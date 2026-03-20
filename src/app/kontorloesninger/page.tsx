@@ -79,7 +79,7 @@ export default function KontorloesningerPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Kontorløsninger
         </p>
@@ -98,8 +98,8 @@ export default function KontorloesningerPage() {
               key={plan.name}
               className={`rounded-lg p-10 ${
                 plan.highlight
-                  ? "bg-[#010f12] text-white ring-2 ring-[#9d2e1e]"
-                  : "bg-[#fffdeb] text-[#010f12]"
+                  ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
+                  : "bg-[#fffdeb] text-[#8397a9]"
               }`}
             >
               {plan.highlight && (
@@ -138,7 +138,7 @@ export default function KontorloesningerPage() {
                 className={`block text-center py-3.5 rounded font-medium transition-colors ${
                   plan.highlight
                     ? "bg-[#9d2e1e] text-white hover:bg-[#8b2518]"
-                    : "border border-[#010f12]/20 text-[#010f12] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
+                    : "border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
                 }`}
               >
                 Kom i gang
@@ -151,7 +151,7 @@ export default function KontorloesningerPage() {
       {/* All plans include */}
       <section className="py-16 px-6 bg-[#fffdeb]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#010f12] text-2xl font-light mb-8">
+          <h2 className="text-[#8397a9] text-2xl font-light mb-8">
             Alle løsninger inkluderer
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-[#6b6b7a]">

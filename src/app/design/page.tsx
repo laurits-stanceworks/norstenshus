@@ -31,7 +31,7 @@ const designPrinciples = [
 export default function DesignPage() {
   return (
     <>
-      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Design
         </p>
@@ -48,7 +48,7 @@ export default function DesignPage() {
             {designPrinciples.map(({ title, description }) => (
               <div key={title} className="p-10 bg-[#fffdeb] rounded-lg">
                 <div className="w-8 h-px bg-[#9d2e1e] mb-6" />
-                <h3 className="text-[#010f12] text-xl font-semibold mb-3">{title}</h3>
+                <h3 className="text-[#8397a9] text-xl font-semibold mb-3">{title}</h3>
                 <p className="text-[#6b6b7a] leading-relaxed text-sm">{description}</p>
               </div>
             ))}
@@ -56,7 +56,7 @@ export default function DesignPage() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-[#010f12] text-white text-center">
+      <section className="py-20 px-6 bg-[#8397a9] text-white text-center">
         <div className="mx-auto max-w-2xl">
           <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
             Filosofi

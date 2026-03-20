@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-[#010f12] overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-[#8397a9] overflow-hidden">
         <Image
           src="/images/building.jpg"
           alt="Nordstens Workspace bygning"
@@ -61,7 +61,7 @@ export default function HomePage() {
             <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Kontorløsninger
             </p>
-            <h2 className="text-[#010f12] text-4xl font-light">
+            <h2 className="text-[#8397a9] text-4xl font-light">
               Find den løsning der passer dig
             </h2>
           </div>
@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/kontorloesninger"
-              className="text-[#010f12] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
+              className="text-[#8397a9] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
             >
               Se alle detaljer →
             </Link>
@@ -84,7 +84,7 @@ export default function HomePage() {
             <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Faciliteter
             </p>
-            <h2 className="text-[#010f12] text-4xl font-light">
+            <h2 className="text-[#8397a9] text-4xl font-light">
               Alt hvad du behøver — inkluderet
             </h2>
           </div>
@@ -92,7 +92,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/faciliteter"
-              className="text-[#010f12] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
+              className="text-[#8397a9] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
             >
               Se alle faciliteter →
             </Link>
@@ -101,7 +101,7 @@ export default function HomePage() {
       </section>
 
       {/* About snippet */}
-      <section className="py-24 px-6 bg-[#010f12] text-white">
+      <section className="py-24 px-6 bg-[#8397a9] text-white">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
             Nordstens Hus
@@ -130,7 +130,7 @@ export default function HomePage() {
             <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Spørgsmål & svar
             </p>
-            <h2 className="text-[#010f12] text-4xl font-light">
+            <h2 className="text-[#8397a9] text-4xl font-light">
               Ofte stillede spørgsmål
             </h2>
           </div>

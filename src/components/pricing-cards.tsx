@@ -70,8 +70,8 @@ export function PricingCards() {
           key={plan.name}
           className={`rounded-lg p-8 flex flex-col ${
             plan.highlight
-              ? "bg-[#010f12] text-white ring-2 ring-[#9d2e1e]"
-              : "bg-[#fffdeb] text-[#010f12]"
+              ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
+              : "bg-[#fffdeb] text-[#8397a9]"
           }`}
         >
           {plan.highlight && (
@@ -115,7 +115,7 @@ export function PricingCards() {
             className={`text-center py-3 rounded text-sm font-medium transition-colors ${
               plan.highlight
                 ? "bg-[#9d2e1e] text-white hover:bg-[#8b2518]"
-                : "border border-[#010f12]/20 text-[#010f12] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
+                : "border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
             }`}
           >
             {plan.cta}

@@ -36,7 +36,7 @@ export function ContactForm() {
         <div className="w-12 h-12 bg-[#9d2e1e]/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <span className="text-[#9d2e1e] text-2xl">✓</span>
         </div>
-        <h3 className="text-[#010f12] font-semibold mb-2">Besked sendt!</h3>
+        <h3 className="text-[#8397a9] font-semibold mb-2">Besked sendt!</h3>
         <p className="text-[#6b6b7a] text-sm">
           Vi vender tilbage til dig hurtigst muligt.
         </p>
@@ -48,7 +48,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-[#010f12] mb-1.5">
+          <label htmlFor="name" className="block text-sm font-medium text-[#8397a9] mb-1.5">
             Navn <span className="text-[#9d2e1e]">*</span>
           </label>
           <input
@@ -56,26 +56,26 @@ export function ContactForm() {
             name="name"
             type="text"
             required
-            className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#010f12] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
+            className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
             placeholder="Dit navn"
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-[#010f12] mb-1.5">
+          <label htmlFor="phone" className="block text-sm font-medium text-[#8397a9] mb-1.5">
             Telefon
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
-            className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#010f12] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
+            className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
             placeholder="Dit telefonnummer"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-[#010f12] mb-1.5">
+        <label htmlFor="email" className="block text-sm font-medium text-[#8397a9] mb-1.5">
           Email <span className="text-[#9d2e1e]">*</span>
         </label>
         <input
@@ -83,13 +83,13 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#010f12] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
+          className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
           placeholder="din@email.dk"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-[#010f12] mb-1.5">
+        <label htmlFor="message" className="block text-sm font-medium text-[#8397a9] mb-1.5">
           Besked <span className="text-[#9d2e1e]">*</span>
         </label>
         <textarea
@@ -98,7 +98,7 @@ export function ContactForm() {
           required
           rows={5}
           maxLength={600}
-          className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#010f12] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors resize-none"
+          className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors resize-none"
           placeholder="Fortæl os hvad du er interesseret i..."
         />
       </div>

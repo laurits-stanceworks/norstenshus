@@ -41,7 +41,7 @@ export function FaqSection() {
             className="w-full flex items-center justify-between py-5 text-left gap-4"
             onClick={() => setOpen(open === i ? null : i)}
           >
-            <span className="text-[#010f12] font-medium">{faq.q}</span>
+            <span className="text-[#8397a9] font-medium">{faq.q}</span>
             {open === i ? (
               <Minus size={18} className="text-[#9d2e1e] shrink-0" />
             ) : (

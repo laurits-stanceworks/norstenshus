@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function LejevilkaarPage() {
   return (
     <>
-      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Vilkår
         </p>

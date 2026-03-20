@@ -21,7 +21,7 @@ export function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-[#010f12] text-white">
+    <header className="sticky top-0 z-50 bg-[#8397a9] text-white">
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -62,7 +62,7 @@ export function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden bg-[#050d0f] px-6 pb-6 flex flex-col gap-4">
+        <div className="lg:hidden bg-[#6b8394] px-6 pb-6 flex flex-col gap-4">
           {links.map((l) => (
             <Link
               key={l.href}

@@ -18,7 +18,7 @@ const features = [
 export default function MoederumPage() {
   return (
     <>
-      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Møderum
         </p>
@@ -36,7 +36,7 @@ export default function MoederumPage() {
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-[#010f12] text-3xl font-light mb-6">
+            <h2 className="text-[#8397a9] text-3xl font-light mb-6">
               Alt klar til dit møde
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed mb-8">
@@ -46,7 +46,7 @@ export default function MoederumPage() {
             </p>
             <div className="grid grid-cols-2 gap-4 mb-10">
               {features.map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-3 text-sm text-[#010f12]">
+                <div key={label} className="flex items-center gap-3 text-sm text-[#8397a9]">
                   <Icon size={18} className="text-[#9d2e1e]" strokeWidth={1.5} />
                   {label}
                 </div>
@@ -61,12 +61,12 @@ export default function MoederumPage() {
           </div>
 
           <div className="bg-[#fffdeb] rounded-lg p-10">
-            <h3 className="text-[#010f12] font-semibold mb-6">Inkluderet for medlemmer</h3>
+            <h3 className="text-[#8397a9] font-semibold mb-6">Inkluderet for medlemmer</h3>
             <p className="text-[#6b6b7a] text-sm leading-relaxed mb-6">
               Har du et privat kontor hos os, er adgang til mødelokalerne inkluderet i dit
               abonnement. Flexplads og fast plads-medlemmer kan booke til favorable priser.
             </p>
-            <h3 className="text-[#010f12] font-semibold mb-3">Externe bookinger</h3>
+            <h3 className="text-[#8397a9] font-semibold mb-3">Externe bookinger</h3>
             <p className="text-[#6b6b7a] text-sm leading-relaxed">
               Mødelokalerne kan lejes af alle — også virksomheder uden fast tilknytning til
               Nordstens Workspace. Kontakt os for priser og ledige tider.

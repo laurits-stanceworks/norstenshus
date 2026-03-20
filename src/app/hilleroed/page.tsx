@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function HilleroedPage() {
   return (
     <>
-      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Hillerød
         </p>
@@ -22,13 +22,13 @@ export default function HilleroedPage() {
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-[#010f12] text-3xl font-light mb-8">Adresse & transport</h2>
+            <h2 className="text-[#8397a9] text-3xl font-light mb-8">Adresse & transport</h2>
 
             <div className="space-y-6 mb-10">
               <div className="flex gap-4">
                 <MapPin size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#010f12] mb-1">Adresse</p>
+                  <p className="font-medium text-[#8397a9] mb-1">Adresse</p>
                   <p className="text-[#6b6b7a] text-sm">
                     Slotsgade 13-17<br />
                     3400 Hillerød
@@ -39,7 +39,7 @@ export default function HilleroedPage() {
               <div className="flex gap-4">
                 <Train size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#010f12] mb-1">Med tog</p>
+                  <p className="font-medium text-[#8397a9] mb-1">Med tog</p>
                   <p className="text-[#6b6b7a] text-sm">
                     5 minutters gang fra Hillerød Station (S-tog linje E og F samt Lokalbanen).
                     Direkte forbindelse fra København H på ca. 45 minutter.
@@ -50,7 +50,7 @@ export default function HilleroedPage() {
               <div className="flex gap-4">
                 <Car size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#010f12] mb-1">Med bil</p>
+                  <p className="font-medium text-[#8397a9] mb-1">Med bil</p>
                   <p className="text-[#6b6b7a] text-sm">
                     Let tilgængeligt fra motorvejsnettet. Parkering tilgængeligt i nærheden.
                   </p>
@@ -60,7 +60,7 @@ export default function HilleroedPage() {
               <div className="flex gap-4">
                 <Clock size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#010f12] mb-1">Adgang</p>
+                  <p className="font-medium text-[#8397a9] mb-1">Adgang</p>
                   <p className="text-[#6b6b7a] text-sm">
                     24/7 adgang med Salto mobil nøgle for alle medlemmer.
                   </p>
@@ -88,7 +88,7 @@ export default function HilleroedPage() {
       {/* About Hillerød */}
       <section className="py-16 px-6 bg-[#fffdeb]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#010f12] text-3xl font-light mb-6">Om Hillerød</h2>
+          <h2 className="text-[#8397a9] text-3xl font-light mb-6">Om Hillerød</h2>
           <p className="text-[#6b6b7a] leading-relaxed">
             Hillerød er en levende by nord for København med Frederiksborg Slot som
             vartegn. Byen byder på et aktivt erhvervsliv, gode transportforbindelser

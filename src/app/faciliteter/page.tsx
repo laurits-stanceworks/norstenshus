@@ -117,7 +117,7 @@ const facilities = [
 export default function FaciliteterPage() {
   return (
     <>
-      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Faciliteter
         </p>
@@ -151,7 +151,7 @@ export default function FaciliteterPage() {
               className="p-8 bg-[#fffdeb] rounded-lg hover:shadow-md transition-shadow"
             >
               <Icon size={28} className="text-[#9d2e1e] mb-4" strokeWidth={1.5} />
-              <h3 className="text-[#010f12] font-semibold mb-2">{title}</h3>
+              <h3 className="text-[#8397a9] font-semibold mb-2">{title}</h3>
               <p className="text-[#6b6b7a] text-sm leading-relaxed">{description}</p>
             </div>
           ))}
