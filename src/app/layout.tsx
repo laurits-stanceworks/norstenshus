@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
+import localFont from "next/font/local"
 import "./globals.css"
 import { Nav } from "@/components/nav"
 import { Footer } from "@/components/footer"
@@ -7,6 +8,12 @@ import { Footer } from "@/components/footer"
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+})
+
+const prumo = localFont({
+  src: "../../public/fonts/PrumoTextBold.otf",
+  variable: "--font-prumo",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -29,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="da" className={`${geist.variable} h-full`}>
+    <html lang="da" className={`${geist.variable} ${prumo.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
         <Nav />
         <main className="flex-1">{children}</main>

@@ -13,6 +13,11 @@
   --color-card: #ffffff;
   --color-card-foreground: #1a1a2e;
   --font-sans: var(--font-geist-sans);
+  --font-heading: var(--font-prumo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), serif;
 }
 
 * {
