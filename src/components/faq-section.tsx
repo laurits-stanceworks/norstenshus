@@ -5,28 +5,28 @@ import { Plus, Minus } from "lucide-react"
 
 const faqs = [
   {
-    q: "Er arbejdspladserne møblerede?",
-    a: "Ja, alle vores arbejdspladser er fuldt møblerede med ergonomiske stole og skriveborde. Fast pladser inkluderer desuden skærm og periferiudstyr.",
+    q: "Hvad indeholder en møbleret arbejdsplads?",
+    a: "En møbleret arbejdsplads i Nordstens Workspace sikrer maksimal komfort og produktivitet. Alle pladser har moderne hæve-sænkeborde, bordlampe, ergonomiske kontorstole og aflåselige reoler. Et godt arbejdsmiljø starter med den rette indretning — vores kontorer er ikke blot funktionelle, men også æstetisk indbydende. Uanset om du har brug for en fast plads eller en mere fleksibel løsning, er vi klar til at understøtte din arbejdsdag fra dag ét.",
   },
   {
-    q: "Hvad er inkluderet i prisen?",
-    a: "Fibernet, daglig rengøring, el, vand og varme, kaffe og te, adgang til fællesområder, lounges og tagterrasse er inkluderet i alle abonnementer.",
+    q: "Hvad er inkluderet i lejen?",
+    a: "I Nordstens Workspace tror vi på gennemsigtighed og bekvemmelighed. Når du lejer en plads eller et kontor hos os, er alt inkluderet i prisen — du behøver ikke bekymre dig om ekstra omkostninger til forbrug, rengøring, møbler eller it-infrastruktur. Du får adgang til hurtigt internet, telefonbokse til private samtaler og fuldt udstyrede fælleskøkkener med fri kaffe og te.",
   },
   {
-    q: "Hvad er opsigelsesvilkårene?",
-    a: "Alle vores løsninger har 3 måneders gensidig opsigelse. Flexplads kan dog opsiges med kortere varsel — kontakt os for detaljer.",
+    q: "Er der nogen binding?",
+    a: "Fleksibilitet er vigtigt i en verden, hvor man ikke altid kender fremtiden. Derfor er der ingen lange bindingsperioder. Du kan opsige din aftale med tre måneders varsel, hvilket giver dig fuld frihed til at tilpasse dine behov uden at være låst fast i en lang kontrakt.",
   },
   {
-    q: "Kan jeg leje et mødelokale som ekstern?",
-    a: "Ja, vores mødelokaler kan lejes af alle — også virksomheder der ikke har fast plads hos os. Kontakt os for pris og booking.",
+    q: "Hvordan er ånden hos Nordstens Workspace?",
+    a: "Ånden i Nordstens Workspace bygger på fællesskab, innovation og ambition. Vi har skabt et miljø, hvor virksomheder både kan vokse, finde inspiration og skabe forbindelser med andre ligesindede. Vores lejere spænder bredt fra dynamiske startups til veletablerede virksomheder. Vi afholder regelmæssige netværksarrangementer og lægger stor vægt på, at alle skal føle sig som en del af et dynamisk og støttende fællesskab.",
   },
   {
-    q: "Er der parkering?",
-    a: "Der er parkering i nærheden af bygningen. Kontakt os for aktuelle parkeringsmuligheder og betingelser.",
+    q: "Kan jeg komme forbi og se lokalerne?",
+    a: "Absolut! Vi viser dig meget gerne rundt, så du får en klar fornemmelse af, hvad Nordstens Workspace tilbyder. Lokalerne er åbne for fremvisninger, så du kan se vores smukt designede kontorpladser, mødelokaler, de afslappende loungeområder og vores unikke tagterrasse og gårdmiljø. Tag fat i os, så finder vi en tid der passer dig.",
   },
   {
-    q: "Hvad er kulturen i Nordstens Workspace?",
-    a: "Vi lægger stor vægt på fællesskab og netværk. Vores medlemmer er en bred blanding af freelancere, iværksættere og mindre virksomheder der sætter pris på professionelle omgivelser og et levende miljø.",
+    q: "Hvilke slags AV-udstyr er til rådighed i mødelokalerne?",
+    a: "Hvert mødelokale er udstyret med det nyeste inden for AV-teknologi, herunder højopløselige skærme og systemer til videoopkald, så du kan præsentere alt dit indhold trådløst, klart og effektivt. Det brugervenlige opsætningssystem sikrer, at teknikken fungerer fra start, så du kan fokusere på dit møde uden forstyrrelser.",
   },
 ]
 

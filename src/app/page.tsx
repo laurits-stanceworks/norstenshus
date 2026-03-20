@@ -28,8 +28,9 @@ export default function HomePage() {
             <span className="font-semibold">Nordstens Workspace</span>
           </h1>
           <p className="text-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
-            Et moderne kontorfællesskab i historiske omgivelser. Vælg mellem flexplads,
-            fast plads, privat kontor eller virtuelt kontor.
+            Et unikt og levende miljø lige midt i Hillerød. I det smukke Nordstens Hus fra 1887
+            bliver fortidens håndværk forenet med nutidens komfort og design — altid med
+            fleksibilitet og fællesskab i centrum.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link
@@ -107,12 +108,12 @@ export default function HomePage() {
             Nordstens Hus
           </p>
           <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed mb-6 sm:mb-8">
-            "Det der skabes uden omhu inspirerer sjældent til stor begejstring"
+            "Hvad der er skabt uden omtanke vækker sjældent stor begejstring"
           </blockquote>
           <p className="text-white/60 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10">
-            Nordstens Hus er en omhyggeligt restaureret bygning fra 1880'erne i Hillerød.
-            Restaureringen skete i samarbejde med Nationalmuseet og har skabt rammerne
-            for et unikt kontorfællesskab, der forener historisk arkitektur med moderne arbejdsliv.
+            I Nordstens Hus har Hillerød fået et håndgribeligt bevis på fortidens helt unikke håndværk.
+            Hele huset er nænsomt restaureret og i stort omfang genskabt som det så ud i slutningen af
+            1800-tallet — bl.a. med hjælp fra Nationalmuseet.
           </p>
           <Link
             href="/om-os"

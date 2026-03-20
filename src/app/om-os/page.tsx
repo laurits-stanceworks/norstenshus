@@ -3,16 +3,31 @@ import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Nordstens Hus — Nordstens Workspace",
-  description: "Lær historien bag Nordstens Hus — en omhyggeligt restaureret bygning fra 1880'erne i hjertet af Hillerød.",
+  description:
+    "Lær historien bag Nordstens Hus — en omhyggeligt restaureret bygning fra 1880'erne i hjertet af Hillerød.",
 }
 
 const timeline = [
-  { year: "1877", text: "Nordstens grundlægges som maskin- og redskabsfabrik i Hillerød." },
-  { year: "1900", text: "International anerkendelse med medaljer fra Paris og Reval for produktudvikling." },
-  { year: "1910", text: "Grand Prix i Bruxelles — Nordstens tærskemaskiner og såmaskiner sælges globalt." },
+  { year: "1877", text: "Peder Nielsen overtager Frederiksborg Jernstøberi og Maskinfabrik i Hillerød og grundlægger Nordstens med 12 mand." },
+  { year: "1900", text: "Guldmedalje på verdensudstillingen i Paris og sølvmedalje i Reval. Fabrikken er vokset til Nordeuropas største producent af såmaskiner." },
+  { year: "1910", text: "Grand Prix på verdensudstillingen i Bruxelles. Nordstens eksporterer tærskeværker og såmaskiner til hele verden." },
   { year: "1950'erne", text: "Produktionen ophører og fabriksvirksomheden afsluttes." },
-  { year: "2020'erne", text: "Frederiksborg Gruppen restaurerer bygningen i samarbejde med Nationalmuseet." },
-  { year: "I dag", text: "Nordstens Workspace åbner — et moderne kontorfællesskab i historiske rammer." },
+  { year: "2020'erne", text: "Frederiksborg Gruppen restaurerer bygningen nænsomt i samarbejde med Nationalmuseet — genskabt som i slutningen af 1800-tallet." },
+  { year: "I dag", text: "Nordstens Workspace åbner — et moderne kontorfællesskab i historiske rammer, der skriver sig ind i et nyt kapitel for Hillerød." },
+]
+
+const collaborators = [
+  "Frederiksborg Gruppen",
+  "Møgelhøj Arkitekter",
+  "Aksel V. Jensen Rådgivende Ingeniører",
+  "VVS Allan Kristiansen og Sønner",
+  "CL Electric",
+  "CL & CO",
+  "MadsMaler",
+  "Rubin Stuk & Søn",
+  "Malerfag",
+  "Nationalmuseet",
+  "Spar Nord",
 ]
 
 export default function OmOsPage() {
@@ -22,7 +37,7 @@ export default function OmOsPage() {
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Nordstens Hus
         </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Historien bag huset</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Et hus lige fra hjertet</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           En bygning med sjæl. Opført i 1880'erne, restaureret med respekt — og nu rammen
           om et moderne arbejdsfællesskab.
@@ -38,7 +53,7 @@ export default function OmOsPage() {
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
           <blockquote className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light leading-relaxed">
-            "Det der skabes uden omhu inspirerer sjældent til stor begejstring"
+            "Hvad der er skabt uden omtanke vækker sjældent stor begejstring"
           </blockquote>
           <p className="text-[#6b6b7a] mt-4 text-sm">— Frederiksborg Gruppen</p>
         </div>
@@ -52,18 +67,25 @@ export default function OmOsPage() {
               Fra maskinfabrik til kontorfællesskab
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed mb-4">
-              Nordstens Hus rummer en rig industrihistorie. Oprindeligt hjem for en af
-              Hillerøds vigtigste fabrikker, producerede Nordstens verdenserkendte tærskemaskiner
-              og såmaskiner fra 1877 til 1950'erne.
+              I Nordstens Hus har Hillerød fået et håndgribeligt bevis på fortidens helt unikke og
+              gode håndværk. Slotsgade 15 var i mere end 100 år hovedsædet for Nordstens fabrik —
+              Nordeuropas største producent af såmaskiner, der eksporterede til hele verden og
+              modtog internationale medaljer.
             </p>
             <p className="text-[#6b6b7a] leading-relaxed mb-4">
-              Restaureringen er udført med Nationalmuseet som partner for at sikre, at
-              bygningens historiske udtryk og autentiske detaljer bevares — mens det indre
-              er transformeret til et tidssvarende kontormiljø.
+              Hele huset er nænsomt restaureret og i stort omfang genskabt som det så ud i
+              slutningen af 1800-tallet. Restaureringen skete i samarbejde med Nationalmuseet.
+              Der er i særklasse kommet nyt liv i bygningen.
+            </p>
+            <p className="text-[#6b6b7a] leading-relaxed mb-4">
+              Vores ambitiøse hus inviterer indenfor i et driftigt fællesskab, der bidrager til
+              byen og dens borgere. Vi hylder idéen om, at vores hus er meget mere end mursten —
+              det er også et historisk og kulturelt anker, og et sted for alle.
             </p>
             <p className="text-[#6b6b7a] leading-relaxed">
-              Resultatet er et sted der føles unikt: en bygning der fortæller en historie,
-              og som danner rammen for nye historier om arbejde, fællesskab og vækst.
+              Mantraet fra Frederiksborg Gruppen, som står bag Nordstens Hus, er: <em>"Vi gør
+              tingene ordentligt."</em> Intet bliver gjort halvt — det vil du opleve, når du er en
+              del af Nordstens Workspace.
             </p>
           </div>
 
@@ -71,7 +93,7 @@ export default function OmOsPage() {
           <div className="space-y-8">
             {timeline.map(({ year, text }) => (
               <div key={year} className="flex gap-6">
-                <div className="shrink-0">
+                <div className="shrink-0 w-20">
                   <span className="text-[#9d2e1e] font-semibold text-sm">{year}</span>
                 </div>
                 <div className="border-l border-[#e5e3dc] pl-6 pb-2">
@@ -88,12 +110,8 @@ export default function OmOsPage() {
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
           Bygget i samarbejde med
         </p>
-        <div className="flex flex-wrap justify-center gap-8 text-white/50 text-sm max-w-3xl mx-auto">
-          {[
-            "Møgelhøj Arkitekter",
-            "Nationalmuseet",
-            "Frederiksborg Gruppen",
-          ].map((name) => (
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-white/50 text-sm max-w-3xl mx-auto">
+          {collaborators.map((name) => (
             <span key={name} className="hover:text-white/80 transition-colors">
               {name}
             </span>

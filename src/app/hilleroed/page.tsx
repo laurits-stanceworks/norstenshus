@@ -1,10 +1,30 @@
 import type { Metadata } from "next"
-import { MapPin, Train, Car, Clock } from "lucide-react"
+import { MapPin, Train, Car, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Hillerød — Nordstens Workspace",
-  description: "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-17. Let tilgængeligt med tog og bil.",
+  description:
+    "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-17 — under 1 time fra København.",
 }
+
+const distances = [
+  { label: "Bus", distance: "150 m" },
+  { label: "Tog", distance: "800 m" },
+  { label: "Parkering", distance: "100 m" },
+  { label: "Motorvej", distance: "3 min" },
+  { label: "Café", distance: "0 m" },
+  { label: "Restaurant", distance: "75 m" },
+  { label: "Padel", distance: "200 m" },
+  { label: "Frederiksborg Slot", distance: "1,1 km" },
+  { label: "Kongernes Nationalpark", distance: "1,1 km" },
+  { label: "Fitness og fysio", distance: "1 km" },
+  { label: "Royal Stage", distance: "200 m" },
+  { label: "Kulturhus", distance: "400 m" },
+  { label: "Bibliotek", distance: "150 m" },
+  { label: "Golfbane", distance: "700 m" },
+  { label: "Hotel", distance: "2,5 km" },
+  { label: "Barokhaven", distance: "4 km" },
+]
 
 export default function HilleroedPage() {
   return (
@@ -13,16 +33,20 @@ export default function HilleroedPage() {
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Hillerød
         </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Find os i Hillerød</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+          Hillerød — den perfekte hjemmebane til din virksomhed
+        </h1>
         <p className="text-white/60 max-w-xl mx-auto">
-          Centralt beliggende i hjertet af Hillerød — let tilgængeligt med både tog og bil.
+          Omringet af skov, slot og sø — og under 1 time fra København i bil, 35 minutter med S-tog.
         </p>
       </section>
 
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-16">
           <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-8">Adresse & transport</h2>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-8">
+              Adresse & transport
+            </h2>
 
             <div className="space-y-6 mb-10">
               <div className="flex gap-4">
@@ -41,8 +65,8 @@ export default function HilleroedPage() {
                 <div>
                   <p className="font-medium text-[#8397a9] mb-1">Med tog</p>
                   <p className="text-[#6b6b7a] text-sm">
-                    5 minutters gang fra Hillerød Station (S-tog linje E og F samt Lokalbanen).
-                    Direkte forbindelse fra København H på ca. 45 minutter.
+                    800 meter fra Hillerød Station (S-tog og Lokalbanen).
+                    35 minutter fra København med S-tog.
                   </p>
                 </div>
               </div>
@@ -52,17 +76,17 @@ export default function HilleroedPage() {
                 <div>
                   <p className="font-medium text-[#8397a9] mb-1">Med bil</p>
                   <p className="text-[#6b6b7a] text-sm">
-                    Let tilgængeligt fra motorvejsnettet. Parkering tilgængeligt i nærheden.
+                    Motorvejen kun 3 minutter væk. 4 parkeringshuse blot 100 meter fra døren.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <Clock size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
+                <Bus size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#8397a9] mb-1">Adgang</p>
+                  <p className="font-medium text-[#8397a9] mb-1">Med bus</p>
                   <p className="text-[#6b6b7a] text-sm">
-                    24/7 adgang med Salto mobil nøgle for alle medlemmer.
+                    Busstoppested kun 150 meter fra bygningen.
                   </p>
                 </div>
               </div>
@@ -85,16 +109,59 @@ export default function HilleroedPage() {
         </div>
       </section>
 
-      {/* About Hillerød */}
+      {/* Distances */}
       <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#f5f4f0]">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">Om Hillerød</h2>
-          <p className="text-[#6b6b7a] leading-relaxed">
-            Hillerød er en levende by nord for København med Frederiksborg Slot som
-            vartegn. Byen byder på et aktivt erhvervsliv, gode transportforbindelser
-            og en stemning der kombinerer det historiske med det moderne — præcis som
-            Nordstens Workspace.
-          </p>
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-[#8397a9] text-xl sm:text-2xl font-light mb-8 text-center">
+            I hjertet af Hillerød — afstand til
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {distances.map(({ label, distance }) => (
+              <div key={label} className="bg-white rounded-lg p-4 text-center">
+                <p className="text-[#9d2e1e] font-semibold text-sm">{distance}</p>
+                <p className="text-[#6b6b7a] text-xs mt-1">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Hillerød */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-3xl space-y-10">
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              Helt tæt på det hele
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Natur, historie og byliv. Du får det hele i Hillerød, som Nordstens Workspace ligger
+              helt centralt i. Gå frem og tag 10 minutters pause med en kollega rundt om Slotssøen.
+              Nyd Barokhaven og Frederiksborg Slot. Eller gå ind i SlotsArkaderne og gågadens
+              200 butikker — der er masser af inspiration, velvære og muligheder lige ude foran døren.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              En erhvervsby med internationalt snit
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed mb-4">
+              Hillerød tiltrækker internationale virksomheder — særligt inden for medicinalindustrien
+              — med sin stærke strategiske beliggenhed. Byens blomstrende teknologi- og sundhedssektor
+              skaber optimale rammer for samarbejde og vækst.
+            </p>
+            <p className="text-[#6b6b7a] leading-relaxed mb-4">
+              Hillerød er den førende vækstkommune i Hovedstadsregionen. Ifølge den seneste
+              befolkningsprognose forventes byen at vokse med ca. 500 nye boliger årligt frem til
+              2032. Virksomheder som Novo, Foss, Fuji-Film og El-lab investerer massivt i nye
+              faciliteter for et tocifret milliardbeløb.
+            </p>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Byens udvikling understøttes yderligere af opførelsen af det nye supersygehus,
+              forlængelsen af motorvejen til Hillerød og en løbende udvidelse af
+              uddannelsesmulighederne — Hillerød er en central vækstmotor i regionen.
+            </p>
+          </div>
         </div>
       </section>
     </>

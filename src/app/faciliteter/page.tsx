@@ -125,8 +125,7 @@ export default function FaciliteterPage() {
           Faciliteter der løfter din arbejdsdag
         </h1>
         <p className="text-white/60 max-w-xl mx-auto">
-          Meget mere end traditionel kontorleasing. Alt hvad du behøver er inkluderet
-          — fra dag ét.
+          Meget mere end et traditionelt kontorlejemål. Alt hvad du behøver er inkluderet — fra dag ét.
         </p>
       </section>
 
@@ -155,6 +154,85 @@ export default function FaciliteterPage() {
               <p className="text-[#6b6b7a] text-sm leading-relaxed">{description}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Text sections */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-3xl space-y-16">
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              State of the art mødelokaler
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              I Nordstens Workspace møder du højeste kvalitet i alt — fra mursten til mødelokaler,
+              der kommer i flere størrelser. Alle husets mødelokaler er udstyret med de nyeste
+              skærme, systemer til videoopkald og hurtigt og stabilt internet, så du kan afvikle
+              præsentationer, møder og workshops optimalt og helt uden bekymringer. Efter dine møder
+              kan du invitere deltagerne op på tagterrassen eller hygge i gården.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              Teknologi og komfort hånd i hånd
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Vi har skabt et arbejdsmiljø, der sætter både teknologi og komfort i centrum.
+              Med vores Salto-briklåsesystem, som du styrer direkte fra din mobil, bliver
+              dagen lidt lettere og mere sikker. Med optimal belysning og god akustik i alle rum
+              skaber Nordstens Workspace en behagelig og inspirerende atmosfære, hver gang du
+              træder ind på din arbejdsplads.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              Unik tagterrasse og indbydende gårdmiljø
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Nyd godt af din store, private tagterrasse — den perfekte ramme for alt fra
+              uformelle møder til større arrangementer. Du kan arbejde i det fri (vi har lagt
+              el ind), koble af og se det hele lidt fra oven, eller netværke med andre lejere
+              i et afslappet miljø. Gårdmiljøet er en grøn og social oase i stueetagen, omgivet
+              af kaffebar, øl- og vinbar, restaurant og butik.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              Telefonrum til dine private samtaler
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Når du har brug for at tage en privat samtale eller deltage i et online møde, har
+              vi 6 dedikerede telefonrum, der giver dig den ro og det privatliv, du har brug for.
+              Her kan du føle dig tryg og uforstyrret og fokusere fuldt ud på dine samtaler.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              Gratis kaffe og te i vores fælleskøkkener
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              I vores fuldt udstyrede fælleskøkkener er der altid gratis kaffe og te — den
+              perfekte anledning til en velfortjent pause, idéudveksling med kolleger og nye
+              bekendtskaber. Køkkenerne er indrettet som hyggelige fællesområder med cafémiljø,
+              hvor uformelle samtaler kan blomstre og styrke fællesskabet.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+              Netværksstruktur og sikkerhed
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Vores netværk er sikkert og stabilt og giver dig trådløst internet i hele bygningen.
+              IT-infrastrukturen inkluderer firewall og CAT6-kabling med mulighed for at oprette
+              dit eget lukkede netværk. Datasikkerhed er vigtigt for dig — og derfor har vi
+              investeret i den nyeste teknologi inden for IT-sikkerhed.
+            </p>
+          </div>
         </div>
       </section>
     </>

@@ -4,15 +4,15 @@ import { motion } from "framer-motion"
 
 const items = [
   "HAY DESIGN",
+  "GÅGADEN I HILLERØD",
   "TAGTERRASSE",
   "FIBERNET",
   "INGEN BINDING",
+  "HISTORISK BYGNING",
   "MØDELOKALER",
-  "TELEFONBOKSE",
+  "NØGLEFRI ADGANG",
   "24/7 ADGANG",
-  "RENGØRING",
-  "NETVÆRK",
-  "HILLERØD",
+  "NETVÆRKSARRANGEMENTER",
 ]
 
 export function Marquee() {

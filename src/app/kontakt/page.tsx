@@ -69,12 +69,30 @@ export default function KontaktPage() {
               </div>
             </div>
 
-            <div className="bg-[#f5f4f0] rounded-lg p-8">
-              <p className="text-[#8397a9] font-medium mb-2">Åbningstider</p>
-              <p className="text-[#6b6b7a] text-sm">
-                Kontoret er bemandet mandag–fredag 9:00–17:00.<br />
-                Medlemmer har 24/7 adgang til bygningen.
-              </p>
+            <div className="bg-[#f5f4f0] rounded-lg p-8 space-y-6">
+              <div>
+                <p className="text-[#8397a9] font-medium mb-2">Telefontider</p>
+                <p className="text-[#6b6b7a] text-sm">
+                  Vi står klar til at hjælpe dig mandag–fredag kl. 09:00–17:00.<br />
+                  Har du spørgsmål uden for telefontiden, er du velkommen til at benytte kontaktformularen.
+                </p>
+              </div>
+              <div>
+                <p className="text-[#8397a9] font-medium mb-2">Akut skade</p>
+                <p className="text-[#6b6b7a] text-sm">
+                  Oplever du en akut skade (vand, brand, strøm eller bygningsskade) kontakt vores
+                  administration på{" "}
+                  <a href="tel:+4572228200" className="text-[#9d2e1e] hover:underline">
+                    72 22 82 00
+                  </a>
+                  .<br />
+                  Uden for åbningstid:{" "}
+                  <a href="tel:+4540200090" className="text-[#9d2e1e] hover:underline">
+                    40 20 00 90
+                  </a>
+                  .
+                </p>
+              </div>
             </div>
           </div>
         </div>

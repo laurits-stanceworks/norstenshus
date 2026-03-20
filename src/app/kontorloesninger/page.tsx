@@ -12,65 +12,84 @@ const plans = [
   {
     name: "Virtuelt Kontor",
     price: "600",
+    deposit: "1 måneds depositum",
     description:
-      "Perfekt til dig der har brug for en professionel erhvervsadresse i Hillerød, men arbejder hjemmefra eller er meget på farten.",
+      "Har du ikke behov for et fysisk kontor, men gerne vil have en professionel adresse i Hillerød? Vores virtuelle kontorløsning giver dig en professionel tilstedeværelse og mulighed for at leje mødelokaler efter behov.",
     features: [
-      "Erhvervsadresse i Hillerød",
-      "Postkasse og postmodtagelse",
-      "Skiltning i bygningen",
-      "3 måneders gensidig opsigelse",
+      "Professionel virksomhedsadresse",
+      "Eget firmaskilt og postkasse",
+      "Adgang til åbne faglige events",
+      "Rabat på leje af mødelokaler og telefonrum",
+      "1 måneds depositum",
+      "Ingen binding – 3 måneders opsigelse",
     ],
   },
   {
-    name: "Flexplads",
+    name: "Co-working Flexplads",
     price: "1.595",
+    deposit: "3 måneders depositum",
     description:
-      "Ideel til freelancere og selvstændige der ønsker fleksibilitet og professionelle omgivelser uden fast commitment.",
+      "Er du freelancer, startup, iværksætter eller en mindre virksomhed? En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet — kombinér det bedste fra begge verdener.",
     features: [
-      "Arbejdsplads i åbent kontormiljø",
-      "Fuldt møbleret",
-      "Fibernet inkluderet",
-      "24/7 adgang med mobil nøgle",
+      "Fleksibel plads i åbent kontormiljø",
+      "Fuld møbleret plads",
+      "Fri adgang til alle fællesområder, tagterrasse, køkkener og lounges",
+      "Kaffe, te og vand ad libitum",
+      "Hurtigt, sikkert og stabilt fibernet",
       "Daglig rengøring",
-      "Kaffe, te og køkkenadgang",
-      "Adgang til fællesområder og lounge",
-      "Deltagelse i netværksarrangementer",
-      "Ingen binding",
+      "Adgang 24/7",
+      "Netværksarrangementer i Nordstens Workspace",
+      "Rabat på leje af mødelokaler og telefonrum",
+      "3 måneders depositum – ingen binding – 3 mdr. opsigelse",
+      "Inklusiv alle driftsudgifter, el, vand og varme",
     ],
     highlight: true,
   },
   {
-    name: "Fast Plads",
+    name: "Co-working Fast Plads",
     price: "3.495",
+    deposit: "3 måneders depositum",
     description:
-      "Din egen dedikerede arbejdsplads med alt udstyr klar til dig hver dag. Oplagt til dig der er på kontoret fast.",
+      "Med en fast plads får du din egen dedikerede arbejdsstation med adgang 24/7. Perfekt til dig, der ønsker at kombinere det dynamiske co-working miljø med en stabil base.",
     features: [
-      "Dedikeret skrivebord — dit eget",
-      "Skærm og periferiudstyr",
-      "Erhvervsadresse og postkasse",
-      "Fibernet inkluderet",
-      "24/7 adgang",
+      "Fast, personlig arbejdsstation med skærm, tastatur og mus",
+      "Fuld møbleret plads",
+      "Fri adgang til alle fællesområder, tagterrasse, køkkener og lounges",
+      "Kaffe, te og vand ad libitum",
+      "Hurtigt, sikkert og stabilt fibernet",
       "Daglig rengøring",
-      "Kaffe, te og køkkenadgang",
-      "Adgang til lounge og tagterrasse",
-      "3 måneders gensidig opsigelse",
+      "Adgang 24/7",
+      "Briklåsesystem med nøglefri adgang og mobiladgang",
+      "Virksomhedsadresse og eigen postkasse",
+      "Firmaskiltning",
+      "Netværksarrangementer i Nordstens Workspace",
+      "Rabat på leje af mødelokaler og telefonrum",
+      "3 måneders depositum – ingen binding – 3 mdr. opsigelse",
+      "Inklusiv alle driftsudgifter, el, vand og varme",
     ],
   },
   {
     name: "Privat Kontor",
     price: "6.500",
+    deposit: "3 måneders depositum",
     description:
-      "Eget afskærmet kontor til din virksomhed. Kombiner privathed med alle fordelene ved et levende kontorfællesskab.",
+      "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere.",
     features: [
-      "Privat, lukket kontor",
-      "Fuldt møbleret",
-      "Fri adgang til mødelokaler",
-      "6 telefonbokse inkluderet",
-      "Erhvervsadresse og postkasse",
-      "Fibernet inkluderet",
-      "24/7 adgang",
+      "Fuld møbleret privat kontor",
+      "Ergonomiske stole, hæve-sænkeborde, skabe og lamper",
+      "Fri adgang til alle fællesområder, tagterrasse, køkkener og lounges",
+      "Fri adgang til alle telefonrum",
+      "Kaffe, te og vand ad libitum",
+      "Hurtigt, sikkert og stabilt fibernet",
       "Daglig rengøring",
-      "3 måneders gensidig opsigelse",
+      "Adgang 24/7",
+      "Briklåsesystem med nøglefri adgang og mobiladgang",
+      "Virksomhedsadresse og postkasse",
+      "Firmaskiltning",
+      "Netværksarrangementer i Nordstens Workspace",
+      "Mulighed for leje af mødelokaler",
+      "3 måneders depositum – ingen binding – 3 mdr. opsigelse",
+      "Inklusiv alle driftsudgifter, el, vand og varme",
     ],
   },
 ]
@@ -83,10 +102,12 @@ export default function KontorloesningerPage() {
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Kontorløsninger
         </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Find din løsning</h1>
-        <p className="text-white/60 max-w-xl mx-auto">
-          Fra virtuel adresse til privat kontor — vi har en løsning der passer til
-          præcis dit behov og din hverdag.
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+          Fleksible kontorløsninger uden lange bindinger
+        </h1>
+        <p className="text-white/60 max-w-2xl mx-auto">
+          I Nordstens Workspace kan I skifte mellem forskellige rum og miljøer for øget fokus og
+          effektivitet. Uanset dine behov er vi her for at imødekomme dem.
         </p>
       </section>
 
@@ -96,7 +117,7 @@ export default function KontorloesningerPage() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-lg p-10 ${
+              className={`rounded-lg p-6 sm:p-8 md:p-10 ${
                 plan.highlight
                   ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
                   : "bg-[#f5f4f0] text-[#8397a9]"
@@ -141,7 +162,7 @@ export default function KontorloesningerPage() {
                     : "border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
                 }`}
               >
-                Kom i gang
+                Book nu
               </Link>
             </div>
           ))}
