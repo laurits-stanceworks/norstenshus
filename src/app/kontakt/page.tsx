@@ -69,7 +69,7 @@ export default function KontaktPage() {
               </div>
             </div>
 
-            <div className="bg-[#fffdeb] rounded-lg p-8">
+            <div className="bg-[#f5f4f0] rounded-lg p-8">
               <p className="text-[#8397a9] font-medium mb-2">Åbningstider</p>
               <p className="text-[#6b6b7a] text-sm">
                 Kontoret er bemandet mandag–fredag 9:00–17:00.<br />

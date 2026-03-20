@@ -78,7 +78,7 @@ export default function HomePage() {
       </section>
 
       {/* Facilities preview */}
-      <section className="py-24 px-6 bg-[#fffdeb]">
+      <section className="py-24 px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">

@@ -60,7 +60,7 @@ export default function MoederumPage() {
             </Link>
           </div>
 
-          <div className="bg-[#fffdeb] rounded-lg p-10">
+          <div className="bg-[#f5f4f0] rounded-lg p-10">
             <h3 className="text-[#8397a9] font-semibold mb-6">Inkluderet for medlemmer</h3>
             <p className="text-[#6b6b7a] text-sm leading-relaxed mb-6">
               Har du et privat kontor hos os, er adgang til mødelokalerne inkluderet i dit

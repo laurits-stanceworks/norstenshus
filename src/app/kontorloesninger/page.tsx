@@ -99,7 +99,7 @@ export default function KontorloesningerPage() {
               className={`rounded-lg p-10 ${
                 plan.highlight
                   ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
-                  : "bg-[#fffdeb] text-[#8397a9]"
+                  : "bg-[#f5f4f0] text-[#8397a9]"
               }`}
             >
               {plan.highlight && (
@@ -149,7 +149,7 @@ export default function KontorloesningerPage() {
       </section>
 
       {/* All plans include */}
-      <section className="py-16 px-6 bg-[#fffdeb]">
+      <section className="py-16 px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-[#8397a9] text-2xl font-light mb-8">
             Alle løsninger inkluderer

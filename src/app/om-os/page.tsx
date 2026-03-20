@@ -35,7 +35,7 @@ export default function OmOsPage() {
       </div>
 
       {/* Quote */}
-      <section className="py-20 px-6 bg-[#fffdeb]">
+      <section className="py-20 px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
           <blockquote className="text-[#8397a9] text-3xl font-light leading-relaxed">
             "Det der skabes uden omhu inspirerer sjældent til stor begejstring"

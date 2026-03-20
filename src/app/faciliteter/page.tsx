@@ -148,7 +148,7 @@ export default function FaciliteterPage() {
           {facilities.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="p-8 bg-[#fffdeb] rounded-lg hover:shadow-md transition-shadow"
+              className="p-8 bg-[#f5f4f0] rounded-lg hover:shadow-md transition-shadow"
             >
               <Icon size={28} className="text-[#9d2e1e] mb-4" strokeWidth={1.5} />
               <h3 className="text-[#8397a9] font-semibold mb-2">{title}</h3>

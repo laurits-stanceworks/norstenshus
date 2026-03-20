@@ -32,7 +32,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-[#fffdeb] rounded-lg p-10 text-center">
+      <div className="bg-[#f5f4f0] rounded-lg p-10 text-center">
         <div className="w-12 h-12 bg-[#9d2e1e]/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <span className="text-[#9d2e1e] text-2xl">✓</span>
         </div>

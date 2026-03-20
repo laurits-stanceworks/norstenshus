@@ -71,7 +71,7 @@ export function PricingCards() {
           className={`rounded-lg p-8 flex flex-col ${
             plan.highlight
               ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
-              : "bg-[#fffdeb] text-[#8397a9]"
+              : "bg-[#f5f4f0] text-[#8397a9]"
           }`}
         >
           {plan.highlight && (

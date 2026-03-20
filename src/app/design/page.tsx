@@ -46,7 +46,7 @@ export default function DesignPage() {
         <div className="mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-10">
             {designPrinciples.map(({ title, description }) => (
-              <div key={title} className="p-10 bg-[#fffdeb] rounded-lg">
+              <div key={title} className="p-10 bg-[#f5f4f0] rounded-lg">
                 <div className="w-8 h-px bg-[#9d2e1e] mb-6" />
                 <h3 className="text-[#8397a9] text-xl font-semibold mb-3">{title}</h3>
                 <p className="text-[#6b6b7a] leading-relaxed text-sm">{description}</p>

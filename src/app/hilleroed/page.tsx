@@ -86,7 +86,7 @@ export default function HilleroedPage() {
       </section>
 
       {/* About Hillerød */}
-      <section className="py-16 px-6 bg-[#fffdeb]">
+      <section className="py-16 px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-[#8397a9] text-3xl font-light mb-6">Om Hillerød</h2>
           <p className="text-[#6b6b7a] leading-relaxed">
