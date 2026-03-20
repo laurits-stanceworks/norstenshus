@@ -18,8 +18,8 @@ const timeline = [
 export default function OmOsPage() {
   return (
     <>
-      <section className="bg-[#262742] py-24 px-6 text-white text-center">
-        <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Nordstens Hus
         </p>
         <h1 className="text-5xl font-light mb-4">Historien bag huset</h1>
@@ -35,9 +35,9 @@ export default function OmOsPage() {
       </div>
 
       {/* Quote */}
-      <section className="py-20 px-6 bg-[#f5f4f0]">
+      <section className="py-20 px-6 bg-[#fffdeb]">
         <div className="mx-auto max-w-3xl text-center">
-          <blockquote className="text-[#262742] text-3xl font-light leading-relaxed">
+          <blockquote className="text-[#010f12] text-3xl font-light leading-relaxed">
             "Det der skabes uden omhu inspirerer sjældent til stor begejstring"
           </blockquote>
           <p className="text-[#6b6b7a] mt-4 text-sm">— Frederiksborg Gruppen</p>
@@ -48,7 +48,7 @@ export default function OmOsPage() {
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <h2 className="text-[#262742] text-3xl font-light mb-6">
+            <h2 className="text-[#010f12] text-3xl font-light mb-6">
               Fra maskinfabrik til kontorfællesskab
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed mb-4">
@@ -72,9 +72,9 @@ export default function OmOsPage() {
             {timeline.map(({ year, text }) => (
               <div key={year} className="flex gap-6">
                 <div className="shrink-0">
-                  <span className="text-[#CA9665] font-semibold text-sm">{year}</span>
+                  <span className="text-[#9d2e1e] font-semibold text-sm">{year}</span>
                 </div>
-                <div className="border-l border-[#e5e3dc] pl-6 pb-2">
+                <div className="border-l border-[#decab1] pl-6 pb-2">
                   <p className="text-[#6b6b7a] text-sm leading-relaxed">{text}</p>
                 </div>
               </div>
@@ -84,8 +84,8 @@ export default function OmOsPage() {
       </section>
 
       {/* Collaborators */}
-      <section className="py-16 px-6 bg-[#262742] text-white text-center">
-        <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+      <section className="py-16 px-6 bg-[#010f12] text-white text-center">
+        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
           Bygget i samarbejde med
         </p>
         <div className="flex flex-wrap justify-center gap-8 text-white/50 text-sm max-w-3xl mx-auto">

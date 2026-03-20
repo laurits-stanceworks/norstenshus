@@ -70,12 +70,12 @@ export function PricingCards() {
           key={plan.name}
           className={`rounded-lg p-8 flex flex-col ${
             plan.highlight
-              ? "bg-[#262742] text-white ring-2 ring-[#CA9665]"
-              : "bg-[#f5f4f0] text-[#262742]"
+              ? "bg-[#010f12] text-white ring-2 ring-[#9d2e1e]"
+              : "bg-[#fffdeb] text-[#010f12]"
           }`}
         >
           {plan.highlight && (
-            <span className="text-[#CA9665] text-xs font-semibold uppercase tracking-widest mb-3">
+            <span className="text-[#9d2e1e] text-xs font-semibold uppercase tracking-widest mb-3">
               Mest populær
             </span>
           )}
@@ -103,7 +103,7 @@ export function PricingCards() {
                 <Check
                   size={16}
                   className={`mt-0.5 shrink-0 ${
-                    plan.highlight ? "text-[#CA9665]" : "text-[#CA9665]"
+                    plan.highlight ? "text-[#9d2e1e]" : "text-[#9d2e1e]"
                   }`}
                 />
                 {f}
@@ -114,8 +114,8 @@ export function PricingCards() {
             href="/kontakt"
             className={`text-center py-3 rounded text-sm font-medium transition-colors ${
               plan.highlight
-                ? "bg-[#CA9665] text-white hover:bg-[#b8855a]"
-                : "border border-[#262742]/20 text-[#262742] hover:border-[#CA9665] hover:text-[#CA9665]"
+                ? "bg-[#9d2e1e] text-white hover:bg-[#8b2518]"
+                : "border border-[#010f12]/20 text-[#010f12] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
             }`}
           >
             {plan.cta}

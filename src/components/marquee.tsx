@@ -19,7 +19,7 @@ export function Marquee() {
   const repeated = [...items, ...items]
 
   return (
-    <div className="bg-[#CA9665] py-4 overflow-hidden">
+    <div className="bg-[#9d2e1e] py-4 overflow-hidden">
       <motion.div
         className="flex gap-12 whitespace-nowrap"
         animate={{ x: ["0%", "-50%"] }}

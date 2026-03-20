@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-[#262742] overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-[#010f12] overflow-hidden">
         <Image
           src="/images/building.jpg"
           alt="Nordstens Workspace bygning"
@@ -19,7 +19,7 @@ export default function HomePage() {
           className="object-cover opacity-30"
         />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
             Hillerød · Siden 1877
           </p>
           <h1 className="text-white text-5xl md:text-7xl font-light leading-tight mb-6">
@@ -34,7 +34,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/kontorloesninger"
-              className="bg-[#CA9665] text-white font-medium px-8 py-4 rounded hover:bg-[#b8855a] transition-colors"
+              className="bg-[#9d2e1e] text-white font-medium px-8 py-4 rounded hover:bg-[#8b2518] transition-colors"
             >
               Se kontorløsninger
             </Link>
@@ -58,10 +58,10 @@ export default function HomePage() {
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Kontorløsninger
             </p>
-            <h2 className="text-[#262742] text-4xl font-light">
+            <h2 className="text-[#010f12] text-4xl font-light">
               Find den løsning der passer dig
             </h2>
           </div>
@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/kontorloesninger"
-              className="text-[#262742] border-b border-[#CA9665] pb-0.5 text-sm font-medium hover:text-[#CA9665] transition-colors"
+              className="text-[#010f12] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
             >
               Se alle detaljer →
             </Link>
@@ -78,13 +78,13 @@ export default function HomePage() {
       </section>
 
       {/* Facilities preview */}
-      <section className="py-24 px-6 bg-[#f5f4f0]">
+      <section className="py-24 px-6 bg-[#fffdeb]">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Faciliteter
             </p>
-            <h2 className="text-[#262742] text-4xl font-light">
+            <h2 className="text-[#010f12] text-4xl font-light">
               Alt hvad du behøver — inkluderet
             </h2>
           </div>
@@ -92,7 +92,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/faciliteter"
-              className="text-[#262742] border-b border-[#CA9665] pb-0.5 text-sm font-medium hover:text-[#CA9665] transition-colors"
+              className="text-[#010f12] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
             >
               Se alle faciliteter →
             </Link>
@@ -101,9 +101,9 @@ export default function HomePage() {
       </section>
 
       {/* About snippet */}
-      <section className="py-24 px-6 bg-[#262742] text-white">
+      <section className="py-24 px-6 bg-[#010f12] text-white">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
             Nordstens Hus
           </p>
           <blockquote className="text-3xl md:text-4xl font-light leading-relaxed mb-8">
@@ -116,7 +116,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/om-os"
-            className="text-white border-b border-[#CA9665] pb-0.5 text-sm font-medium hover:text-[#CA9665] transition-colors"
+            className="text-white border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
           >
             Læs mere om huset →
           </Link>
@@ -127,10 +127,10 @@ export default function HomePage() {
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-3xl">
           <div className="text-center mb-16">
-            <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Spørgsmål & svar
             </p>
-            <h2 className="text-[#262742] text-4xl font-light">
+            <h2 className="text-[#010f12] text-4xl font-light">
               Ofte stillede spørgsmål
             </h2>
           </div>
@@ -139,7 +139,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-[#CA9665]">
+      <section className="py-20 px-6 bg-[#9d2e1e]">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-white text-4xl font-light mb-4">
             Klar til at se det selv?
@@ -149,7 +149,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/kontakt"
-            className="bg-white text-[#CA9665] font-semibold px-8 py-4 rounded hover:bg-white/90 transition-colors inline-block"
+            className="bg-white text-[#9d2e1e] font-semibold px-8 py-4 rounded hover:bg-white/90 transition-colors inline-block"
           >
             Kontakt os
           </Link>

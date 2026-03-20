@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 export default function LejevilkaarPage() {
   return (
     <>
-      <section className="bg-[#262742] py-24 px-6 text-white text-center">
-        <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Vilkår
         </p>
         <h1 className="text-5xl font-light mb-4">Lejevilkår</h1>
@@ -61,11 +61,11 @@ export default function LejevilkaarPage() {
           <h2>Kontakt</h2>
           <p>
             Spørgsmål til lejevilkår kan rettes til{" "}
-            <a href="mailto:info@nordstens.dk" className="text-[#CA9665] hover:underline">
+            <a href="mailto:info@nordstens.dk" className="text-[#9d2e1e] hover:underline">
               info@nordstens.dk
             </a>{" "}
             eller på telefon{" "}
-            <a href="tel:+4582303234" className="text-[#CA9665] hover:underline">
+            <a href="tel:+4582303234" className="text-[#9d2e1e] hover:underline">
               82 30 32 34
             </a>
             .

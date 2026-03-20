@@ -3,13 +3,13 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #1a1a2e;
-  --color-primary: #262742;
+  --color-primary: #010f12;
   --color-primary-foreground: #ffffff;
-  --color-accent: #CA9665;
+  --color-accent: #9d2e1e;
   --color-accent-foreground: #ffffff;
-  --color-muted: #f5f4f0;
+  --color-muted: #fffdeb;
   --color-muted-foreground: #6b6b7a;
-  --color-border: #e5e3dc;
+  --color-border: #decab1;
   --color-card: #ffffff;
   --color-card-foreground: #1a1a2e;
   --font-sans: var(--font-geist-sans);

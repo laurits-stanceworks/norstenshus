@@ -36,8 +36,8 @@ export function FacilitiesPreview() {
           key={label}
           className="flex flex-col items-center gap-3 p-6 bg-white rounded-lg text-center hover:shadow-sm transition-shadow"
         >
-          <Icon size={24} className="text-[#CA9665]" strokeWidth={1.5} />
-          <span className="text-xs font-medium text-[#262742] uppercase tracking-wide">
+          <Icon size={24} className="text-[#9d2e1e]" strokeWidth={1.5} />
+          <span className="text-xs font-medium text-[#010f12] uppercase tracking-wide">
             {label}
           </span>
         </div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function PrivatlivspolitikPage() {
   return (
     <>
-      <section className="bg-[#262742] py-24 px-6 text-white text-center">
+      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
         <h1 className="text-5xl font-light">Privatlivspolitik</h1>
       </section>
       <section className="py-24 px-6 bg-white">
@@ -34,7 +34,7 @@ export default function PrivatlivspolitikPage() {
           <h2>Kontakt</h2>
           <p>
             Spørgsmål til vores behandling af personoplysninger kan rettes til{" "}
-            <a href="mailto:info@nordstens.dk" className="text-[#CA9665]">
+            <a href="mailto:info@nordstens.dk" className="text-[#9d2e1e]">
               info@nordstens.dk
             </a>
             .

@@ -21,11 +21,11 @@ export function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-[#262742] text-white">
+    <header className="sticky top-0 z-50 bg-[#010f12] text-white">
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/images/logo.png" alt="Nordstens Workspace" width={120} height={32} className="brightness-0 invert" />
+          <Image src="/images/logo-new.svg" alt="Nordstens Workspace" width={140} height={26} />
         </Link>
 
         {/* Desktop nav */}
@@ -44,7 +44,7 @@ export function Nav() {
         {/* Phone CTA */}
         <a
           href="tel:+4582303234"
-          className="hidden lg:flex items-center gap-2 bg-[#CA9665] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#b8855a] transition-colors"
+          className="hidden lg:flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#8b2518] transition-colors"
         >
           <Phone size={14} />
           82 30 32 34
@@ -62,7 +62,7 @@ export function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden bg-[#1e1f36] px-6 pb-6 flex flex-col gap-4">
+        <div className="lg:hidden bg-[#050d0f] px-6 pb-6 flex flex-col gap-4">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -75,7 +75,7 @@ export function Nav() {
           ))}
           <a
             href="tel:+4582303234"
-            className="flex items-center gap-2 bg-[#CA9665] text-white text-sm font-medium px-4 py-2 rounded mt-2 w-fit"
+            className="flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded mt-2 w-fit"
           >
             <Phone size={14} />
             82 30 32 34

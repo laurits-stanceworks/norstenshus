@@ -79,8 +79,8 @@ export default function KontorloesningerPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#262742] py-24 px-6 text-white text-center">
-        <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+      <section className="bg-[#010f12] py-24 px-6 text-white text-center">
+        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Kontorløsninger
         </p>
         <h1 className="text-5xl font-light mb-4">Find din løsning</h1>
@@ -98,12 +98,12 @@ export default function KontorloesningerPage() {
               key={plan.name}
               className={`rounded-lg p-10 ${
                 plan.highlight
-                  ? "bg-[#262742] text-white ring-2 ring-[#CA9665]"
-                  : "bg-[#f5f4f0] text-[#262742]"
+                  ? "bg-[#010f12] text-white ring-2 ring-[#9d2e1e]"
+                  : "bg-[#fffdeb] text-[#010f12]"
               }`}
             >
               {plan.highlight && (
-                <span className="text-[#CA9665] text-xs font-semibold uppercase tracking-widest block mb-3">
+                <span className="text-[#9d2e1e] text-xs font-semibold uppercase tracking-widest block mb-3">
                   Mest populær
                 </span>
               )}
@@ -128,7 +128,7 @@ export default function KontorloesningerPage() {
               <ul className="space-y-3 mb-10">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm">
-                    <Check size={16} className="text-[#CA9665] mt-0.5 shrink-0" />
+                    <Check size={16} className="text-[#9d2e1e] mt-0.5 shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -137,8 +137,8 @@ export default function KontorloesningerPage() {
                 href="/kontakt"
                 className={`block text-center py-3.5 rounded font-medium transition-colors ${
                   plan.highlight
-                    ? "bg-[#CA9665] text-white hover:bg-[#b8855a]"
-                    : "border border-[#262742]/20 text-[#262742] hover:border-[#CA9665] hover:text-[#CA9665]"
+                    ? "bg-[#9d2e1e] text-white hover:bg-[#8b2518]"
+                    : "border border-[#010f12]/20 text-[#010f12] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
                 }`}
               >
                 Kom i gang
@@ -149,9 +149,9 @@ export default function KontorloesningerPage() {
       </section>
 
       {/* All plans include */}
-      <section className="py-16 px-6 bg-[#f5f4f0]">
+      <section className="py-16 px-6 bg-[#fffdeb]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#262742] text-2xl font-light mb-8">
+          <h2 className="text-[#010f12] text-2xl font-light mb-8">
             Alle løsninger inkluderer
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-[#6b6b7a]">
@@ -164,7 +164,7 @@ export default function KontorloesningerPage() {
               "Netværksarrangementer",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 justify-center">
-                <Check size={14} className="text-[#CA9665]" />
+                <Check size={14} className="text-[#9d2e1e]" />
                 {item}
               </div>
             ))}

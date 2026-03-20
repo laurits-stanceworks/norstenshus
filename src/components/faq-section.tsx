@@ -34,18 +34,18 @@ export function FaqSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <div className="divide-y divide-[#e5e3dc]">
+    <div className="divide-y divide-[#decab1]">
       {faqs.map((faq, i) => (
         <div key={i}>
           <button
             className="w-full flex items-center justify-between py-5 text-left gap-4"
             onClick={() => setOpen(open === i ? null : i)}
           >
-            <span className="text-[#262742] font-medium">{faq.q}</span>
+            <span className="text-[#010f12] font-medium">{faq.q}</span>
             {open === i ? (
-              <Minus size={18} className="text-[#CA9665] shrink-0" />
+              <Minus size={18} className="text-[#9d2e1e] shrink-0" />
             ) : (
-              <Plus size={18} className="text-[#CA9665] shrink-0" />
+              <Plus size={18} className="text-[#9d2e1e] shrink-0" />
             )}
           </button>
           {open === i && (
