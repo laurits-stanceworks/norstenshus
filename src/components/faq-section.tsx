@@ -34,7 +34,7 @@ export function FaqSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <div className="divide-y divide-[#decab1]">
+    <div className="divide-y divide-[#e5e3dc]">
       {faqs.map((faq, i) => (
         <div key={i}>
           <button

@@ -56,7 +56,7 @@ export function ContactForm() {
             name="name"
             type="text"
             required
-            className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
+            className="w-full border border-[#e5e3dc] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
             placeholder="Dit navn"
           />
         </div>
@@ -68,7 +68,7 @@ export function ContactForm() {
             id="phone"
             name="phone"
             type="tel"
-            className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
+            className="w-full border border-[#e5e3dc] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
             placeholder="Dit telefonnummer"
           />
         </div>
@@ -83,7 +83,7 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
+          className="w-full border border-[#e5e3dc] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors"
           placeholder="din@email.dk"
         />
       </div>
@@ -98,7 +98,7 @@ export function ContactForm() {
           required
           rows={5}
           maxLength={600}
-          className="w-full border border-[#decab1] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors resize-none"
+          className="w-full border border-[#e5e3dc] rounded px-4 py-2.5 text-sm text-[#8397a9] placeholder-[#6b6b7a]/50 focus:outline-none focus:border-[#9d2e1e] transition-colors resize-none"
           placeholder="Fortæl os hvad du er interesseret i..."
         />
       </div>

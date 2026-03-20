@@ -74,7 +74,7 @@ export default function OmOsPage() {
                 <div className="shrink-0">
                   <span className="text-[#9d2e1e] font-semibold text-sm">{year}</span>
                 </div>
-                <div className="border-l border-[#decab1] pl-6 pb-2">
+                <div className="border-l border-[#e5e3dc] pl-6 pb-2">
                   <p className="text-[#6b6b7a] text-sm leading-relaxed">{text}</p>
                 </div>
               </div>
