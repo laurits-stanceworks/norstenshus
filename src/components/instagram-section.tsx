@@ -1,14 +1,15 @@
-import Image from "next/image"
+"use client"
+
+import Script from "next/script"
 import { Instagram } from "lucide-react"
 
-const photos = [
-  { src: "/images/interior-3.png", alt: "Lounge" },
-  { src: "/images/rooftop.jpg", alt: "Tagterrasse" },
-  { src: "/images/interior-1.png", alt: "Arbejdsplads" },
-  { src: "/images/meeting.png", alt: "Møderum" },
-  { src: "/images/interior-4.png", alt: "Kontor" },
-  { src: "/images/building-2.jpg", alt: "Nordstens Hus" },
-]
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "behold-widget": React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & { "feed-id": string }, HTMLElement>
+    }
+  }
+}
 
 export function InstagramSection() {
   return (
@@ -34,27 +35,13 @@ export function InstagramSection() {
           </a>
         </div>
 
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
-          {photos.map(({ src, alt }) => (
-            <a
-              key={src}
-              href="https://www.instagram.com/nordstens_workspace/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative aspect-square overflow-hidden group block"
-            >
-              <Image
-                src={src}
-                alt={alt}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                <Instagram size={24} className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            </a>
-          ))}
-        </div>
+        <behold-widget feed-id="IV0CkSNn70qOHb63eNOU" />
+
+        <Script
+          src="https://w.behold.so/widget.js"
+          type="module"
+          strategy="afterInteractive"
+        />
       </div>
     </section>
   )
