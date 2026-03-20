@@ -1,65 +1,156 @@
-import Image from "next/image";
+import Link from "next/link"
+import { Marquee } from "@/components/marquee"
+import { PricingCards } from "@/components/pricing-cards"
+import { FacilitiesPreview } from "@/components/facilities-preview"
+import { FaqSection } from "@/components/faq-section"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      {/* Hero */}
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-[#262742] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#262742] via-[#1e1f36] to-[#2d2e4a]" />
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 25% 50%, #CA9665 0%, transparent 60%), radial-gradient(circle at 75% 20%, #CA9665 0%, transparent 50%)",
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+            Hillerød · Siden 1877
           </p>
+          <h1 className="text-white text-5xl md:text-7xl font-light leading-tight mb-6">
+            Kom indenfor i
+            <br />
+            <span className="font-semibold">Nordstens Workspace</span>
+          </h1>
+          <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            Et moderne kontorfællesskab i historiske omgivelser. Vælg mellem flexplads,
+            fast plads, privat kontor eller virtuelt kontor.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/kontorloesninger"
+              className="bg-[#CA9665] text-white font-medium px-8 py-4 rounded hover:bg-[#b8855a] transition-colors"
+            >
+              Se kontorløsninger
+            </Link>
+            <Link
+              href="/kontakt"
+              className="border border-white/30 text-white font-medium px-8 py-4 rounded hover:border-white/60 transition-colors"
+            >
+              Book en rundvisning
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Marquee */}
+      <Marquee />
+
+      {/* Pricing */}
+      <section className="py-24 px-6 bg-white">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Kontorløsninger
+            </p>
+            <h2 className="text-[#262742] text-4xl font-light">
+              Find den løsning der passer dig
+            </h2>
+          </div>
+          <PricingCards />
+          <div className="text-center mt-12">
+            <Link
+              href="/kontorloesninger"
+              className="text-[#262742] border-b border-[#CA9665] pb-0.5 text-sm font-medium hover:text-[#CA9665] transition-colors"
+            >
+              Se alle detaljer →
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* Facilities preview */}
+      <section className="py-24 px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Faciliteter
+            </p>
+            <h2 className="text-[#262742] text-4xl font-light">
+              Alt hvad du behøver — inkluderet
+            </h2>
+          </div>
+          <FacilitiesPreview />
+          <div className="text-center mt-12">
+            <Link
+              href="/faciliteter"
+              className="text-[#262742] border-b border-[#CA9665] pb-0.5 text-sm font-medium hover:text-[#CA9665] transition-colors"
+            >
+              Se alle faciliteter →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About snippet */}
+      <section className="py-24 px-6 bg-[#262742] text-white">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+            Nordstens Hus
+          </p>
+          <blockquote className="text-3xl md:text-4xl font-light leading-relaxed mb-8">
+            "Det der skabes uden omhu inspirerer sjældent til stor begejstring"
+          </blockquote>
+          <p className="text-white/60 text-base leading-relaxed max-w-2xl mx-auto mb-10">
+            Nordstens Hus er en omhyggeligt restaureret bygning fra 1880'erne i Hillerød.
+            Restaureringen skete i samarbejde med Nationalmuseet og har skabt rammerne
+            for et unikt kontorfællesskab, der forener historisk arkitektur med moderne arbejdsliv.
+          </p>
+          <Link
+            href="/om-os"
+            className="text-white border-b border-[#CA9665] pb-0.5 text-sm font-medium hover:text-[#CA9665] transition-colors"
+          >
+            Læs mere om huset →
+          </Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 px-6 bg-white">
+        <div className="mx-auto max-w-3xl">
+          <div className="text-center mb-16">
+            <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Spørgsmål & svar
+            </p>
+            <h2 className="text-[#262742] text-4xl font-light">
+              Ofte stillede spørgsmål
+            </h2>
+          </div>
+          <FaqSection />
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 px-6 bg-[#CA9665]">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-white text-4xl font-light mb-4">
+            Klar til at se det selv?
+          </h2>
+          <p className="text-white/80 text-lg mb-8">
+            Book en gratis rundvisning og mærk stemningen i Nordstens Workspace.
+          </p>
+          <Link
+            href="/kontakt"
+            className="bg-white text-[#CA9665] font-semibold px-8 py-4 rounded hover:bg-white/90 transition-colors inline-block"
+          >
+            Kontakt os
+          </Link>
+        </div>
+      </section>
+    </>
+  )
 }
