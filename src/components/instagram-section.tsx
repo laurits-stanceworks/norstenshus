@@ -3,14 +3,6 @@
 import Script from "next/script"
 import { Instagram } from "lucide-react"
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "behold-widget": React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & { "feed-id": string }, HTMLElement>
-    }
-  }
-}
-
 export function InstagramSection() {
   return (
     <section className="py-24 px-6 bg-white">
