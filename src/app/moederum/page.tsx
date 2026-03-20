@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { Monitor, Wifi, Users, Phone } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -27,6 +28,10 @@ export default function MoederumPage() {
           tilgængelige for både medlemmer og externe.
         </p>
       </section>
+
+      <div className="relative h-80 w-full overflow-hidden">
+        <Image src="/images/meeting.png" alt="Mødelokale" fill className="object-cover" />
+      </div>
 
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16 items-center">

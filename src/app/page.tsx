@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Marquee } from "@/components/marquee"
 import { PricingCards } from "@/components/pricing-cards"
 import { FacilitiesPreview } from "@/components/facilities-preview"
@@ -9,13 +10,12 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-[#262742] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#262742] via-[#1e1f36] to-[#2d2e4a]" />
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 25% 50%, #CA9665 0%, transparent 60%), radial-gradient(circle at 75% 20%, #CA9665 0%, transparent 50%)",
-          }}
+        <Image
+          src="/images/building.jpg"
+          alt="Nordstens Workspace bygning"
+          fill
+          priority
+          className="object-cover opacity-30"
         />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <p className="text-[#CA9665] text-sm font-medium uppercase tracking-[0.2em] mb-6">
@@ -94,6 +94,20 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* Photo grid */}
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-1">
+        {[
+          { src: "/images/interior-1.png", alt: "Kontormiljø" },
+          { src: "/images/interior-3.png", alt: "Lounge" },
+          { src: "/images/rooftop.jpg", alt: "Tagterrasse" },
+          { src: "/images/interior-4.png", alt: "Arbejdsplads" },
+        ].map(({ src, alt }) => (
+          <div key={src} className="relative aspect-square overflow-hidden">
+            <Image src={src} alt={alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+        ))}
       </section>
 
       {/* About snippet */}

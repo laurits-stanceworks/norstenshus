@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -23,8 +24,8 @@ export function Nav() {
     <header className="sticky top-0 z-50 bg-[#262742] text-white">
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="font-semibold text-lg tracking-wide uppercase">
-          Nordstens
+        <Link href="/" className="flex items-center">
+          <Image src="/images/logo.png" alt="Nordstens Workspace" width={120} height={32} className="brightness-0 invert" />
         </Link>
 
         {/* Desktop nav */}

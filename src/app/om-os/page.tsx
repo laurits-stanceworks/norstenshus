@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Nordstens Hus — Nordstens Workspace",
@@ -27,6 +28,11 @@ export default function OmOsPage() {
           om et moderne arbejdsfællesskab.
         </p>
       </section>
+
+      {/* Hero image */}
+      <div className="relative h-96 w-full overflow-hidden">
+        <Image src="/images/building-2.jpg" alt="Nordstens Hus" fill className="object-cover" />
+      </div>
 
       {/* Quote */}
       <section className="py-20 px-6 bg-[#f5f4f0]">

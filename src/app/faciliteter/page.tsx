@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import {
   Wifi, Coffee, Sun, Users, Phone, Lock, Monitor, Zap,
   Wind, Car, Shield, Lightbulb, Droplets, Volume2, Key,
@@ -128,6 +129,19 @@ export default function FaciliteterPage() {
           — fra dag ét.
         </p>
       </section>
+
+      {/* Photo strip */}
+      <div className="grid grid-cols-3 gap-1 h-64">
+        <div className="relative overflow-hidden">
+          <Image src="/images/interior-3.png" alt="Lounge" fill className="object-cover" />
+        </div>
+        <div className="relative overflow-hidden">
+          <Image src="/images/rooftop.jpg" alt="Tagterrasse" fill className="object-cover" />
+        </div>
+        <div className="relative overflow-hidden">
+          <Image src="/images/interior-1.png" alt="Kontor" fill className="object-cover" />
+        </div>
+      </div>
 
       <section className="py-24 px-6 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
