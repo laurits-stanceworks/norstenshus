@@ -4,7 +4,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import { Menu, X, Phone } from "lucide-react"
-import { cn } from "@/lib/utils"
 
 const links = [
   { href: "/kontorloesninger", label: "Kontorløsninger" },
@@ -22,19 +21,18 @@ export function Nav() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#8397a9] text-white">
-      <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <Image src="/images/logo-new.svg" alt="Nordstens Workspace" width={140} height={26} />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between h-14 md:h-16">
+        <Link href="/" className="flex items-center shrink-0">
+          <Image src="/images/logo-new.svg" alt="Nordstens Workspace" width={120} height={22} />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden xl:flex items-center gap-5">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-white/80 hover:text-white transition-colors"
+              className="text-sm text-white/80 hover:text-white transition-colors whitespace-nowrap"
             >
               {l.label}
             </Link>
@@ -44,7 +42,7 @@ export function Nav() {
         {/* Phone CTA */}
         <a
           href="tel:+4582303234"
-          className="hidden lg:flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#8b2518] transition-colors"
+          className="hidden xl:flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#8b2518] transition-colors shrink-0"
         >
           <Phone size={14} />
           82 30 32 34
@@ -52,22 +50,22 @@ export function Nav() {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden text-white"
+          className="xl:hidden text-white p-1"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile/tablet menu */}
       {open && (
-        <div className="lg:hidden bg-[#6b8394] px-6 pb-6 flex flex-col gap-4">
+        <div className="xl:hidden bg-[#6b8394] px-4 sm:px-6 pb-6 flex flex-col gap-3 max-h-[calc(100vh-56px)] overflow-y-auto">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-white/80 hover:text-white py-1 border-b border-white/10"
+              className="text-sm text-white/80 hover:text-white py-2 border-b border-white/10"
               onClick={() => setOpen(false)}
             >
               {l.label}

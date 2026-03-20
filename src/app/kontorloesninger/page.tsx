@@ -79,11 +79,11 @@ export default function KontorloesningerPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Kontorløsninger
         </p>
-        <h1 className="text-5xl font-light mb-4">Find din løsning</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Find din løsning</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           Fra virtuel adresse til privat kontor — vi har en løsning der passer til
           præcis dit behov og din hverdag.
@@ -91,7 +91,7 @@ export default function KontorloesningerPage() {
       </section>
 
       {/* Plans */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
           {plans.map((plan) => (
             <div
@@ -116,7 +116,7 @@ export default function KontorloesningerPage() {
                 {plan.description}
               </p>
               <div className="mb-8">
-                <span className="text-5xl font-light">{plan.price}</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl font-light">{plan.price}</span>
                 <span
                   className={`text-sm ml-2 ${
                     plan.highlight ? "text-white/60" : "text-[#6b6b7a]"
@@ -149,9 +149,9 @@ export default function KontorloesningerPage() {
       </section>
 
       {/* All plans include */}
-      <section className="py-16 px-6 bg-[#f5f4f0]">
+      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#8397a9] text-2xl font-light mb-8">
+          <h2 className="text-[#8397a9] text-lg sm:text-xl md:text-2xl font-light mb-8">
             Alle løsninger inkluderer
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-[#6b6b7a]">

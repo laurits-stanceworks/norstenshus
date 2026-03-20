@@ -18,25 +18,25 @@ const features = [
 export default function MoederumPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Møderum
         </p>
-        <h1 className="text-5xl font-light mb-4">Professionelle mødelokaler</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Professionelle mødelokaler</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           Moderne og velfungerende mødelokaler med det udstyr du har brug for —
           tilgængelige for både medlemmer og externe.
         </p>
       </section>
 
-      <div className="relative h-80 w-full overflow-hidden">
+      <div className="relative h-48 sm:h-64 md:h-80 w-full overflow-hidden">
         <Image src="/images/meeting.png" alt="Mødelokale" fill className="object-cover" />
       </div>
 
-      <section className="py-24 px-6 bg-white">
-        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
-            <h2 className="text-[#8397a9] text-3xl font-light mb-6">
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
               Alt klar til dit møde
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed mb-8">

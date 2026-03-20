@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-[#8397a9] overflow-hidden">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center bg-[#8397a9] overflow-hidden">
         <Image
           src="/images/building.jpg"
           alt="Nordstens Workspace bygning"
@@ -18,29 +18,29 @@ export default function HomePage() {
           priority
           className="object-cover opacity-30"
         />
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto py-16">
+          <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-4 sm:mb-6">
             Hillerød · Siden 1877
           </p>
-          <h1 className="text-white text-5xl md:text-7xl font-light leading-tight mb-6">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4 sm:mb-6">
             Kom indenfor i
             <br />
             <span className="font-semibold">Nordstens Workspace</span>
           </h1>
-          <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
             Et moderne kontorfællesskab i historiske omgivelser. Vælg mellem flexplads,
             fast plads, privat kontor eller virtuelt kontor.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link
               href="/kontorloesninger"
-              className="bg-[#9d2e1e] text-white font-medium px-8 py-4 rounded hover:bg-[#8b2518] transition-colors"
+              className="bg-[#9d2e1e] text-white font-medium px-6 sm:px-8 py-3 sm:py-4 rounded hover:bg-[#8b2518] transition-colors text-sm sm:text-base"
             >
               Se kontorløsninger
             </Link>
             <Link
               href="/kontakt"
-              className="border border-white/30 text-white font-medium px-8 py-4 rounded hover:border-white/60 transition-colors"
+              className="border border-white/30 text-white font-medium px-6 sm:px-8 py-3 sm:py-4 rounded hover:border-white/60 transition-colors text-sm sm:text-base"
             >
               Book en rundvisning
             </Link>
@@ -55,18 +55,18 @@ export default function HomePage() {
       <InstagramSection />
 
       {/* Pricing */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Kontorløsninger
             </p>
-            <h2 className="text-[#8397a9] text-4xl font-light">
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
               Find den løsning der passer dig
             </h2>
           </div>
           <PricingCards />
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Link
               href="/kontorloesninger"
               className="text-[#8397a9] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
@@ -78,18 +78,18 @@ export default function HomePage() {
       </section>
 
       {/* Facilities preview */}
-      <section className="py-24 px-6 bg-[#f5f4f0]">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Faciliteter
             </p>
-            <h2 className="text-[#8397a9] text-4xl font-light">
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
               Alt hvad du behøver — inkluderet
             </h2>
           </div>
           <FacilitiesPreview />
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Link
               href="/faciliteter"
               className="text-[#8397a9] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
@@ -101,15 +101,15 @@ export default function HomePage() {
       </section>
 
       {/* About snippet */}
-      <section className="py-24 px-6 bg-[#8397a9] text-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#8397a9] text-white">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
+          <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-4 sm:mb-6">
             Nordstens Hus
           </p>
-          <blockquote className="text-3xl md:text-4xl font-light leading-relaxed mb-8">
+          <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed mb-6 sm:mb-8">
             "Det der skabes uden omhu inspirerer sjældent til stor begejstring"
           </blockquote>
-          <p className="text-white/60 text-base leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-white/60 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10">
             Nordstens Hus er en omhyggeligt restaureret bygning fra 1880'erne i Hillerød.
             Restaureringen skete i samarbejde med Nationalmuseet og har skabt rammerne
             for et unikt kontorfællesskab, der forener historisk arkitektur med moderne arbejdsliv.
@@ -124,13 +124,13 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-3xl">
-          <div className="text-center mb-16">
-            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
               Spørgsmål & svar
             </p>
-            <h2 className="text-[#8397a9] text-4xl font-light">
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
               Ofte stillede spørgsmål
             </h2>
           </div>
@@ -139,17 +139,17 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-[#9d2e1e]">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#9d2e1e]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-white text-4xl font-light mb-4">
+          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">
             Klar til at se det selv?
           </h2>
-          <p className="text-white/80 text-lg mb-8">
+          <p className="text-white/80 text-base sm:text-lg mb-6 sm:mb-8">
             Book en gratis rundvisning og mærk stemningen i Nordstens Workspace.
           </p>
           <Link
             href="/kontakt"
-            className="bg-white text-[#9d2e1e] font-semibold px-8 py-4 rounded hover:bg-white/90 transition-colors inline-block"
+            className="bg-white text-[#9d2e1e] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded hover:bg-white/90 transition-colors inline-block text-sm sm:text-base"
           >
             Kontakt os
           </Link>

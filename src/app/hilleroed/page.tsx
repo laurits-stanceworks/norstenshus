@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 export default function HilleroedPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Hillerød
         </p>
-        <h1 className="text-5xl font-light mb-4">Find os i Hillerød</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Find os i Hillerød</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           Centralt beliggende i hjertet af Hillerød — let tilgængeligt med både tog og bil.
         </p>
       </section>
 
-      <section className="py-24 px-6 bg-white">
-        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-16">
           <div>
-            <h2 className="text-[#8397a9] text-3xl font-light mb-8">Adresse & transport</h2>
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-8">Adresse & transport</h2>
 
             <div className="space-y-6 mb-10">
               <div className="flex gap-4">
@@ -86,9 +86,9 @@ export default function HilleroedPage() {
       </section>
 
       {/* About Hillerød */}
-      <section className="py-16 px-6 bg-[#f5f4f0]">
+      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#8397a9] text-3xl font-light mb-6">Om Hillerød</h2>
+          <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">Om Hillerød</h2>
           <p className="text-[#6b6b7a] leading-relaxed">
             Hillerød er en levende by nord for København med Frederiksborg Slot som
             vartegn. Byen byder på et aktivt erhvervsliv, gode transportforbindelser

@@ -117,11 +117,11 @@ const facilities = [
 export default function FaciliteterPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Faciliteter
         </p>
-        <h1 className="text-5xl font-light mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
           Faciliteter der løfter din arbejdsdag
         </h1>
         <p className="text-white/60 max-w-xl mx-auto">
@@ -143,12 +143,12 @@ export default function FaciliteterPage() {
         </div>
       </div>
 
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {facilities.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="p-8 bg-[#f5f4f0] rounded-lg hover:shadow-md transition-shadow"
+              className="p-6 sm:p-8 bg-[#f5f4f0] rounded-lg hover:shadow-md transition-shadow"
             >
               <Icon size={28} className="text-[#9d2e1e] mb-4" strokeWidth={1.5} />
               <h3 className="text-[#8397a9] font-semibold mb-2">{title}</h3>

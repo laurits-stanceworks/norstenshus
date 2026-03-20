@@ -31,22 +31,22 @@ const designPrinciples = [
 export default function DesignPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Design
         </p>
-        <h1 className="text-5xl font-light mb-4">Indrettet med omhu</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Indrettet med omhu</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           Hvert hjørne af Nordstens Workspace er designet med æstetik og funktion i
           balance — for at gøre din arbejdsdag bedre.
         </p>
       </section>
 
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10">
             {designPrinciples.map(({ title, description }) => (
-              <div key={title} className="p-10 bg-[#f5f4f0] rounded-lg">
+              <div key={title} className="p-6 sm:p-8 md:p-10 bg-[#f5f4f0] rounded-lg">
                 <div className="w-8 h-px bg-[#9d2e1e] mb-6" />
                 <h3 className="text-[#8397a9] text-xl font-semibold mb-3">{title}</h3>
                 <p className="text-[#6b6b7a] leading-relaxed text-sm">{description}</p>
@@ -56,12 +56,12 @@ export default function DesignPage() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-[#8397a9] text-white text-center">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#8397a9] text-white text-center">
         <div className="mx-auto max-w-2xl">
           <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
             Filosofi
           </p>
-          <p className="text-2xl font-light leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
             Vi tror på at smukke og gennemtænkte omgivelser påvirker kvaliteten af
             det arbejde der udføres i dem.
           </p>

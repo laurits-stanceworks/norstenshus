@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 export default function LejevilkaarPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Vilkår
         </p>
-        <h1 className="text-5xl font-light mb-4">Lejevilkår</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Lejevilkår</h1>
       </section>
 
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-3xl prose prose-slate">
           <h2>Opsigelse</h2>
           <p>

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 export default function PrivatlivspolitikPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
-        <h1 className="text-5xl font-light">Privatlivspolitik</h1>
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light">Privatlivspolitik</h1>
       </section>
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-3xl prose prose-slate text-sm leading-relaxed text-[#6b6b7a]">
           <p>
             Nordstens Workspace (Frederiksborg Gruppen) behandler dine personoplysninger

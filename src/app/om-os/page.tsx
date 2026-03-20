@@ -18,11 +18,11 @@ const timeline = [
 export default function OmOsPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Nordstens Hus
         </p>
-        <h1 className="text-5xl font-light mb-4">Historien bag huset</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Historien bag huset</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           En bygning med sjæl. Opført i 1880'erne, restaureret med respekt — og nu rammen
           om et moderne arbejdsfællesskab.
@@ -30,14 +30,14 @@ export default function OmOsPage() {
       </section>
 
       {/* Hero image */}
-      <div className="relative h-96 w-full overflow-hidden">
+      <div className="relative h-56 sm:h-72 md:h-96 w-full overflow-hidden">
         <Image src="/images/building-2.jpg" alt="Nordstens Hus" fill className="object-cover" />
       </div>
 
       {/* Quote */}
-      <section className="py-20 px-6 bg-[#f5f4f0]">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl text-center">
-          <blockquote className="text-[#8397a9] text-3xl font-light leading-relaxed">
+          <blockquote className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light leading-relaxed">
             "Det der skabes uden omhu inspirerer sjældent til stor begejstring"
           </blockquote>
           <p className="text-[#6b6b7a] mt-4 text-sm">— Frederiksborg Gruppen</p>
@@ -45,10 +45,10 @@ export default function OmOsPage() {
       </section>
 
       {/* History */}
-      <section className="py-24 px-6 bg-white">
-        <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-16 items-start">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
-            <h2 className="text-[#8397a9] text-3xl font-light mb-6">
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
               Fra maskinfabrik til kontorfællesskab
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed mb-4">
@@ -84,7 +84,7 @@ export default function OmOsPage() {
       </section>
 
       {/* Collaborators */}
-      <section className="py-16 px-6 bg-[#8397a9] text-white text-center">
+      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#8397a9] text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
           Bygget i samarbejde med
         </p>

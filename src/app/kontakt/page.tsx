@@ -10,28 +10,28 @@ export const metadata: Metadata = {
 export default function KontaktPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-24 px-6 text-white text-center">
+      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Kontakt
         </p>
-        <h1 className="text-5xl font-light mb-4">Lad os tage en snak</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Lad os tage en snak</h1>
         <p className="text-white/60 max-w-xl mx-auto">
           Book en gratis rundvisning, stil os et spørgsmål eller fortæl os hvad du har
           brug for. Vi vender tilbage hurtigst muligt.
         </p>
       </section>
 
-      <section className="py-24 px-6 bg-white">
-        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-16">
           {/* Form */}
           <div>
-            <h2 className="text-[#8397a9] text-2xl font-light mb-8">Send os en besked</h2>
+            <h2 className="text-[#8397a9] text-lg sm:text-xl md:text-2xl font-light mb-8">Send os en besked</h2>
             <ContactForm />
           </div>
 
           {/* Info */}
           <div>
-            <h2 className="text-[#8397a9] text-2xl font-light mb-8">Find os</h2>
+            <h2 className="text-[#8397a9] text-lg sm:text-xl md:text-2xl font-light mb-8">Find os</h2>
             <div className="space-y-6 mb-10">
               <div className="flex gap-4">
                 <MapPin size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
