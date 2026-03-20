@@ -4,6 +4,7 @@ import { Marquee } from "@/components/marquee"
 import { PricingCards } from "@/components/pricing-cards"
 import { FacilitiesPreview } from "@/components/facilities-preview"
 import { FaqSection } from "@/components/faq-section"
+import { InstagramSection } from "@/components/instagram-section"
 
 export default function HomePage() {
   return (
@@ -73,6 +74,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Instagram */}
+      <InstagramSection />
+
       {/* Facilities preview */}
       <section className="py-24 px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-7xl">
@@ -94,20 +98,6 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* Photo grid */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-1">
-        {[
-          { src: "/images/interior-1.png", alt: "Kontormiljø" },
-          { src: "/images/interior-3.png", alt: "Lounge" },
-          { src: "/images/rooftop.jpg", alt: "Tagterrasse" },
-          { src: "/images/interior-4.png", alt: "Arbejdsplads" },
-        ].map(({ src, alt }) => (
-          <div key={src} className="relative aspect-square overflow-hidden">
-            <Image src={src} alt={alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
-          </div>
-        ))}
       </section>
 
       {/* About snippet */}
