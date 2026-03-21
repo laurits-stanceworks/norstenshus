@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   description: "Fleksible og attraktive lejevilkår skræddersyet til nutidens behov.",
 }
 
+const stats = [
+  { value: "1–3 mdr.", label: "Opsigelse" },
+  { value: "1 md.", label: "Betaling forud" },
+  { value: "24/7", label: "Adgang" },
+  { value: "Alt inkl.", label: "El, vand, varme & internet" },
+]
+
 const benefits = [
   "Ingen lange bindingsperioder – fleksibilitet med 1–3 mdrs. opsigelse",
   "Mulighed for dag-til-dag skalering af kontorstørrelse og antal arbejdspladser",
@@ -15,6 +22,15 @@ const benefits = [
   "Vedligehold klarer vi – vi har handymænd der klarer de løbende opgaver",
   "Månedlig betaling – du betaler kun en måned forud",
   "Daglig rengøring – inkluderet i huslejen",
+]
+
+const included = [
+  "Fibernet og IT-infrastruktur",
+  "El, vand og varme",
+  "Daglig rengøring af fællesarealer",
+  "Kaffe og te ad libitum",
+  "Adgang til fællesarealer, lounge og tagterrasse",
+  "Alarm og videoovervågning",
 ]
 
 const terms = [
@@ -40,18 +56,10 @@ const terms = [
   },
 ]
 
-const included = [
-  "Fibernet og IT-infrastruktur",
-  "El, vand og varme",
-  "Daglig rengøring af fællesarealer",
-  "Kaffe og te ad libitum",
-  "Adgang til fællesarealer, lounge og tagterrasse",
-  "Alarm og videoovervågning",
-]
-
 export default function LejevilkaarPage() {
   return (
     <>
+      {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
         <Image src="/images/lejevilkaar.jpg" alt="Nordstens Workspace" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-black/20" />
@@ -63,25 +71,40 @@ export default function LejevilkaarPage() {
             Fleksible og attraktive lejevilkår
           </h1>
           <p className="text-white/70 max-w-xl mx-auto">
-            Skræddersyet til nutidens behov. Det skal være nemt, trygt og fleksibelt — så du kan
-            fokusere på det, der betyder mest.
+            Skræddersyet til nutidens behov — nemt, trygt og fleksibelt.
           </p>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
-        <div className="mx-auto max-w-3xl">
-          <p className="text-[#6b6b7a] leading-relaxed mb-12">
-            Hos Nordstens Workspace lægger vi stor vægt på fleksibilitet og gennemsigtighed i alle
-            vores lejevilkår. Med korte bindingsperioder på kun 1–3 måneder og frihed til at op-
-            eller nedskalere er du sikret en fleksibel ramme, der passer til både din virksomheds
-            nuværende situation og fremtidige mål.
-          </p>
+      {/* Stat strip */}
+      <section className="bg-[#8397a9]">
+        <div className="mx-auto max-w-7xl grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
+          {stats.map(({ value, label }) => (
+            <div key={label} className="py-8 px-6 text-center text-white">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-light mb-1">{value}</p>
+              <p className="text-white/60 text-xs sm:text-sm uppercase tracking-widest">{label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-          <h2 className="text-[#8397a9] text-xl sm:text-2xl font-light mb-6">
-            Fordele ved vores lejevilkår
-          </h2>
-          <ul className="space-y-4 mb-16">
+      {/* Intro + benefits */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
+          <div>
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+              Hvorfor vælge os
+            </p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-6">
+              Vilkår der passer til din hverdag
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Hos Nordstens Workspace lægger vi stor vægt på fleksibilitet og gennemsigtighed.
+              Med korte bindingsperioder og frihed til at op- eller nedskalere er du sikret
+              en ramme, der passer til både din virksomheds nuværende situation og fremtidige mål.
+            </p>
+          </div>
+          <ul className="space-y-4 pt-1">
             {benefits.map((b) => (
               <li key={b} className="flex items-start gap-3 text-[#6b6b7a]">
                 <Check size={16} className="text-[#9d2e1e] mt-0.5 shrink-0" />
@@ -89,28 +112,46 @@ export default function LejevilkaarPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
 
-          <h2 className="text-[#8397a9] text-xl sm:text-2xl font-light mb-6">
-            Inkluderede ydelser
-          </h2>
-          <ul className="space-y-4 mb-16">
-            {included.map((b) => (
-              <li key={b} className="flex items-start gap-3 text-[#6b6b7a]">
+      {/* Included services */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Alt inkluderet
+            </p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
+              Det får du med fra dag ét
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {included.map((item) => (
+              <div key={item} className="bg-white rounded-lg p-6 flex items-start gap-3">
                 <Check size={16} className="text-[#9d2e1e] mt-0.5 shrink-0" />
-                {b}
-              </li>
+                <span className="text-[#6b6b7a] text-sm">{item}</span>
+              </div>
             ))}
-          </ul>
+          </div>
+        </div>
+      </section>
 
+      {/* Terms */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-10">
+            Vilkår i detaljer
+          </h2>
           <div className="divide-y divide-[#e5e3dc]">
             {terms.map(({ heading, body }) => (
               <div key={heading} className="py-6">
-                <h3 className="text-[#8397a9] font-semibold mb-3">{heading}</h3>
+                <h3 className="text-[#8397a9] font-semibold mb-2">{heading}</h3>
                 <p className="text-[#6b6b7a] text-sm leading-relaxed">{body}</p>
               </div>
             ))}
             <div className="py-6">
-              <h3 className="text-[#8397a9] font-semibold mb-3">Kontakt</h3>
+              <h3 className="text-[#8397a9] font-semibold mb-2">Kontakt</h3>
               <p className="text-[#6b6b7a] text-sm leading-relaxed">
                 Spørgsmål til lejevilkår kan rettes til{" "}
                 <a href="mailto:info@nordstens.dk" className="text-[#9d2e1e] hover:underline">
@@ -119,8 +160,7 @@ export default function LejevilkaarPage() {
                 eller på telefon{" "}
                 <a href="tel:+4582303234" className="text-[#9d2e1e] hover:underline">
                   82 30 32 34
-                </a>
-                .
+                </a>.
               </p>
             </div>
           </div>
