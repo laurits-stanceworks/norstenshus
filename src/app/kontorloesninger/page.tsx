@@ -129,14 +129,20 @@ export default function KontorloesningerPage() {
               </div>
               <div className="p-6 sm:p-8 md:p-10">
                 <h2 className="text-2xl font-semibold mb-2">{plan.name}</h2>
-                <p className="text-sm mb-6 leading-relaxed text-[#6b6b7a]">
+                <p className="text-sm mb-4 leading-relaxed text-[#6b6b7a] min-h-[80px]">
                   {plan.description}
                 </p>
-                <div className="mb-8">
+                <div className="mb-4">
                   <span className="text-3xl sm:text-4xl md:text-5xl font-light">{plan.price}</span>
                   <span className="text-sm ml-2 text-[#6b6b7a]">DKK/måned ekskl. moms</span>
                 </div>
-                <ul className="space-y-3 mb-10">
+                <Link
+                  href="/kontakt"
+                  className="block text-center py-3.5 rounded font-medium transition-colors border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e] mb-8"
+                >
+                  Book nu
+                </Link>
+                <ul className="space-y-3">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-3 text-sm">
                       <Check size={16} className="text-[#9d2e1e] mt-0.5 shrink-0" />
@@ -144,12 +150,6 @@ export default function KontorloesningerPage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/kontakt"
-                  className="block text-center py-3.5 rounded font-medium transition-colors border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e]"
-                >
-                  Book nu
-                </Link>
               </div>
             </div>
           ))}
