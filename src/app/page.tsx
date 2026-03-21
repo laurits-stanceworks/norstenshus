@@ -18,6 +18,7 @@ export default function HomePage() {
           priority
           className="object-cover"
         />
+        <div className="absolute inset-0 bg-black/10" />
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto py-16">
 <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4 sm:mb-6">
             Kom indenfor i
