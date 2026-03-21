@@ -100,14 +100,18 @@ export function PricingCards() {
           </div>
           <div className="p-6 sm:p-8 flex flex-col flex-1">
             <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
-            <p className="text-sm mb-4 sm:mb-6 text-white/60">
-              {plan.description}
-            </p>
-            <div className="mb-4 sm:mb-6">
+            <p className="text-sm mb-4 text-white/60">{plan.description}</p>
+            <div className="mb-4">
               <span className="text-3xl sm:text-4xl font-light">{plan.price}</span>
               <span className="text-sm ml-1 text-white/60">DKK/md.</span>
             </div>
-            <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-1">
+            <Link
+              href="/kontakt"
+              className="text-center py-2.5 rounded text-sm font-medium transition-colors bg-[#9d2e1e] text-white hover:bg-[#8b2518] mb-6"
+            >
+              {plan.cta}
+            </Link>
+            <ul className="space-y-2 sm:space-y-3">
               {plan.features.map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm">
                   <Check size={15} className="mt-0.5 shrink-0 text-[#9d2e1e]" />
@@ -115,12 +119,6 @@ export function PricingCards() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/kontakt"
-              className="text-center py-2.5 sm:py-3 rounded text-sm font-medium transition-colors bg-[#9d2e1e] text-white hover:bg-[#8b2518]"
-            >
-              {plan.cta}
-            </Link>
           </div>
         </div>
       ))}
