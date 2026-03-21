@@ -42,7 +42,7 @@ export function Footer() {
           <p className="text-white font-semibold text-base mb-4">Følg os på</p>
           <div className="flex gap-4 text-white/70">
             <a
-              href="https://www.instagram.com/nordstens_workspace"
+              href="https://www.instagram.com/nordstens_hus"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
@@ -51,7 +51,7 @@ export function Footer() {
               <Instagram size={20} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61569050765396"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
@@ -60,7 +60,7 @@ export function Footer() {
               <Facebook size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/nordstens-hus/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
