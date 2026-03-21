@@ -159,7 +159,7 @@ export default function MoederumPage() {
           </div>
 
           {/* Room photo gallery */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-10 rounded-lg overflow-hidden">
+          <div className="grid grid-cols-3 gap-2 mt-10 rounded-lg overflow-hidden">
             {[
               "/images/moederum-dl-C9A8012.jpg",
               "/images/moederum-dl-C9A8027.jpg",
