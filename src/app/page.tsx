@@ -73,18 +73,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Photo strip */}
-      <div className="grid grid-cols-3 gap-1 h-48 sm:h-64 md:h-80">
-        <div className="relative overflow-hidden">
-          <Image src="/images/interior-b.jpg" alt="Kontorplads" fill className="object-cover" />
+      {/* Facilities preview */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Faciliteter
+            </p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
+              Alt hvad du behøver — inkluderet
+            </h2>
+          </div>
+          <FacilitiesPreview />
+          <div className="text-center mt-8 sm:mt-12">
+            <Link
+              href="/faciliteter"
+              className="text-[#8397a9] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
+            >
+              Se alle faciliteter →
+            </Link>
+          </div>
         </div>
-        <div className="relative overflow-hidden">
-          <Image src="/images/courtyard.jpg" alt="Gårdhave" fill className="object-cover" />
-        </div>
-        <div className="relative overflow-hidden">
-          <Image src="/images/interior-c.jpg" alt="Workspace" fill className="object-cover" />
-        </div>
-      </div>
+      </section>
 
       {/* Gården */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
@@ -105,29 +115,6 @@ export default function HomePage() {
             <p className="text-[#6b6b7a] leading-relaxed">
               Gården byder på en unik stemning med kaffeBar, øl- og vinkort, restaurant og butik — alt hvad du behøver til en god pause eller en hyggelig eftermiddag i selskab med naboerne.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Facilities preview */}
-      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-10 sm:mb-16">
-            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
-              Faciliteter
-            </p>
-            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
-              Alt hvad du behøver — inkluderet
-            </h2>
-          </div>
-          <FacilitiesPreview />
-          <div className="text-center mt-8 sm:mt-12">
-            <Link
-              href="/faciliteter"
-              className="text-[#8397a9] border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
-            >
-              Se alle faciliteter →
-            </Link>
           </div>
         </div>
       </section>
