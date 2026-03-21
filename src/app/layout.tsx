@@ -1,13 +1,18 @@
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
 import { Nav } from "@/components/nav"
 import { Footer } from "@/components/footer"
 
-const geist = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const superblue = localFont({
+  src: [
+    { path: "../../public/fonts/SuperBlue-Light.otf", weight: "300" },
+    { path: "../../public/fonts/SuperBlue-Regular.otf", weight: "400" },
+    { path: "../../public/fonts/SuperBlue-Bold.otf", weight: "700" },
+    { path: "../../public/fonts/SuperBlue-Black.otf", weight: "900" },
+  ],
+  variable: "--font-superblue",
+  display: "swap",
 })
 
 const prumo = localFont({
@@ -36,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="da" className={`${geist.variable} ${prumo.variable} h-full`}>
-      <body className="min-h-full flex flex-col antialiased">
+    <html lang="da" className={`${superblue.variable} ${prumo.variable} h-full`}>
+      <body className="min-h-full flex flex-col antialiased font-[family-name:var(--font-superblue)]">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
