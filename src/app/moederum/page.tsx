@@ -168,7 +168,7 @@ export default function MoederumPage() {
               "/images/moederum-dl-IMG_7561.jpg",
               "/images/moederum-dl-IMG_7589.jpg",
             ].map((src) => (
-              <div key={src} className="relative h-40 overflow-hidden">
+              <div key={src} className="relative h-64 overflow-hidden">
                 <Image src={src} alt="Mødelokale" fill className="object-cover" />
               </div>
             ))}
