@@ -124,7 +124,7 @@ export default function KontorloesningerPage() {
               key={plan.name}
               className="rounded-lg overflow-hidden bg-[#f5f4f0] text-[#8397a9]"
             >
-              <div className="relative h-52">
+              <div className="relative h-72">
                 <Image src={plan.image} alt={plan.name} fill className="object-cover" />
               </div>
               <div className="p-6 sm:p-8 md:p-10">
