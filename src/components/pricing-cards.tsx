@@ -100,7 +100,7 @@ export function PricingCards() {
           </div>
           <div className="p-6 sm:p-8 flex flex-col flex-1">
             <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
-            <p className="text-sm mb-4 text-white/60">{plan.description}</p>
+            <p className="text-sm mb-4 text-white/60 min-h-[60px]">{plan.description}</p>
             <div className="mb-4">
               <span className="text-3xl sm:text-4xl font-light">{plan.price}</span>
               <span className="text-sm ml-1 text-white/60">DKK/md.</span>
