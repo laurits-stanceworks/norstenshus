@@ -122,7 +122,7 @@ const sections = [
     reverse: false,
   },
   {
-    image: "/images/faciliteter-salto.png",
+    image: "/images/faciliteter-salto.jpg",
     heading: "Teknologi og komfort hånd i hånd",
     body: "Vi har skabt et arbejdsmiljø, der sætter både teknologi og komfort i centrum. Med vores Salto-briklåsesystem, som du styrer direkte fra din mobil, bliver dagen lidt lettere og mere sikker. Med optimal belysning og god akustik i alle rum skaber Nordstens Workspace en behagelig og inspirerende atmosfære, hver gang du træder ind på din arbejdsplads.",
     reverse: true,
