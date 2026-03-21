@@ -72,9 +72,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Instagram */}
-      <InstagramSection />
-
       {/* Facilities preview */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-7xl">
@@ -97,6 +94,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Instagram */}
+      <InstagramSection />
 
       {/* About snippet */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#8397a9] text-white">
