@@ -97,11 +97,6 @@ export function PricingCards() {
         >
           <div className="relative h-40 shrink-0">
             <Image src={plan.image} alt={plan.name} fill className="object-cover" />
-            {plan.highlight && (
-              <span className="absolute top-3 left-3 bg-[#9d2e1e] text-white text-xs font-semibold uppercase tracking-widest px-2 py-1 rounded">
-                Mest populær
-              </span>
-            )}
           </div>
           <div className="p-6 sm:p-8 flex flex-col flex-1">
             <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
