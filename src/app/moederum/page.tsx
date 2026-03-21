@@ -113,22 +113,22 @@ const faq = [
 export default function MoederumPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
-        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
-          Møderum
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
-          Møderum og forplejning i hjertet af Hillerød
-        </h1>
-        <p className="text-white/60 max-w-2xl mx-auto">
-          Moderne mødelokaler med fuldt udstyrede videokonferencefaciliteter og mulighed for
-          skræddersyet forplejning. Uanset om I er 2, 5 eller +20 deltagere.
-        </p>
+      <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
+        <Image src="/images/moederum-hero.jpeg" alt="Mødelokale" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-[#8397a9]/70" />
+        <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
+          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
+            Møderum
+          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+            Møderum og forplejning i hjertet af Hillerød
+          </h1>
+          <p className="text-white/70 max-w-2xl mx-auto">
+            Moderne mødelokaler med fuldt udstyrede videokonferencefaciliteter og mulighed for
+            skræddersyet forplejning. Uanset om I er 2, 5 eller +20 deltagere.
+          </p>
+        </div>
       </section>
-
-      <div className="relative h-48 sm:h-64 md:h-80 w-full overflow-hidden">
-        <Image src="/images/moederum-hero.jpeg" alt="Mødelokale" fill className="object-cover" />
-      </div>
 
       {/* Rooms */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
@@ -276,20 +276,20 @@ export default function MoederumPage() {
                   <Image src={item.image} alt={item.name} fill className="object-cover" />
                 </div>
                 <div className="p-6 sm:p-8">
-                <h3 className="text-[#8397a9] font-semibold mb-1">{item.name}</h3>
-                <p className="text-[#6b6b7a] text-xs mb-4">{item.time}</p>
-                <div className="mb-4">
-                  <span className="text-3xl font-light text-[#8397a9]">{item.price}</span>
-                  <span className="text-sm text-[#6b6b7a] ml-1">kr./pers. ekskl. moms</span>
-                </div>
-                <ul className="space-y-2">
-                  {item.includes.map((i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-[#6b6b7a]">
-                      <Check size={14} className="text-[#9d2e1e] shrink-0 mt-0.5" />
-                      {i}
-                    </li>
-                  ))}
-                </ul>
+                  <h3 className="text-[#8397a9] font-semibold mb-1">{item.name}</h3>
+                  <p className="text-[#6b6b7a] text-xs mb-4">{item.time}</p>
+                  <div className="mb-4">
+                    <span className="text-3xl font-light text-[#8397a9]">{item.price}</span>
+                    <span className="text-sm text-[#6b6b7a] ml-1">kr./pers. ekskl. moms</span>
+                  </div>
+                  <ul className="space-y-2">
+                    {item.includes.map((i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-[#6b6b7a]">
+                        <Check size={14} className="text-[#9d2e1e] shrink-0 mt-0.5" />
+                        {i}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
