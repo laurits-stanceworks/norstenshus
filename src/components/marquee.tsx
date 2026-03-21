@@ -28,7 +28,7 @@ export function Marquee() {
         {repeated.map((item, i) => (
           <span
             key={i}
-            className="text-white text-xs font-semibold uppercase tracking-[0.25em] shrink-0"
+            className="text-white text-xs font-semibold uppercase tracking-[0.25em] shrink-0 font-[family-name:var(--font-prumo)]"
           >
             {item}
             <span className="ml-12 text-white/40">·</span>
