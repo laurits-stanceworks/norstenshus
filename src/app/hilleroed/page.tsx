@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { MapPin, Train, Car, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -29,18 +30,30 @@ const distances = [
 export default function HilleroedPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
-        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
-          Hillerød
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
-          Hillerød — den perfekte hjemmebane til din virksomhed
-        </h1>
-        <p className="text-white/60 max-w-xl mx-auto">
-          Omringet af skov, slot og sø — og under 1 time fra København i bil, 35 minutter med S-tog.
-        </p>
+      {/* Hero */}
+      <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
+        <Image
+          src="/images/building-facade.jpg"
+          alt="Nordstens Hus, Hillerød"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/20" />
+        <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
+          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
+            Hillerød
+          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+            Hillerød — den perfekte hjemmebane til din virksomhed
+          </h1>
+          <p className="text-white/70 max-w-xl mx-auto">
+            Omringet af skov, slot og sø — og under 1 time fra København i bil, 35 minutter med S-tog.
+          </p>
+        </div>
       </section>
 
+      {/* Address & map */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-16">
           <div>
@@ -48,7 +61,7 @@ export default function HilleroedPage() {
               Adresse & transport
             </h2>
 
-            <div className="space-y-6 mb-10">
+            <div className="space-y-6">
               <div className="flex gap-4">
                 <MapPin size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
                 <div>
@@ -126,11 +139,14 @@ export default function HilleroedPage() {
         </div>
       </section>
 
-      {/* About Hillerød */}
-      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
-        <div className="mx-auto max-w-3xl space-y-10">
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+      {/* Helt tæt på det hele */}
+      <div className="flex flex-col md:flex-row bg-white">
+        <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
+          <Image src="/images/faciliteter-rooftop.jpg" alt="Udsigt over Hillerød" fill className="object-cover" />
+        </div>
+        <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
+          <div className="max-w-lg">
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
               Helt tæt på det hele
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed">
@@ -140,9 +156,17 @@ export default function HilleroedPage() {
               200 butikker — der er masser af inspiration, velvære og muligheder lige ude foran døren.
             </p>
           </div>
+        </div>
+      </div>
 
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
+      {/* En erhvervsby med internationalt snit */}
+      <div className="flex flex-col md:flex-row-reverse bg-[#f5f4f0]">
+        <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
+          <Image src="/images/building.jpg" alt="Hillerød historisk" fill className="object-cover" />
+        </div>
+        <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
+          <div className="max-w-lg">
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
               En erhvervsby med internationalt snit
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed mb-4">
@@ -163,7 +187,7 @@ export default function HilleroedPage() {
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }
