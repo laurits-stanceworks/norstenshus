@@ -20,7 +20,7 @@ export function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-[#8397a9] text-white">
+    <header className="sticky top-0 z-50 bg-[#8397a9] text-white font-[family-name:var(--font-prumo)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between h-14 md:h-16">
         <Link href="/" className="flex items-center shrink-0">
           <Image src="/images/logo-new.svg" alt="Nordstens Workspace" width={120} height={22} />
