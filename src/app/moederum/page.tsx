@@ -115,7 +115,7 @@ export default function MoederumPage() {
     <>
       <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
         <Image src="/images/moederum-hero.jpg" alt="Mødelokale" fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
           <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
             Møderum
