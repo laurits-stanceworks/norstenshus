@@ -158,7 +158,7 @@ const sections = [
     reverse: false,
   },
   {
-    image: "/images/faciliteter-lounge-cafe.png",
+    image: "/images/faciliteter-lounge2.jpg",
     heading: "Find roen i vores loungeområder og café",
     body: "Når du trænger til en pause, finder du ro og fornyet energi i vores afslappende loungeområder og hyggelige cafémiljøer, der også giver gode rammer for samtale og socialisering med de andre kontorkolleger.",
     reverse: true,
