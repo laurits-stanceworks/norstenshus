@@ -138,95 +138,62 @@ export default function HilleroedPage() {
       </section>
 
       {/* Helt tæt på det hele */}
-      <div className="flex flex-col md:flex-row bg-white">
-        <div className="w-full md:w-1/2 shrink-0 grid grid-cols-2 grid-rows-2 h-64 sm:h-80 md:h-[460px]">
-          <div className="relative col-span-2 row-span-1">
-            <Image src="/images/hilleroed-nature.jpg" alt="Natur og park i Hillerød" fill className="object-cover" />
-          </div>
-          <div className="relative">
-            <Image src="/images/hilleroed-castle.jpg" alt="Frederiksborg Slot" fill className="object-cover" />
-          </div>
-          <div className="relative">
-            <Image src="/images/hilleroed-shopping.jpg" alt="Slotsarkaderne shopping" fill className="object-cover" />
-          </div>
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
+            Helt tæt på det hele
+          </h2>
+          <p className="text-[#6b6b7a] leading-relaxed">
+            Natur, historie og byliv. Du får det hele i Hillerød, som Nordstens Workspace ligger
+            helt centralt i. Så der er masser af inspiration, velvære og shopping lige ude foran
+            døren. Gå lige frem og tag 10 minutters pause med en kollega rundt om Slotssøen. Nyd
+            Barokhaven og Frederiksborg Slot. Gå til venstre og lige om hjørnet ind i
+            Slotsarkaderne. Eller til højre 100 skridt hen ad gaden og ind i Nordisk Films
+            kommende superbiograf.
+          </p>
         </div>
-        <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
-          <div className="max-w-lg">
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
-              Helt tæt på det hele
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Natur, historie og byliv. Du får det hele i Hillerød, som Nordstens Workspace ligger
-              helt centralt i. Så der er masser af inspiration, velvære og shopping lige ude foran
-              døren. Gå lige frem og tag 10 minutters pause med en kollega rundt om Slotssøen. Nyd
-              Barokhaven og Frederiksborg Slot. Gå til venstre og lige om hjørnet ind i
-              Slotsarkaderne. Eller til højre 100 skridt hen ad gaden og ind i Nordisk Films
-              kommende superbiograf.
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
 
       {/* Gastronomi */}
-      <div className="flex flex-col md:flex-row-reverse bg-[#f5f4f0]">
-        <div className="w-full md:w-1/2 shrink-0 grid grid-cols-2 grid-rows-1 h-64 sm:h-80 md:h-[460px]">
-          <div className="relative">
-            <Image src="/images/hilleroed-gastro-1.jpg" alt="Gastronomi i Hillerød" fill className="object-cover" />
-          </div>
-          <div className="relative grid grid-rows-2">
-            <div className="relative">
-              <Image src="/images/hilleroed-gastro-2.jpg" alt="Mad og café" fill className="object-cover" />
-            </div>
-            <div className="relative">
-              <Image src="/images/hilleroed-gastro-3.avif" alt="Café og hygge" fill className="object-cover" />
-            </div>
-          </div>
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
+            Gastronomi og hygge lige ved hånden
+          </h2>
+          <p className="text-[#6b6b7a] leading-relaxed">
+            Nordstens Workspace er omfavnet af et væld af gastronomiske oplevelser og hyggelige
+            caféer. Uanset hvornår på døgnet du har brug for en pause, kan du altid finde en
+            dejlig atmosfære og lækker mad og drikke — enten i vores gård eller lige uden for
+            døren. Her er mulighederne mange, så du kan forkæle dig selv og nyde en velfortjent
+            pause eller fyraften i hyggelige rammer.
+          </p>
         </div>
-        <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
-          <div className="max-w-lg">
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
-              Gastronomi og hygge lige ved hånden
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Nordstens Workspace er omfavnet af et væld af gastronomiske oplevelser og hyggelige
-              caféer. Uanset hvornår på døgnet du har brug for en pause, kan du altid finde en
-              dejlig atmosfære og lækker mad og drikke — enten i vores gård eller lige uden for
-              døren. Her er mulighederne mange, så du kan forkæle dig selv og nyde en velfortjent
-              pause eller fyraften i hyggelige rammer.
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
 
       {/* En erhvervsby med internationalt snit */}
-      <div className="flex flex-col md:flex-row bg-white">
-        <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
-          <Image src="/images/hilleroed-business.jpg" alt="Hillerød erhvervsby" fill className="object-cover" />
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
+            En erhvervsby med internationalt snit
+          </h2>
+          <p className="text-[#6b6b7a] leading-relaxed mb-4">
+            Hillerød tiltrækker internationale virksomheder — særligt inden for medicinalindustrien
+            — med sin stærke strategiske beliggenhed. Byens blomstrende teknologi- og sundhedssektor
+            skaber optimale rammer for samarbejde og vækst.
+          </p>
+          <p className="text-[#6b6b7a] leading-relaxed mb-4">
+            Hillerød er den førende vækstkommune i Hovedstadsregionen. Ifølge den seneste
+            befolkningsprognose forventes byen at vokse med ca. 500 nye boliger årligt frem til
+            2032. Virksomheder som Novo, Foss, Fuji-Film og El-lab investerer massivt i nye
+            faciliteter for et tocifret milliardbeløb.
+          </p>
+          <p className="text-[#6b6b7a] leading-relaxed">
+            Byens udvikling understøttes yderligere af opførelsen af det nye supersygehus,
+            forlængelsen af motorvejen til Hillerød og en løbende udvidelse af
+            uddannelsesmulighederne — Hillerød er en central vækstmotor i regionen.
+          </p>
         </div>
-        <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
-          <div className="max-w-lg">
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
-              En erhvervsby med internationalt snit
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed mb-4">
-              Hillerød tiltrækker internationale virksomheder — særligt inden for medicinalindustrien
-              — med sin stærke strategiske beliggenhed. Byens blomstrende teknologi- og sundhedssektor
-              skaber optimale rammer for samarbejde og vækst.
-            </p>
-            <p className="text-[#6b6b7a] leading-relaxed mb-4">
-              Hillerød er den førende vækstkommune i Hovedstadsregionen. Ifølge den seneste
-              befolkningsprognose forventes byen at vokse med ca. 500 nye boliger årligt frem til
-              2032. Virksomheder som Novo, Foss, Fuji-Film og El-lab investerer massivt i nye
-              faciliteter for et tocifret milliardbeløb.
-            </p>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Byens udvikling understøttes yderligere af opførelsen af det nye supersygehus,
-              forlængelsen af motorvejen til Hillerød og en løbende udvidelse af
-              uddannelsesmulighederne — Hillerød er en central vækstmotor i regionen.
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   )
 }
