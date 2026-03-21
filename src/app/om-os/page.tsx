@@ -46,7 +46,7 @@ export default function OmOsPage() {
 
       {/* Hero image */}
       <div className="relative h-56 sm:h-72 md:h-96 w-full overflow-hidden">
-        <Image src="/images/building-2.jpg" alt="Nordstens Hus" fill className="object-cover" />
+        <Image src="/images/om-os-hero.jpg" alt="Nordstens Hus" fill className="object-cover" />
       </div>
 
       {/* Quote */}
@@ -104,6 +104,16 @@ export default function OmOsPage() {
           </div>
         </div>
       </section>
+
+      {/* Photo pair */}
+      <div className="grid grid-cols-2 gap-1 h-56 sm:h-72 md:h-96">
+        <div className="relative overflow-hidden">
+          <Image src="/images/om-os-interior.jpg" alt="Nordstens Workspace indre" fill className="object-cover" />
+        </div>
+        <div className="relative overflow-hidden">
+          <Image src="/images/om-os-courtyard.jpg" alt="Nordstens gård" fill className="object-cover" />
+        </div>
+      </div>
 
       {/* Collaborators */}
       <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#8397a9] text-white text-center">

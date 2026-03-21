@@ -117,7 +117,10 @@ const facilities = [
 export default function FaciliteterPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
+      <section className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center overflow-hidden">
+        <Image src="/images/faciliteter-hero.jpg" alt="Faciliteter" fill className="object-cover" />
+        <div className="absolute inset-0 bg-[#8397a9]/80" />
+        <div className="relative z-10">
         <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
           Faciliteter
         </p>
@@ -127,18 +130,19 @@ export default function FaciliteterPage() {
         <p className="text-white/60 max-w-xl mx-auto">
           Meget mere end et traditionelt kontorlejemål. Alt hvad du behøver er inkluderet — fra dag ét.
         </p>
+        </div>
       </section>
 
       {/* Photo strip */}
       <div className="grid grid-cols-3 gap-1 h-64">
         <div className="relative overflow-hidden">
-          <Image src="/images/interior-3.png" alt="Lounge" fill className="object-cover" />
+          <Image src="/images/faciliteter-lounge.jpg" alt="Lounge" fill className="object-cover" />
         </div>
         <div className="relative overflow-hidden">
-          <Image src="/images/rooftop.jpg" alt="Tagterrasse" fill className="object-cover" />
+          <Image src="/images/faciliteter-rooftop.jpg" alt="Tagterrasse" fill className="object-cover" />
         </div>
         <div className="relative overflow-hidden">
-          <Image src="/images/interior-1.png" alt="Kontor" fill className="object-cover" />
+          <Image src="/images/faciliteter-phone-booth.jpg" alt="Telefonboks" fill className="object-cover" />
         </div>
       </div>
 

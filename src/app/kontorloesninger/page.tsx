@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { Check } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -110,6 +111,11 @@ export default function KontorloesningerPage() {
           effektivitet. Uanset dine behov er vi her for at imødekomme dem.
         </p>
       </section>
+
+      {/* Hero image */}
+      <div className="relative h-56 sm:h-72 md:h-96 w-full overflow-hidden">
+        <Image src="/images/kontorloesninger-hero.jpg" alt="Kontorløsninger" fill className="object-cover" />
+      </div>
 
       {/* Plans */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">

@@ -12,7 +12,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center bg-[#8397a9] overflow-hidden">
         <Image
-          src="/images/building.jpg"
+          src="/images/hero-main.jpg"
           alt="Nordstens Workspace bygning"
           fill
           priority
@@ -71,6 +71,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Photo strip */}
+      <div className="grid grid-cols-3 gap-1 h-48 sm:h-64 md:h-80">
+        <div className="relative overflow-hidden">
+          <Image src="/images/interior-b.jpg" alt="Kontorplads" fill className="object-cover" />
+        </div>
+        <div className="relative overflow-hidden">
+          <Image src="/images/courtyard.jpg" alt="Gårdhave" fill className="object-cover" />
+        </div>
+        <div className="relative overflow-hidden">
+          <Image src="/images/interior-c.jpg" alt="Workspace" fill className="object-cover" />
+        </div>
+      </div>
 
       {/* Facilities preview */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">

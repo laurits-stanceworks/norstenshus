@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { Check } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -31,6 +32,10 @@ export default function LejevilkaarPage() {
           fokusere på det, der betyder mest.
         </p>
       </section>
+
+      <div className="relative h-56 sm:h-72 md:h-96 w-full overflow-hidden">
+        <Image src="/images/lejevilkaar.jpg" alt="Nordstens Workspace" fill className="object-cover" />
+      </div>
 
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-3xl">

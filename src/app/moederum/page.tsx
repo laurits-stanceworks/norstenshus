@@ -63,12 +63,14 @@ const catering = [
     name: "Morgenmødepakke",
     price: "79",
     time: "kl. 08.00 – 10.00",
+    image: "/images/interior-a.jpg",
     includes: ["Friskbagt surdejsbrød med smør og ost", "Croissant", "Filterkaffe og te", "Vand"],
   },
   {
     name: "Frokostmødepakke",
     price: "182",
     time: "kl. 11.30 – 13.30",
+    image: "/images/catering-lunch.jpg",
     includes: [
       "Let tapas: skinke, pølse, to slags oste, oliven og mandler",
       "Brød: rugbrød og surdejsbrød",
@@ -80,6 +82,7 @@ const catering = [
     name: "Eftermiddagsmødepakke",
     price: "54",
     time: "kl. 14.00 – 17.00",
+    image: "/images/catering-afternoon.jpg",
     includes: ["Filterkaffe og te", "Vand", "Kage"],
   },
 ]
@@ -124,7 +127,7 @@ export default function MoederumPage() {
       </section>
 
       <div className="relative h-48 sm:h-64 md:h-80 w-full overflow-hidden">
-        <Image src="/images/meeting.png" alt="Mødelokale" fill className="object-cover" />
+        <Image src="/images/moederum-hero.jpeg" alt="Mødelokale" fill className="object-cover" />
       </div>
 
       {/* Rooms */}
@@ -151,6 +154,20 @@ export default function MoederumPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Room photo gallery */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-10 rounded-lg overflow-hidden">
+            {[
+              { src: "/images/meeting-c.jpg", alt: "Mødelokale" },
+              { src: "/images/meeting-d.jpg", alt: "Mødelokale" },
+              { src: "/images/meeting-e.jpg", alt: "Mødelokale" },
+              { src: "/images/meeting-f.jpg", alt: "Mødelokale" },
+            ].map(({ src, alt }) => (
+              <div key={src} className="relative h-40 overflow-hidden">
+                <Image src={src} alt={alt} fill className="object-cover" />
               </div>
             ))}
           </div>
@@ -254,7 +271,11 @@ export default function MoederumPage() {
           </h3>
           <div className="grid sm:grid-cols-3 gap-6">
             {catering.map((item) => (
-              <div key={item.name} className="bg-[#f5f4f0] rounded-lg p-6 sm:p-8">
+              <div key={item.name} className="bg-[#f5f4f0] rounded-lg overflow-hidden">
+                <div className="relative h-44">
+                  <Image src={item.image} alt={item.name} fill className="object-cover" />
+                </div>
+                <div className="p-6 sm:p-8">
                 <h3 className="text-[#8397a9] font-semibold mb-1">{item.name}</h3>
                 <p className="text-[#6b6b7a] text-xs mb-4">{item.time}</p>
                 <div className="mb-4">
@@ -269,6 +290,7 @@ export default function MoederumPage() {
                     </li>
                   ))}
                 </ul>
+                </div>
               </div>
             ))}
           </div>
