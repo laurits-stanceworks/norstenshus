@@ -14,13 +14,13 @@ const plans = [
     name: "Virtuelt Kontor",
     price: "600",
     image: "/images/building-facade.jpg",
-    deposit: "1 måneds depositum",
     description:
-      "Har du ikke behov for et fysisk kontor, men gerne vil have en professionel adresse i Hillerød? Vores virtuelle kontorløsning giver dig en professionel tilstedeværelse og mulighed for at leje mødelokaler efter behov.",
+      "Professionel forretningsadresse i Hillerød — uden behov for et fysisk kontor. Bevar et professionelt image, reducer omkostninger og arbejd fleksibelt fra hvor som helst.",
     features: [
       "Professionel virksomhedsadresse",
-      "Eget firmaskilt og postkasse",
-      "Adgang til åbne faglige events",
+      "Dedikeret postkasse og postadresse",
+      "Eget firmaskilt",
+      "Adgang til åbne faglige arrangementer",
       "Rabat på leje af mødelokaler og telefonrum",
       "1 måneds depositum",
       "Ingen binding – 3 måneders opsigelse",
@@ -30,12 +30,11 @@ const plans = [
     name: "Co-working Flexplads",
     price: "1.595",
     image: "/images/interior-a.jpg",
-    deposit: "3 måneders depositum",
     description:
-      "Er du freelancer, startup, iværksætter eller en mindre virksomhed? En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet — kombinér det bedste fra begge verdener.",
+      "Er du freelancer, startup, iværksætter eller en mindre virksomhed? En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet — med struktur til at adskille arbejdsliv og privatliv.",
     features: [
       "Fleksibel plads i åbent kontormiljø",
-      "Fuld møbleret plads",
+      "Fuldt møbleret arbejdsplads",
       "Fri adgang til alle fællesområder, tagterrasse, køkkener og lounges",
       "Kaffe, te og vand ad libitum",
       "Hurtigt, sikkert og stabilt fibernet",
@@ -52,19 +51,18 @@ const plans = [
     name: "Co-working Fast Plads",
     price: "3.495",
     image: "/images/interior-b.jpg",
-    deposit: "3 måneders depositum",
     description:
-      "Med en fast plads får du din egen dedikerede arbejdsstation med adgang 24/7. Perfekt til dig, der ønsker at kombinere det dynamiske co-working miljø med en stabil base.",
+      "Med en fast plads får du din egen dedikerede arbejdsstation, der er klar til dig hver dag. Kombiner det dynamiske co-working miljø med en stabil og personlig base.",
     features: [
       "Fast, personlig arbejdsstation med skærm, tastatur og mus",
-      "Fuld møbleret plads",
+      "Fuldt møbleret plads",
       "Fri adgang til alle fællesområder, tagterrasse, køkkener og lounges",
       "Kaffe, te og vand ad libitum",
       "Hurtigt, sikkert og stabilt fibernet",
       "Daglig rengøring",
       "Adgang 24/7",
-      "Briklåsesystem med nøglefri adgang og mobiladgang",
-      "Virksomhedsadresse og eigen postkasse",
+      "Nøglefri adgang med mobilapp",
+      "Virksomhedsadresse og egen postkasse",
       "Firmaskiltning",
       "Netværksarrangementer i Nordstens Workspace",
       "Rabat på leje af mødelokaler og telefonrum",
@@ -76,11 +74,10 @@ const plans = [
     name: "Privat Kontor",
     price: "6.500",
     image: "/images/interior-c.jpg",
-    deposit: "3 måneders depositum",
     description:
-      "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere.",
+      "Eksklusivt privat kontor med funktionalitet og æstetik. Skalerbart fra enkeltmandsvirksomhed til 15+ medarbejdere med over 100 m². Kan kombineres med co-working for fleksibel bemanding.",
     features: [
-      "Fuld møbleret privat kontor",
+      "Fuldt møbleret privat kontor",
       "Ergonomiske stole, hæve-sænkeborde, skabe og lamper",
       "Fri adgang til alle fællesområder, tagterrasse, køkkener og lounges",
       "Fri adgang til alle telefonrum",
@@ -88,11 +85,11 @@ const plans = [
       "Hurtigt, sikkert og stabilt fibernet",
       "Daglig rengøring",
       "Adgang 24/7",
-      "Briklåsesystem med nøglefri adgang og mobiladgang",
+      "Nøglefri adgang med mobilapp",
       "Virksomhedsadresse og postkasse",
       "Firmaskiltning",
       "Netværksarrangementer i Nordstens Workspace",
-      "Mulighed for leje af mødelokaler",
+      "Rabat på leje af mødelokaler",
       "3 måneders depositum – ingen binding – 3 mdr. opsigelse",
       "Inklusiv alle driftsudgifter, el, vand og varme",
     ],
@@ -111,8 +108,7 @@ export default function KontorloesningerPage() {
           Fleksible kontorløsninger uden lange bindinger
         </h1>
         <p className="text-white/60 max-w-2xl mx-auto">
-          I Nordstens Workspace kan I skifte mellem forskellige rum og miljøer for øget fokus og
-          effektivitet. Uanset dine behov er vi her for at imødekomme dem.
+          Nordstens Workspace tilbyder fleksibilitet til at skifte mellem forskellige rum og omgivelser for øget fokus og produktivitet. Vi har møderum, lounges, åbne arbejdszoner, telefonbokse, stillerum og tagterrasse — uanset dine behov er vi her for at imødekomme dem.
         </p>
       </section>
 
