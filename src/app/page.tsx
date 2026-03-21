@@ -86,6 +86,29 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Gården */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div className="relative h-72 sm:h-96 md:h-[500px] rounded-lg overflow-hidden">
+            <Image src="/images/courtyard.jpg" alt="Gården i Nordstens Workspace" fill className="object-cover" />
+          </div>
+          <div>
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Gården
+            </p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light mb-6">
+              Vi ses i gården!
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed mb-6">
+              En eksklusiv fordel ved Nordstens Workspace er, at du kan nyde Hillerøds hyggeligste gårdmiljø. Her samles lejere og gæster til uformelle møder, netværk og en pause fra hverdagen.
+            </p>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Gården byder på en unik stemning med kaffeBar, øl- og vinkort, restaurant og butik — alt hvad du behøver til en god pause eller en hyggelig eftermiddag i selskab med naboerne.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Facilities preview */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-7xl">
