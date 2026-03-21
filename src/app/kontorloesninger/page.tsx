@@ -168,35 +168,35 @@ export default function KontorloesningerPage() {
               <thead>
                 <tr className="border-b border-[#8397a9]/20">
                   <th className="text-left py-4 pr-6 text-[#8397a9] font-medium w-1/3"></th>
-                  {["Flexplads", "Fast Plads", "Privat Kontor", "Virtuelt Kontor"].map((h) => (
+                  {["Virtuelt Kontor", "Flexplads", "Fast Plads", "Privat Kontor"].map((h) => (
                     <th key={h} className="text-center py-4 px-3 text-[#8397a9] font-semibold">{h}</th>
                   ))}
                 </tr>
                 <tr className="border-b border-[#8397a9]/20 bg-white/50">
                   <td className="py-3 pr-6 text-[#6b6b7a] font-medium">Pris/måned ekskl. moms</td>
-                  {["1.595 DKK", "3.495 DKK", "6.500 DKK", "600 DKK"].map((p) => (
+                  {["600 DKK", "1.595 DKK", "3.495 DKK", "6.500 DKK"].map((p) => (
                     <td key={p} className="text-center py-3 px-3 text-[#8397a9] font-semibold">{p}</td>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { label: "Fleksibel arbejdsplads i åbent miljø", vals: [true, true, true, false] },
-                  { label: "Fast personlig arbejdsstation med skærm, tastatur og mus", vals: [false, true, true, false] },
-                  { label: "Fuldt møbleret", vals: [true, true, true, false] },
-                  { label: "Adgang 24/7", vals: [true, true, true, false] },
-                  { label: "Nøglefri adgang med mobilapp", vals: [false, true, true, false] },
-                  { label: "Fri adgang til fællesarealer, tagterrasse og lounges", vals: [true, true, true, false] },
-                  { label: "Kaffe, te og vand ad libitum", vals: [true, true, true, false] },
-                  { label: "Fibernet", vals: [true, true, true, false] },
-                  { label: "Daglig rengøring", vals: [true, true, true, false] },
-                  { label: "Telefonrum", vals: [false, false, true, false] },
-                  { label: "Virksomhedsadresse og postkasse", vals: [false, true, true, true] },
-                  { label: "Firmaskiltning", vals: [false, true, true, true] },
+                  { label: "Fleksibel arbejdsplads i åbent miljø", vals: [false, true, true, true] },
+                  { label: "Fast personlig arbejdsstation med skærm, tastatur og mus", vals: [false, false, true, true] },
+                  { label: "Fuldt møbleret", vals: [false, true, true, true] },
+                  { label: "Adgang 24/7", vals: [false, true, true, true] },
+                  { label: "Nøglefri adgang med mobilapp", vals: [false, false, true, true] },
+                  { label: "Fri adgang til fællesarealer, tagterrasse og lounges", vals: [false, true, true, true] },
+                  { label: "Kaffe, te og vand ad libitum", vals: [false, true, true, true] },
+                  { label: "Fibernet", vals: [false, true, true, true] },
+                  { label: "Daglig rengøring", vals: [false, true, true, true] },
+                  { label: "Telefonrum", vals: [false, false, false, true] },
+                  { label: "Virksomhedsadresse og postkasse", vals: [true, false, true, true] },
+                  { label: "Firmaskiltning", vals: [true, false, true, true] },
                   { label: "Netværksarrangementer", vals: [true, true, true, true] },
                   { label: "Rabat på mødelokaler og telefonrum", vals: [true, true, true, true] },
-                  { label: "Inkl. el, vand og varme", vals: [true, true, true, false] },
-                  { label: "Depositum", vals: ["3 mdr.", "3 mdr.", "3 mdr.", "1 md."] },
+                  { label: "Inkl. el, vand og varme", vals: [false, true, true, true] },
+                  { label: "Depositum", vals: ["1 md.", "3 mdr.", "3 mdr.", "3 mdr."] },
                   { label: "Opsigelse", vals: ["3 mdr.", "3 mdr.", "3 mdr.", "3 mdr."] },
                 ].map((row, i) => (
                   <tr key={row.label} className={`border-b border-[#8397a9]/10 ${i % 2 === 0 ? "" : "bg-white/50"}`}>
