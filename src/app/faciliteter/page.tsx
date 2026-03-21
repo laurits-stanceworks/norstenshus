@@ -133,18 +133,6 @@ export default function FaciliteterPage() {
         </div>
       </section>
 
-      {/* Photo strip */}
-      <div className="grid grid-cols-3 gap-1 h-64">
-        <div className="relative overflow-hidden">
-          <Image src="/images/faciliteter-lounge.jpg" alt="Lounge" fill className="object-cover" />
-        </div>
-        <div className="relative overflow-hidden">
-          <Image src="/images/faciliteter-rooftop.jpg" alt="Tagterrasse" fill className="object-cover" />
-        </div>
-        <div className="relative overflow-hidden">
-          <Image src="/images/faciliteter-phone-booth.jpg" alt="Telefonboks" fill className="object-cover" />
-        </div>
-      </div>
 
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
