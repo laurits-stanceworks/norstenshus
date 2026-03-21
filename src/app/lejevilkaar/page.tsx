@@ -8,11 +8,6 @@ export const metadata: Metadata = {
   description: "Fleksible og attraktive lejevilkår skræddersyet til nutidens behov.",
 }
 
-const stats = [
-  { value: "1 md.", label: "Betaling forud" },
-  { value: "24/7", label: "Adgang" },
-  { value: "Alt inkl.", label: "El, vand, varme & internet" },
-]
 
 const benefits = [
   "Ingen lange bindingsperioder – fleksibilitet med 1–3 mdrs. opsigelse",
@@ -76,19 +71,7 @@ export default function LejevilkaarPage() {
         </div>
       </section>
 
-      {/* Stat strip */}
-      <section className="bg-[#8397a9]">
-        <div className="mx-auto max-w-7xl grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
-          {stats.map(({ value, label }) => (
-            <div key={label} className="py-8 px-6 text-center text-white">
-              <p className="text-2xl sm:text-3xl md:text-4xl font-light mb-1">{value}</p>
-              <p className="text-white/60 text-xs sm:text-sm uppercase tracking-widest">{label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Intro + benefits */}
+{/* Intro + benefits */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
           <div>
