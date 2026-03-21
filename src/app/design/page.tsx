@@ -131,19 +131,6 @@ export default function DesignPage() {
         ))}
       </div>
 
-      {/* Closing quote */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#8397a9] text-white text-center">
-        <div className="mx-auto max-w-2xl">
-          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-6">
-            Filosofi
-          </p>
-          <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed">
-            &ldquo;Vi har skabt et rum, hvor hjemlige og professionelle miljøer smelter sammen —
-            præcis som vores produkter altid har gjort.&rdquo;
-          </p>
-          <p className="text-white/50 mt-4 text-sm">— Rolf Hay, kreativ direktør, HAY Furniture og Lighting</p>
-        </div>
-      </section>
     </>
   )
 }
