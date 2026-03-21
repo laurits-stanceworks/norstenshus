@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 }
 
 
+const stats = [
+  { value: "1–3 mdr.", label: "Ingen lange bindingsperioder" },
+  { value: "1 md.", label: "Månedlig betaling forud" },
+  { value: "Professionel adresse", label: "Slotsgade 13-17, Hillerød" },
+  { value: "Fællesskab", label: "Adgang til netværksarrangementer" },
+]
+
 const benefits = [
   "Ingen lange bindingsperioder – fleksibilitet med 1–3 mdrs. opsigelse",
   "Mulighed for dag-til-dag skalering af kontorstørrelse og antal arbejdspladser",
@@ -68,6 +75,18 @@ export default function LejevilkaarPage() {
           <p className="text-white/70 max-w-xl mx-auto">
             Skræddersyet til nutidens behov — nemt, trygt og fleksibelt.
           </p>
+        </div>
+      </section>
+
+      {/* Stat strip */}
+      <section className="bg-[#8397a9]">
+        <div className="mx-auto max-w-7xl grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
+          {stats.map(({ value, label }) => (
+            <div key={label} className="py-8 px-6 text-center text-white">
+              <p className="text-xl sm:text-2xl md:text-3xl font-light mb-1">{value}</p>
+              <p className="text-white/60 text-xs sm:text-sm uppercase tracking-widest">{label}</p>
+            </div>
+          ))}
         </div>
       </section>
 
