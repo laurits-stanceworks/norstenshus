@@ -5,26 +5,26 @@ import { Instagram, Linkedin, Facebook } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-[#8397a9]">
-      <div className="mx-auto max-w-7xl px-6 sm:px-8 py-12 sm:py-16 flex flex-col md:flex-row md:items-start gap-10 md:gap-0">
+      <div className="mx-auto max-w-5xl px-6 sm:px-8 py-16 sm:py-20 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
 
         {/* Building illustration */}
-        <div className="md:w-1/4 flex justify-start">
+        <div>
           <Image
             src="/images/logo-icon.svg"
             alt="Nordstens Workspace"
-            width={140}
-            height={110}
-            className="opacity-80"
+            width={120}
+            height={95}
+            className="opacity-75"
           />
         </div>
 
         {/* Contact */}
-        <div className="md:w-2/4">
-          <p className="text-white font-semibold text-sm mb-3">Nordstens Hus</p>
-          <address className="not-italic text-white/60 text-sm leading-relaxed space-y-1">
+        <div>
+          <p className="text-white font-semibold text-sm uppercase tracking-wide mb-4">Nordstens Hus</p>
+          <address className="not-italic text-white/60 text-sm leading-loose space-y-0">
             <p>Slotsgade 13-17</p>
             <p>3400 Hillerød</p>
-            <p className="mt-3">
+            <p className="mt-4">
               <a href="mailto:info@nordstens.dk" className="hover:text-white transition-colors">
                 info@nordstens.dk
               </a>
@@ -38,9 +38,9 @@ export function Footer() {
         </div>
 
         {/* Social */}
-        <div className="md:w-1/4">
-          <p className="text-white font-semibold text-sm mb-3">Følg os på</p>
-          <div className="flex gap-4 text-white/60 mb-6">
+        <div>
+          <p className="text-white font-semibold text-sm uppercase tracking-wide mb-4">Følg os på</p>
+          <div className="flex gap-5 text-white/60 mb-8">
             <a href="https://www.instagram.com/nordstens_hus" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Instagram">
               <Instagram size={18} />
             </a>
@@ -51,7 +51,7 @@ export function Footer() {
               <Linkedin size={18} />
             </a>
           </div>
-          <Link href="/privatlivspolitik" className="text-white/60 text-xs hover:text-white transition-colors">
+          <Link href="/privatlivspolitik" className="text-white/40 text-xs hover:text-white/70 transition-colors">
             Privatlivspolitik
           </Link>
         </div>
