@@ -126,9 +126,9 @@ export default function HilleroedPage() {
           <h2 className="text-[#8397a9] text-xl sm:text-2xl font-light mb-8 text-center">
             I hjertet af Hillerød — afstand til
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {distances.map(({ label, distance }) => (
-              <div key={label} className="bg-white rounded-lg p-4 text-center">
+              <div key={label} className="bg-white rounded-lg p-4 text-center w-[calc(50%-8px)] sm:w-[calc(33.33%-11px)] md:w-[calc(25%-12px)]">
                 <p className="text-[#9d2e1e] font-semibold text-sm">{distance}</p>
                 <p className="text-[#6b6b7a] text-xs mt-1">{label}</p>
               </div>
