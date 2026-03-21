@@ -161,13 +161,16 @@ export default function MoederumPage() {
           {/* Room photo gallery */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-10 rounded-lg overflow-hidden">
             {[
-              { src: "/images/meeting-c.jpg", alt: "Mødelokale" },
-              { src: "/images/meeting-d.jpg", alt: "Mødelokale" },
-              { src: "/images/meeting-e.jpg", alt: "Mødelokale" },
-              { src: "/images/meeting-f.jpg", alt: "Mødelokale" },
-            ].map(({ src, alt }) => (
+              "/images/moederum-dl-C9A8012.jpg",
+              "/images/moederum-dl-C9A8027.jpg",
+              "/images/moederum-dl-IMG_6650.jpg",
+              "/images/moederum-dl-IMG_7372.jpg",
+              "/images/moederum-dl-IMG_7554.jpg",
+              "/images/moederum-dl-IMG_7561.jpg",
+              "/images/moederum-dl-IMG_7589.jpg",
+            ].map((src) => (
               <div key={src} className="relative h-40 overflow-hidden">
-                <Image src={src} alt={alt} fill className="object-cover" />
+                <Image src={src} alt="Mødelokale" fill className="object-cover" />
               </div>
             ))}
           </div>
@@ -207,6 +210,22 @@ export default function MoederumPage() {
             Lokalet egner sig perfekt til forretningsmøder, workshops, firmafester, netværksevents
             og private fejringer.
           </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-8 rounded-lg overflow-hidden text-left">
+            {[
+              "/images/moederum-dl-Ny_raa_0003_raa15-36.jpg",
+              "/images/moederum-dl-Ny_raa_0008_raa-100.jpg",
+              "/images/moederum-dl-Ny_raa_0005_raa15-01.jpg",
+              "/images/moederum-dl-Ny_raa_0002_raa15-24.jpg",
+              "/images/moederum-dl-Ny_raa_0007_raa-110.jpg",
+              "/images/moederum-dl-Ny_raa_0006_raa-116.jpg",
+              "/images/moederum-dl-Ny_raa_0000_raa15-12.jpg",
+              "/images/moederum-dl-Ny_raa_0004_raa15-22.jpg",
+            ].map((src) => (
+              <div key={src} className="relative h-40 overflow-hidden">
+                <Image src={src} alt="RÅ15" fill className="object-cover" />
+              </div>
+            ))}
+          </div>
           <div className="bg-white rounded-lg p-6 sm:p-8 text-left mb-6">
             <h3 className="text-[#8397a9] font-semibold mb-4">Leje af RÅ15</h3>
             <div className="space-y-3 text-sm text-[#6b6b7a]">
