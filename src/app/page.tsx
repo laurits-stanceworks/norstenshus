@@ -49,9 +49,6 @@ export default function HomePage() {
       {/* Marquee */}
       <Marquee />
 
-      {/* Instagram */}
-      <InstagramSection />
-
       {/* Pricing */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl">
@@ -74,6 +71,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Instagram */}
+      <InstagramSection />
 
       {/* Facilities preview */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
