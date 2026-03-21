@@ -141,8 +141,24 @@ export default function MoederumPage() {
               Vores mødelokaler
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {rooms.map((room) => (
+          <div className="grid sm:grid-cols-3 gap-6">
+            {rooms.slice(0, 3).map((room) => (
+              <div key={room.name} className="bg-[#f5f4f0] rounded-lg p-6 sm:p-8">
+                <h3 className="text-[#8397a9] text-xl font-semibold mb-1">{room.name}</h3>
+                <p className="text-[#9d2e1e] text-sm font-medium mb-4">{room.capacity}</p>
+                <ul className="space-y-2">
+                  {room.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2 text-sm text-[#6b6b7a]">
+                      <Check size={14} className="text-[#9d2e1e] shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 mt-6 sm:max-w-2xl sm:mx-auto">
+            {rooms.slice(3).map((room) => (
               <div key={room.name} className="bg-[#f5f4f0] rounded-lg p-6 sm:p-8">
                 <h3 className="text-[#8397a9] text-xl font-semibold mb-1">{room.name}</h3>
                 <p className="text-[#9d2e1e] text-sm font-medium mb-4">{room.capacity}</p>
