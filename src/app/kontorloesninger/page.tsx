@@ -156,26 +156,65 @@ export default function KontorloesningerPage() {
         </div>
       </section>
 
-      {/* All plans include */}
-      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#f5f4f0]">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-[#8397a9] text-lg sm:text-xl md:text-2xl font-light mb-8">
-            Alle løsninger inkluderer
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-[#6b6b7a]">
-            {[
-              "Fibernet",
-              "Daglig rengøring",
-              "El, vand & varme",
-              "Kaffe & te",
-              "Fællesarealer",
-              "Netværksarrangementer",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2 justify-center">
-                <Check size={14} className="text-[#9d2e1e]" />
-                {item}
-              </div>
-            ))}
+      {/* Comparison table */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">Sammenlign</p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">Sammenlign vores løsninger</h2>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[#8397a9]/20">
+                  <th className="text-left py-4 pr-6 text-[#8397a9] font-medium w-1/3"></th>
+                  {["Flexplads", "Fast Plads", "Privat Kontor", "Virtuelt Kontor"].map((h) => (
+                    <th key={h} className="text-center py-4 px-3 text-[#8397a9] font-semibold">{h}</th>
+                  ))}
+                </tr>
+                <tr className="border-b border-[#8397a9]/20 bg-white/50">
+                  <td className="py-3 pr-6 text-[#6b6b7a] font-medium">Pris/måned ekskl. moms</td>
+                  {["1.595 DKK", "3.495 DKK", "6.500 DKK", "600 DKK"].map((p) => (
+                    <td key={p} className="text-center py-3 px-3 text-[#8397a9] font-semibold">{p}</td>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { label: "Fleksibel arbejdsplads i åbent miljø", vals: [true, true, true, false] },
+                  { label: "Fast personlig arbejdsstation med skærm, tastatur og mus", vals: [false, true, true, false] },
+                  { label: "Fuldt møbleret", vals: [true, true, true, false] },
+                  { label: "Adgang 24/7", vals: [true, true, true, false] },
+                  { label: "Nøglefri adgang med mobilapp", vals: [false, true, true, false] },
+                  { label: "Fri adgang til fællesarealer, tagterrasse og lounges", vals: [true, true, true, false] },
+                  { label: "Kaffe, te og vand ad libitum", vals: [true, true, true, false] },
+                  { label: "Fibernet", vals: [true, true, true, false] },
+                  { label: "Daglig rengøring", vals: [true, true, true, false] },
+                  { label: "Telefonrum", vals: [false, false, true, false] },
+                  { label: "Virksomhedsadresse og postkasse", vals: [false, true, true, true] },
+                  { label: "Firmaskiltning", vals: [false, true, true, true] },
+                  { label: "Netværksarrangementer", vals: [true, true, true, true] },
+                  { label: "Rabat på mødelokaler og telefonrum", vals: [true, true, true, true] },
+                  { label: "Inkl. el, vand og varme", vals: [true, true, true, false] },
+                  { label: "Depositum", vals: ["3 mdr.", "3 mdr.", "3 mdr.", "1 md."] },
+                  { label: "Opsigelse", vals: ["3 mdr.", "3 mdr.", "3 mdr.", "3 mdr."] },
+                ].map((row, i) => (
+                  <tr key={row.label} className={`border-b border-[#8397a9]/10 ${i % 2 === 0 ? "" : "bg-white/50"}`}>
+                    <td className="py-3 pr-6 text-[#6b6b7a]">{row.label}</td>
+                    {row.vals.map((v, j) => (
+                      <td key={j} className="text-center py-3 px-3">
+                        {typeof v === "boolean" ? (
+                          v ? <span className="text-[#9d2e1e] font-bold">✓</span>
+                            : <span className="text-[#8397a9]/30">—</span>
+                        ) : (
+                          <span className="text-[#6b6b7a]">{v}</span>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
