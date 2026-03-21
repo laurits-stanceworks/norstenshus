@@ -65,8 +65,13 @@ export function InstagramSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                  <Instagram size={28} className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-300 flex flex-col items-center justify-center gap-3 p-4">
+                  <Instagram size={22} className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 shrink-0" />
+                  {post.caption && (
+                    <p className="text-white text-xs text-center leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-4">
+                      {post.caption}
+                    </p>
+                  )}
                 </div>
               </a>
             ))}
