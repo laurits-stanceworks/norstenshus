@@ -41,9 +41,9 @@ export function InstagramSection() {
             href="https://www.instagram.com/nordstens_hus"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-[#8397a9] text-sm font-medium hover:text-[#9d2e1e] transition-colors"
+            className="flex items-center gap-2 border border-[#8397a9]/30 text-[#8397a9] text-sm px-4 py-2 rounded hover:border-[#9d2e1e] hover:text-[#9d2e1e] transition-colors shrink-0"
           >
-            <Instagram size={16} />
+            <Instagram size={15} />
             @nordstens_hus
           </a>
         </div>
