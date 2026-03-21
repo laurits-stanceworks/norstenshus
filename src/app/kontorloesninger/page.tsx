@@ -99,23 +99,22 @@ const plans = [
 export default function KontorloesningerPage() {
   return (
     <>
-      {/* Header */}
-      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
-        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
-          Kontorløsninger
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
-          Fleksible kontorløsninger uden lange bindinger
-        </h1>
-        <p className="text-white/60 max-w-2xl mx-auto">
-          Nordstens Workspace tilbyder fleksibilitet til at skifte mellem forskellige rum og omgivelser for øget fokus og produktivitet. Vi har møderum, lounges, åbne arbejdszoner, telefonbokse, stillerum og tagterrasse — uanset dine behov er vi her for at imødekomme dem.
-        </p>
+      {/* Hero */}
+      <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
+        <Image src="/images/kontorloesninger-hero.jpg" alt="Kontorløsninger" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-[#8397a9]/70" />
+        <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
+          <p className="text-[#f4a89a] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+            Kontorløsninger
+          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+            Fleksible kontorløsninger uden lange bindinger
+          </h1>
+          <p className="text-white/70 max-w-2xl mx-auto">
+            Nordstens Workspace tilbyder fleksibilitet til at skifte mellem forskellige rum og omgivelser for øget fokus og produktivitet. Vi har møderum, lounges, åbne arbejdszoner, telefonbokse, stillerum og tagterrasse — uanset dine behov er vi her for at imødekomme dem.
+          </p>
+        </div>
       </section>
-
-      {/* Hero image */}
-      <div className="relative h-56 sm:h-72 md:h-96 w-full overflow-hidden">
-        <Image src="/images/kontorloesninger-hero.jpg" alt="Kontorløsninger" fill className="object-cover" />
-      </div>
 
       {/* Plans */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
