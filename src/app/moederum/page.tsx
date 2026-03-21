@@ -163,7 +163,6 @@ export default function MoederumPage() {
             {[
               "/images/moederum-dl-C9A8012.jpg",
               "/images/moederum-dl-C9A8027.jpg",
-              "/images/moederum-dl-IMG_6650.jpg",
               "/images/moederum-dl-IMG_7372.jpg",
               "/images/moederum-dl-IMG_7554.jpg",
               "/images/moederum-dl-IMG_7561.jpg",
