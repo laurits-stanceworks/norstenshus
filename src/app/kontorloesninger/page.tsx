@@ -13,6 +13,7 @@ const plans = [
   {
     name: "Virtuelt Kontor",
     price: "600",
+    image: "/images/interior-a.jpg",
     deposit: "1 måneds depositum",
     description:
       "Har du ikke behov for et fysisk kontor, men gerne vil have en professionel adresse i Hillerød? Vores virtuelle kontorløsning giver dig en professionel tilstedeværelse og mulighed for at leje mødelokaler efter behov.",
@@ -28,6 +29,7 @@ const plans = [
   {
     name: "Co-working Flexplads",
     price: "1.595",
+    image: "/images/interior-b.jpg",
     deposit: "3 måneders depositum",
     description:
       "Er du freelancer, startup, iværksætter eller en mindre virksomhed? En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet — kombinér det bedste fra begge verdener.",
@@ -49,6 +51,7 @@ const plans = [
   {
     name: "Co-working Fast Plads",
     price: "3.495",
+    image: "/images/interior-c.jpg",
     deposit: "3 måneders depositum",
     description:
       "Med en fast plads får du din egen dedikerede arbejdsstation med adgang 24/7. Perfekt til dig, der ønsker at kombinere det dynamiske co-working miljø med en stabil base.",
@@ -72,6 +75,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
+    image: "/images/building-facade.jpg",
     deposit: "3 måneders depositum",
     description:
       "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere.",
@@ -123,17 +127,21 @@ export default function KontorloesningerPage() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-lg p-6 sm:p-8 md:p-10 ${
+              className={`rounded-lg overflow-hidden ${
                 plan.highlight
                   ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
                   : "bg-[#f5f4f0] text-[#8397a9]"
               }`}
             >
-              {plan.highlight && (
-                <span className="text-[#9d2e1e] text-xs font-semibold uppercase tracking-widest block mb-3">
-                  Mest populær
-                </span>
-              )}
+              <div className="relative h-52">
+                <Image src={plan.image} alt={plan.name} fill className="object-cover" />
+                {plan.highlight && (
+                  <span className="absolute top-3 left-3 bg-[#9d2e1e] text-white text-xs font-semibold uppercase tracking-widest px-2 py-1 rounded">
+                    Mest populær
+                  </span>
+                )}
+              </div>
+              <div className="p-6 sm:p-8 md:p-10">
               <h2 className="text-2xl font-semibold mb-2">{plan.name}</h2>
               <p
                 className={`text-sm mb-6 leading-relaxed ${
@@ -170,6 +178,7 @@ export default function KontorloesningerPage() {
               >
                 Book nu
               </Link>
+              </div>
             </div>
           ))}
         </div>

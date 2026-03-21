@@ -1,10 +1,12 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Check } from "lucide-react"
 
 const plans = [
   {
     name: "Virtuelt Kontor",
     price: "600",
+    image: "/images/interior-a.jpg",
     description: "Professionel virksomhedsadresse i Hillerød — uden at du behøver et fysisk kontor.",
     features: [
       "Professionel virksomhedsadresse",
@@ -21,6 +23,7 @@ const plans = [
   {
     name: "Flexplads",
     price: "1.595",
+    image: "/images/interior-b.jpg",
     description: "Fleksibel arbejdsplads i åbent kontormiljø — ideel til freelancere og iværksættere.",
     features: [
       "Fuldt møbleret arbejdsplads",
@@ -40,6 +43,7 @@ const plans = [
   {
     name: "Fast Plads",
     price: "3.495",
+    image: "/images/interior-c.jpg",
     description: "Din egen faste, dedikerede arbejdsstation klar til dig hver dag.",
     features: [
       "Fast arbejdsstation med skærm, tastatur og mus",
@@ -61,6 +65,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
+    image: "/images/building-facade.jpg",
     description: "Eget lukket kontor til din virksomhed — kombiner privathed med fællesskabets fordele.",
     features: [
       "Fuldt møbleret privat kontor",
@@ -88,18 +93,22 @@ export function PricingCards() {
       {plans.map((plan) => (
         <div
           key={plan.name}
-          className={`rounded-lg p-6 sm:p-8 flex flex-col ${
+          className={`rounded-lg overflow-hidden flex flex-col ${
             plan.highlight
               ? "bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
               : "bg-[#f5f4f0] text-[#8397a9]"
           }`}
         >
-          {plan.highlight && (
-            <span className="text-[#9d2e1e] text-xs font-semibold uppercase tracking-widest mb-3">
-              Mest populær
-            </span>
-          )}
-          <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
+          <div className="relative h-40 shrink-0">
+            <Image src={plan.image} alt={plan.name} fill className="object-cover" />
+            {plan.highlight && (
+              <span className="absolute top-3 left-3 bg-[#9d2e1e] text-white text-xs font-semibold uppercase tracking-widest px-2 py-1 rounded">
+                Mest populær
+              </span>
+            )}
+          </div>
+          <div className="p-6 sm:p-8 flex flex-col flex-1">
+            <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
           <p className={`text-sm mb-4 sm:mb-6 ${plan.highlight ? "text-white/60" : "text-[#6b6b7a]"}`}>
             {plan.description}
           </p>
@@ -127,6 +136,7 @@ export function PricingCards() {
           >
             {plan.cta}
           </Link>
+          </div>
         </div>
       ))}
     </div>
