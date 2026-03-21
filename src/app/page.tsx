@@ -19,10 +19,7 @@ export default function HomePage() {
           className="object-cover opacity-30"
         />
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto py-16">
-          <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-4 sm:mb-6">
-            Hillerød · Siden 1877
-          </p>
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4 sm:mb-6">
+<h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4 sm:mb-6">
             Kom indenfor i
             <br />
             <span className="font-semibold">Nordstens Workspace</span>
