@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Check } from "lucide-react"
+import { MoederumFaq } from "@/components/moederum-faq"
 
 export const metadata: Metadata = {
   title: "Møderum — Nordstens Workspace",
@@ -87,28 +88,6 @@ const catering = [
   },
 ]
 
-const faq = [
-  {
-    q: "Er der IT-udstyr og AV-teknik klar til mødet?",
-    a: "Hos Nordstens Workspace har vi altid moderne teknisk udstyr, så dit møde forløber uden tekniske problemer. Vi tester alt udstyr på forhånd, så det står klart, når du ankommer.",
-  },
-  {
-    q: "Er der mulighed for forplejning?",
-    a: "Ja, vi sørger for frisk og velsmagende forplejning til alle mødedeltagere lavet af de bedste råvarer fra Café Rømers her i Hillerød. I bestemmer selv, hvor meget forplejning og hvornår I ønsker det.",
-  },
-  {
-    q: "Kan Nordstens Workspace hjælpe med at arrangere mødet?",
-    a: "Ja, vi tilbyder rådgivning og hjælp til planlægning af jeres møde eller event. Vores team hjælper dig hele vejen fra de første idéer til den endelige afvikling.",
-  },
-  {
-    q: "Hvad er jeres annulleringsbetingelser?",
-    a: "Nordstens Workspace har fleksible og gennemsigtige annulleringsbetingelser. Afbestilling skal altid ske skriftligt. Kontakt os for at høre mere om gældende frister og betingelser.",
-  },
-  {
-    q: "Er der mulighed for at parkere som mødegæst?",
-    a: "Ja, der er mange parkeringsmuligheder tæt på vores lokation i p-husene ved Slotskaderne eller i Gallerierne. Du kan betale direkte ved p-pladserne eller via EasyPark.",
-  },
-]
 
 export default function MoederumPage() {
   return (
@@ -337,14 +316,7 @@ export default function MoederumPage() {
           <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-10 text-center">
             Spørgsmål og svar
           </h2>
-          <div className="divide-y divide-[#e5e3dc]">
-            {faq.map(({ q, a }) => (
-              <div key={q} className="py-6">
-                <h3 className="text-[#8397a9] font-semibold mb-3">{q}</h3>
-                <p className="text-[#6b6b7a] text-sm leading-relaxed">{a}</p>
-              </div>
-            ))}
-          </div>
+          <MoederumFaq />
         </div>
       </section>
     </>
