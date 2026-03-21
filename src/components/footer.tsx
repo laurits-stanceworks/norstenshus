@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Instagram, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -39,33 +40,31 @@ export function Footer() {
         {/* Social */}
         <div>
           <p className="text-white font-semibold text-base mb-4">Følg os på</p>
-          <div className="space-y-2 text-sm text-white/70">
-            <p>
-              <a
-                href="https://www.instagram.com/nordstens_workspace"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
-                Instagram
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
-                LinkedIn
-              </a>
-            </p>
-            <p className="pt-4">
-              <Link href="/privatlivspolitik" className="hover:text-white transition-colors">
-                Privatlivspolitik
-              </Link>
-            </p>
+          <div className="flex gap-4 text-white/70">
+            <a
+              href="https://www.instagram.com/nordstens_workspace"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
           </div>
+          <p className="mt-4 text-sm text-white/70">
+            <Link href="/privatlivspolitik" className="hover:text-white transition-colors">
+              Privatlivspolitik
+            </Link>
+          </p>
         </div>
 
       </div>
