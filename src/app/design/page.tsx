@@ -68,36 +68,6 @@ export default function DesignPage() {
         </div>
       </section>
 
-      {/* Alternating image-text sections */}
-      <div>
-        {sections.map(({ image, heading, body, quote, cite, reverse }, i) => (
-          <div
-            key={heading}
-            className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} ${
-              i % 2 === 0 ? "bg-[#f5f4f0]" : "bg-white"
-            }`}
-          >
-            <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] shrink-0">
-              <Image src={image} alt={heading} fill className="object-cover" />
-            </div>
-            <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
-              <div className="max-w-lg">
-                <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
-                  {heading}
-                </h2>
-                <p className="text-[#6b6b7a] leading-relaxed mb-6">{body}</p>
-                <blockquote className="border-l-2 border-[#9d2e1e] pl-5">
-                  <p className="text-[#8397a9] text-sm font-light italic leading-relaxed mb-2">
-                    &ldquo;{quote}&rdquo;
-                  </p>
-                  <cite className="text-[#6b6b7a] text-xs not-italic">{cite}</cite>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* Et unikt samarbejde */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-3xl">
@@ -130,6 +100,36 @@ export default function DesignPage() {
           </div>
         </div>
       </section>
+
+      {/* Alternating image-text sections */}
+      <div>
+        {sections.map(({ image, heading, body, quote, cite, reverse }, i) => (
+          <div
+            key={heading}
+            className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} ${
+              i % 2 === 0 ? "bg-[#f5f4f0]" : "bg-white"
+            }`}
+          >
+            <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] shrink-0">
+              <Image src={image} alt={heading} fill className="object-cover" />
+            </div>
+            <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
+              <div className="max-w-lg">
+                <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
+                  {heading}
+                </h2>
+                <p className="text-[#6b6b7a] leading-relaxed mb-6">{body}</p>
+                <blockquote className="border-l-2 border-[#9d2e1e] pl-5">
+                  <p className="text-[#8397a9] text-sm font-light italic leading-relaxed mb-2">
+                    &ldquo;{quote}&rdquo;
+                  </p>
+                  <cite className="text-[#6b6b7a] text-xs not-italic">{cite}</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
 
       {/* Closing quote */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#8397a9] text-white text-center">
