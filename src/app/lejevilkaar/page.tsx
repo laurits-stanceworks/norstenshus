@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { Check } from "lucide-react"
+import { LejevilkaarFaq } from "@/components/lejevilkaar-faq"
 
 export const metadata: Metadata = {
   title: "Lejevilkår — Nordstens Workspace",
@@ -137,8 +138,23 @@ export default function LejevilkaarPage() {
         </div>
       </section>
 
-      {/* Terms */}
+      {/* FAQ */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-3xl">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Spørgsmål & svar
+            </p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light">
+              Ofte stillede spørgsmål
+            </h2>
+          </div>
+          <LejevilkaarFaq />
+        </div>
+      </section>
+
+      {/* Terms */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-10">
             Vilkår i detaljer
