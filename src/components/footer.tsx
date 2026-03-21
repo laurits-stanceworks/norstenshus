@@ -5,15 +5,15 @@ import { Instagram, Linkedin, Facebook } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-[#8397a9]">
-      <div className="mx-auto max-w-7xl px-6 sm:px-12 py-16 sm:py-20 flex flex-col md:flex-row md:justify-between md:items-center gap-12 md:gap-0 text-center">
+      <div className="mx-auto max-w-4xl px-6 py-16 sm:py-20 grid grid-cols-3 gap-8 items-center text-center">
 
         {/* Building illustration */}
         <div className="flex justify-center">
           <Image
             src="/images/logo-icon.svg"
             alt="Nordstens Workspace"
-            width={120}
-            height={95}
+            width={110}
+            height={85}
             className="opacity-75"
           />
         </div>
@@ -40,7 +40,7 @@ export function Footer() {
         {/* Social */}
         <div>
           <p className="text-white font-semibold text-sm uppercase tracking-wide mb-4">Følg os på</p>
-          <div className="flex gap-5 text-white/60 mb-8 justify-center">
+          <div className="flex gap-5 text-white/60 mb-6 justify-center">
             <a href="https://www.instagram.com/nordstens_hus" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Instagram">
               <Instagram size={18} />
             </a>
