@@ -104,7 +104,7 @@ export default function KontorloesningerPage() {
         <Image src="/images/kontorloesninger-hero.jpg" alt="Kontorløsninger" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-[#8397a9]/70" />
         <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
-          <p className="text-[#f4a89a] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
             Kontorløsninger
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
