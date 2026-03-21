@@ -5,7 +5,7 @@ import { Instagram, Linkedin, Facebook } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-[#8397a9]">
-      <div className="mx-auto max-w-7xl px-6 sm:px-12 py-16 sm:py-20 flex flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-0">
+      <div className="mx-auto max-w-7xl px-6 sm:px-12 py-16 sm:py-20 flex flex-col md:flex-row md:justify-between md:items-center gap-12 md:gap-0">
 
         {/* Building illustration */}
         <div>
