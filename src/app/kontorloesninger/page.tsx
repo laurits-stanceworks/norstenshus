@@ -121,10 +121,7 @@ export default function KontorloesningerPage() {
                 <Image src={plan.image} alt={plan.name} fill className="object-cover" />
               </div>
               <div className="p-6 sm:p-8 md:p-10">
-                <h2 className="text-2xl font-semibold mb-2">{plan.name}</h2>
-                <p className="text-sm mb-4 leading-relaxed text-[#6b6b7a] min-h-[80px]">
-                  {plan.description}
-                </p>
+                <h2 className="text-2xl font-semibold mb-4">{plan.name}</h2>
                 <div className="mb-4">
                   <span className="text-3xl sm:text-4xl md:text-5xl font-light">{plan.price}</span>
                   <span className="text-sm ml-2 text-[#6b6b7a]">DKK/måned ekskl. moms</span>
@@ -135,6 +132,9 @@ export default function KontorloesningerPage() {
                 >
                   Book nu
                 </Link>
+                <p className="text-sm mb-6 leading-relaxed text-[#6b6b7a] whitespace-pre-line">
+                  {plan.description}
+                </p>
                 {plan.subheading && (
                   <h3 className="text-base font-semibold text-[#8397a9] mb-4">{plan.subheading}</h3>
                 )}
