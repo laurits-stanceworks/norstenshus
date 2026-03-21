@@ -9,10 +9,10 @@ export function Footer() {
         {/* Building illustration */}
         <div className="flex justify-center md:justify-start">
           <Image
-            src="/images/logo-new.svg"
+            src="/images/logo-icon.svg"
             alt="Nordstens Workspace"
             width={180}
-            height={120}
+            height={140}
             className="opacity-80"
           />
         </div>
