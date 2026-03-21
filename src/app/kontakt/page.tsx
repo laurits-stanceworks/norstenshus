@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { ContactForm } from "@/components/contact-form"
-import { MapPin, Phone, Mail } from "lucide-react"
+import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Kontakt — Nordstens Workspace",
@@ -10,91 +11,96 @@ export const metadata: Metadata = {
 export default function KontaktPage() {
   return (
     <>
-      <section className="bg-[#8397a9] py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center">
-        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
-          Kontakt
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">Lad os tage en snak</h1>
-        <p className="text-white/60 max-w-xl mx-auto">
-          Book en gratis rundvisning, stil os et spørgsmål eller fortæl os hvad du har
-          brug for. Vi vender tilbage hurtigst muligt.
-        </p>
+      {/* Hero */}
+      <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
+        <Image
+          src="/images/building-facade.jpg"
+          alt="Nordstens Hus facade"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
+          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
+            Kontakt
+          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+            Lad os tage en snak
+          </h1>
+          <p className="text-white/70 max-w-xl mx-auto">
+            Book en gratis rundvisning, stil os et spørgsmål eller fortæl os hvad du har brug for.
+            Vi vender tilbage hurtigst muligt.
+          </p>
+        </div>
       </section>
 
-      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
-        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-16">
+      {/* Form + Info */}
+      <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-white">
+        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+
           {/* Form */}
           <div>
-            <h2 className="text-[#8397a9] text-lg sm:text-xl md:text-2xl font-light mb-8">Send os en besked</h2>
+            <p className="text-[#9d2e1e] text-xs font-medium uppercase tracking-[0.2em] mb-4">Skriv til os</p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-8">Send os en besked</h2>
             <ContactForm />
           </div>
 
           {/* Info */}
           <div>
-            <h2 className="text-[#8397a9] text-lg sm:text-xl md:text-2xl font-light mb-8">Find os</h2>
-            <div className="space-y-6 mb-10">
+            <p className="text-[#9d2e1e] text-xs font-medium uppercase tracking-[0.2em] mb-4">Find os</p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-8">Kontaktoplysninger</h2>
+
+            <div className="relative h-48 w-full rounded-lg overflow-hidden mb-8">
+              <Image src="/images/contact-photo.png" alt="Nordstens Workspace team" fill className="object-cover" />
+            </div>
+
+            <div className="space-y-5 mb-10">
               <div className="flex gap-4">
-                <MapPin size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
+                <MapPin size={18} className="text-[#9d2e1e] shrink-0 mt-0.5" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#8397a9] mb-1">Adresse</p>
-                  <p className="text-[#6b6b7a] text-sm">
-                    Slotsgade 13-17<br />
-                    3400 Hillerød
-                  </p>
+                  <p className="text-xs font-medium text-[#8397a9] uppercase tracking-wide mb-0.5">Adresse</p>
+                  <p className="text-[#6b6b7a] text-sm">Slotsgade 13-17, 3400 Hillerød</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Phone size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
+                <Phone size={18} className="text-[#9d2e1e] shrink-0 mt-0.5" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#8397a9] mb-1">Telefon</p>
-                  <a
-                    href="tel:+4582303234"
-                    className="text-[#6b6b7a] text-sm hover:text-[#9d2e1e] transition-colors"
-                  >
+                  <p className="text-xs font-medium text-[#8397a9] uppercase tracking-wide mb-0.5">Telefon</p>
+                  <a href="tel:+4582303234" className="text-[#6b6b7a] text-sm hover:text-[#9d2e1e] transition-colors">
                     82 30 32 34
                   </a>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Mail size={20} className="text-[#9d2e1e] shrink-0 mt-1" strokeWidth={1.5} />
+                <Mail size={18} className="text-[#9d2e1e] shrink-0 mt-0.5" strokeWidth={1.5} />
                 <div>
-                  <p className="font-medium text-[#8397a9] mb-1">Email</p>
-                  <a
-                    href="mailto:info@nordstens.dk"
-                    className="text-[#6b6b7a] text-sm hover:text-[#9d2e1e] transition-colors"
-                  >
+                  <p className="text-xs font-medium text-[#8397a9] uppercase tracking-wide mb-0.5">Email</p>
+                  <a href="mailto:info@nordstens.dk" className="text-[#6b6b7a] text-sm hover:text-[#9d2e1e] transition-colors">
                     info@nordstens.dk
                   </a>
                 </div>
               </div>
+              <div className="flex gap-4">
+                <Clock size={18} className="text-[#9d2e1e] shrink-0 mt-0.5" strokeWidth={1.5} />
+                <div>
+                  <p className="text-xs font-medium text-[#8397a9] uppercase tracking-wide mb-0.5">Telefontider</p>
+                  <p className="text-[#6b6b7a] text-sm">Mandag–fredag kl. 09:00–17:00</p>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-[#f5f4f0] rounded-lg p-8 space-y-6">
-              <div>
-                <p className="text-[#8397a9] font-medium mb-2">Telefontider</p>
-                <p className="text-[#6b6b7a] text-sm">
-                  Vi står klar til at hjælpe dig mandag–fredag kl. 09:00–17:00.<br />
-                  Har du spørgsmål uden for telefontiden, er du velkommen til at benytte kontaktformularen.
-                </p>
-              </div>
-              <div>
-                <p className="text-[#8397a9] font-medium mb-2">Akut skade</p>
-                <p className="text-[#6b6b7a] text-sm">
-                  Oplever du en akut skade (vand, brand, strøm eller bygningsskade) kontakt vores
-                  administration på{" "}
-                  <a href="tel:+4572228200" className="text-[#9d2e1e] hover:underline">
-                    72 22 82 00
-                  </a>
-                  .<br />
-                  Uden for åbningstid:{" "}
-                  <a href="tel:+4540200090" className="text-[#9d2e1e] hover:underline">
-                    40 20 00 90
-                  </a>
-                  .
-                </p>
-              </div>
+            <div className="border-t border-[#e5e3dc] pt-6">
+              <p className="text-xs font-medium text-[#8397a9] uppercase tracking-wide mb-2">Akut skade</p>
+              <p className="text-[#6b6b7a] text-sm leading-relaxed">
+                Vand, brand, strøm eller bygningsskade — kontakt vores administration på{" "}
+                <a href="tel:+4572228200" className="text-[#9d2e1e] hover:underline">72 22 82 00</a>.
+                Uden for åbningstid:{" "}
+                <a href="tel:+4540200090" className="text-[#9d2e1e] hover:underline">40 20 00 90</a>.
+              </p>
             </div>
           </div>
+
         </div>
       </section>
     </>
