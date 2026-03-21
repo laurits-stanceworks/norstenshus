@@ -114,6 +114,63 @@ const facilities = [
   },
 ]
 
+const sections = [
+  {
+    image: "/images/meeting-a.jpg",
+    heading: "State of the art mødelokaler",
+    body: "I Nordstens Workspace møder du højeste kvalitet i alt — fra mursten til mødelokaler, der kommer i flere størrelser. Alle husets mødelokaler er udstyret med de nyeste skærme, systemer til videoopkald og hurtigt og stabilt internet, så du kan afvikle præsentationer, møder og workshops optimalt og helt uden bekymringer. Efter dine møder kan du invitere deltagerne op på tagterrassen eller hygge i gården.",
+    reverse: false,
+  },
+  {
+    image: "/images/faciliteter-interior.jpg",
+    heading: "Teknologi og komfort hånd i hånd",
+    body: "Vi har skabt et arbejdsmiljø, der sætter både teknologi og komfort i centrum. Med vores Salto-briklåsesystem, som du styrer direkte fra din mobil, bliver dagen lidt lettere og mere sikker. Med optimal belysning og god akustik i alle rum skaber Nordstens Workspace en behagelig og inspirerende atmosfære, hver gang du træder ind på din arbejdsplads.",
+    reverse: true,
+  },
+  {
+    image: "/images/faciliteter-rooftop.jpg",
+    heading: "Unik tagterrasse og indbydende gårdmiljø",
+    body: "Nyd godt af din store, private tagterrasse — den perfekte ramme for alt fra uformelle møder til større arrangementer. Du kan arbejde i det fri (vi har lagt el ind), koble af og se det hele lidt fra oven, eller netværke med andre lejere i et afslappet miljø. Gårdmiljøet er en grøn og social oase i stueetagen, omgivet af kaffebar, øl- og vinbar, restaurant og butik.",
+    reverse: false,
+  },
+  {
+    image: "/images/faciliteter-phone-booth.jpg",
+    heading: "Telefonrum til dine private samtaler",
+    body: "Når du har brug for at tage en privat samtale eller deltage i et online møde, har vi 6 dedikerede telefonrum, der giver dig den ro og det privatliv, du har brug for. Her kan du føle dig tryg og uforstyrret og fokusere fuldt ud på dine samtaler.",
+    reverse: true,
+  },
+  {
+    image: "/images/faciliteter-lounge.jpg",
+    heading: "Gratis kaffe og te i vores fælleskøkkener",
+    body: "I vores fuldt udstyrede fælleskøkkener er der altid gratis kaffe og te — den perfekte anledning til en velfortjent pause, idéudveksling med kolleger og nye bekendtskaber. Køkkenerne er indrettet som hyggelige fællesområder med cafémiljø, hvor uformelle samtaler kan blomstre og styrke fællesskabet.",
+    reverse: false,
+  },
+  {
+    image: "/images/interior-b.jpg",
+    heading: "Netværksstruktur og sikkerhed",
+    body: "Vores netværk er sikkert og stabilt og giver dig trådløst internet i hele bygningen. IT-infrastrukturen inkluderer alt fra firewall og CAT6-kabling til muligheden for at oprette dit eget lukkede netværk. Datasikkerhed er vigtigt for dig, og derfor har vi investeret i den nyeste teknologi inden for IT-sikkerhed. Så kan du føle dig tryg ved at dele og arbejde med dine data.",
+    reverse: true,
+  },
+  {
+    image: "/images/interior-a.jpg",
+    heading: "Kan arbejde føles som hjemme?",
+    body: "Vi har gjort et godt forsøg! For Nordstens Workspace er meget mere end et kontorfællesskab – det er et levende miljø, hvor vi har kombineret fortidens unikke håndværk med ultramoderne komfort. I huset handler det om mennesker, fællesskab og fleksibilitet, så du kan føle dig hjemme, selv når du er på arbejde. Nordstens Workspace er skabt med stor kærlighed til detaljen og designet til at imødekomme nutidens behov for inspirerende og funktionelle arbejdsmiljøer.",
+    reverse: false,
+  },
+  {
+    image: "/images/faciliteter-lounge-cafe.png",
+    heading: "Find roen i vores loungeområder og café",
+    body: "Når du trænger til en pause, finder du ro og fornyet energi i vores afslappende loungeområder og hyggelige cafémiljøer, der også giver gode rammer for samtale og socialisering med de andre kontorkolleger.",
+    reverse: true,
+  },
+  {
+    image: "/images/courtyard.jpg",
+    heading: "Rum for pauser og social samvær",
+    body: "Hos Nordstens Workspace går vi langt for at skabe balance i hverdagen. Med adgang til bad og en smuk tagterrasse kan du både opfriske dig og nyde udelivet uden at forlade bygningen. Vores indbydende gårdmiljø giver dig også mulighed for at tage en pause i grønne omgivelser eller arrangere uformelle møder over en kop kaffe.",
+    reverse: false,
+  },
+]
+
 export default function FaciliteterPage() {
   return (
     <>
@@ -121,18 +178,17 @@ export default function FaciliteterPage() {
         <Image src="/images/faciliteter-hero.jpg" alt="Faciliteter" fill className="object-cover" />
         <div className="absolute inset-0 bg-[#8397a9]/80" />
         <div className="relative z-10">
-        <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
-          Faciliteter
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
-          Faciliteter der løfter din arbejdsdag
-        </h1>
-        <p className="text-white/60 max-w-xl mx-auto">
-          Meget mere end et traditionelt kontorlejemål. Alt hvad du behøver er inkluderet — fra dag ét.
-        </p>
+          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+            Faciliteter
+          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+            Faciliteter der løfter din arbejdsdag
+          </h1>
+          <p className="text-white/60 max-w-xl mx-auto">
+            Meget mere end et traditionelt kontorlejemål. Alt hvad du behøver er inkluderet — fra dag ét.
+          </p>
         </div>
       </section>
-
 
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -149,124 +205,29 @@ export default function FaciliteterPage() {
         </div>
       </section>
 
-      {/* Text sections */}
-      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
-        <div className="mx-auto max-w-3xl space-y-16">
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              State of the art mødelokaler
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              I Nordstens Workspace møder du højeste kvalitet i alt — fra mursten til mødelokaler,
-              der kommer i flere størrelser. Alle husets mødelokaler er udstyret med de nyeste
-              skærme, systemer til videoopkald og hurtigt og stabilt internet, så du kan afvikle
-              præsentationer, møder og workshops optimalt og helt uden bekymringer. Efter dine møder
-              kan du invitere deltagerne op på tagterrassen eller hygge i gården.
-            </p>
+      {/* Alternating image-text sections */}
+      <div>
+        {sections.map(({ image, heading, body, reverse }, i) => (
+          <div
+            key={heading}
+            className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} ${
+              i % 2 === 0 ? "bg-[#f5f4f0]" : "bg-white"
+            }`}
+          >
+            <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
+              <Image src={image} alt={heading} fill className="object-cover" />
+            </div>
+            <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
+              <div className="max-w-lg">
+                <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
+                  {heading}
+                </h2>
+                <p className="text-[#6b6b7a] leading-relaxed">{body}</p>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Teknologi og komfort hånd i hånd
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Vi har skabt et arbejdsmiljø, der sætter både teknologi og komfort i centrum.
-              Med vores Salto-briklåsesystem, som du styrer direkte fra din mobil, bliver
-              dagen lidt lettere og mere sikker. Med optimal belysning og god akustik i alle rum
-              skaber Nordstens Workspace en behagelig og inspirerende atmosfære, hver gang du
-              træder ind på din arbejdsplads.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Unik tagterrasse og indbydende gårdmiljø
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Nyd godt af din store, private tagterrasse — den perfekte ramme for alt fra
-              uformelle møder til større arrangementer. Du kan arbejde i det fri (vi har lagt
-              el ind), koble af og se det hele lidt fra oven, eller netværke med andre lejere
-              i et afslappet miljø. Gårdmiljøet er en grøn og social oase i stueetagen, omgivet
-              af kaffebar, øl- og vinbar, restaurant og butik.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Telefonrum til dine private samtaler
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Når du har brug for at tage en privat samtale eller deltage i et online møde, har
-              vi 6 dedikerede telefonrum, der giver dig den ro og det privatliv, du har brug for.
-              Her kan du føle dig tryg og uforstyrret og fokusere fuldt ud på dine samtaler.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Gratis kaffe og te i vores fælleskøkkener
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              I vores fuldt udstyrede fælleskøkkener er der altid gratis kaffe og te — den
-              perfekte anledning til en velfortjent pause, idéudveksling med kolleger og nye
-              bekendtskaber. Køkkenerne er indrettet som hyggelige fællesområder med cafémiljø,
-              hvor uformelle samtaler kan blomstre og styrke fællesskabet.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Netværksstruktur og sikkerhed
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Vores netværk er sikkert og stabilt og giver dig trådløst internet i hele bygningen.
-              IT-infrastrukturen inkluderer alt fra firewall og CAT6-kabling til muligheden for at
-              oprette dit eget lukkede netværk. Datasikkerhed er vigtigt for dig, og derfor har vi
-              investeret i den nyeste teknologi inden for IT-sikkerhed. Så kan du føle dig tryg ved
-              at dele og arbejde med dine data.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Kan arbejde føles som hjemme?
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Vi har gjort et godt forsøg! For Nordstens Workspace er meget mere end et
-              kontorfællesskab – det er et levende miljø, hvor vi har kombineret fortidens unikke
-              håndværk med ultramoderne komfort. I huset handler det om mennesker, fællesskab og
-              fleksibilitet, så du kan føle dig hjemme, selv når du er på arbejde. Nordstens
-              Workspace er skabt med stor kærlighed til detaljen og designet til at imødekomme
-              nutidens behov for inspirerende og funktionelle arbejdsmiljøer. Her er hver eneste
-              detalje nøje overvejet for at give dig de bedste rammer til at vokse som virksomhed
-              og trives som menneske.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Find roen i vores loungeområder og café
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Når du trænger til en pause, finder du ro og fornyet energi i vores afslappende
-              loungeområder og hyggelige cafémiljøer, der også giver gode rammer for samtale og
-              socialisering med de andre kontorkolleger.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-6">
-              Rum for pauser og social samvær
-            </h2>
-            <p className="text-[#6b6b7a] leading-relaxed">
-              Hos Nordstens Workspace går vi langt for at skabe balance i hverdagen. Med adgang
-              til bad og en smuk tagterrasse kan du både opfriske dig og nyde udelivet uden at
-              forlade bygningen. Vores indbydende gårdmiljø giver dig også mulighed for at tage
-              en pause i grønne omgivelser eller arrangere uformelle møder over en kop kaffe.
-            </p>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
     </>
   )
 }
