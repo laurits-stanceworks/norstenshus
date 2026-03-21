@@ -22,7 +22,7 @@ export function Footer() {
         <div>
           <p className="text-white font-semibold text-base mb-4">Nordstens hus</p>
           <address className="not-italic text-white/70 text-sm leading-relaxed space-y-1">
-            <p>Slotsgade 13-15</p>
+            <p>Slotsgade 13-17</p>
             <p>3400 Hillerød</p>
             <p className="mt-3">
               <a href="mailto:info@nordstens.dk" className="hover:text-white transition-colors">
