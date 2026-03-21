@@ -35,7 +35,7 @@ export default function HilleroedPage() {
           alt="Hillerød set fra luften"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
         />
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
