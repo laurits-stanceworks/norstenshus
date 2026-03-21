@@ -204,17 +204,19 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#9d2e1e]">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4">
-            Klar til at se det selv?
-          </h2>
-          <p className="text-white/80 text-base sm:text-lg mb-6 sm:mb-8">
-            Book en gratis rundvisning og mærk stemningen i Nordstens Workspace.
-          </p>
+      <section className="py-5 px-4 sm:px-6 bg-[#9d2e1e]">
+        <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h2 className="text-white text-xl sm:text-2xl font-light">
+              Klar til at se det selv?
+            </h2>
+            <p className="text-white/70 text-sm mt-1">
+              Book en gratis rundvisning og mærk stemningen i Nordstens Workspace.
+            </p>
+          </div>
           <Link
             href="/kontakt"
-            className="bg-white text-[#9d2e1e] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded hover:bg-white/90 transition-colors inline-block text-sm sm:text-base"
+            className="shrink-0 bg-white text-[#9d2e1e] font-semibold px-6 py-2.5 rounded hover:bg-white/90 transition-colors text-sm"
           >
             Kontakt os
           </Link>
