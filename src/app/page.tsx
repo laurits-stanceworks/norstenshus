@@ -115,25 +115,46 @@ export default function HomePage() {
                 quote: "Nordstens Workspace har givet vores lille virksomhed de professionelle rammer, vi aldrig selv ville have råd til at skabe. Det er ikke bare et kontor — det er et fællesskab.",
                 name: "Sarah M.",
                 title: "Freelance konsulent",
+                initials: "SM",
+                photo: null,
               },
               {
                 quote: "Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os.",
                 name: "Mikkel H.",
                 title: "Medstifter, tech-startup",
+                initials: "MH",
+                photo: null,
               },
               {
                 quote: "Bygningen er noget helt særligt. Kombinationen af historiske omgivelser og moderne faciliteter skaber en arbejdsatmosfære, der simpelthen inspirerer — hver eneste dag.",
                 name: "Louise B.",
                 title: "Kreativ direktør",
+                initials: "LB",
+                photo: null,
               },
-            ].map(({ quote, name, title }) => (
-              <div key={name} className="bg-white/10 rounded-lg p-6 sm:p-8">
-                <p className="text-white/80 leading-relaxed mb-6 text-sm sm:text-base">
+            ].map(({ quote, name, title, initials, photo }) => (
+              <div key={name} className="bg-white/10 rounded-lg p-6 sm:p-8 flex flex-col">
+                <p className="text-white/80 leading-relaxed mb-8 text-sm sm:text-base flex-1">
                   &ldquo;{quote}&rdquo;
                 </p>
-                <div>
-                  <p className="font-semibold text-sm">{name}</p>
-                  <p className="text-white/50 text-xs mt-0.5">{title}</p>
+                <div className="flex items-center gap-3">
+                  {photo ? (
+                    <Image
+                      src={photo}
+                      alt={name}
+                      width={44}
+                      height={44}
+                      className="rounded-full object-cover shrink-0"
+                    />
+                  ) : (
+                    <div className="w-11 h-11 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                      <span className="text-white text-xs font-semibold">{initials}</span>
+                    </div>
+                  )}
+                  <div>
+                    <p className="font-semibold text-sm">{name}</p>
+                    <p className="text-white/50 text-xs mt-0.5">{title}</p>
+                  </div>
                 </div>
               </div>
             ))}
