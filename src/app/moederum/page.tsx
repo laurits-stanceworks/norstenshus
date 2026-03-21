@@ -121,7 +121,7 @@ export default function MoederumPage() {
             Møderum
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
-            Møderum og forplejning i hjertet af Hillerød
+            Mød hinanden i de bedste rammer
           </h1>
           <p className="text-white/70 max-w-2xl mx-auto">
             Moderne mødelokaler med fuldt udstyrede videokonferencefaciliteter og mulighed for
