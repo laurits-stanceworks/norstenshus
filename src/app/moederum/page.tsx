@@ -306,9 +306,6 @@ export default function MoederumPage() {
           <div className="grid sm:grid-cols-3 gap-6">
             {catering.map((item) => (
               <div key={item.name} className="bg-[#f5f4f0] rounded-lg overflow-hidden">
-                <div className="relative h-44">
-                  <Image src={item.image} alt={item.name} fill className="object-cover" />
-                </div>
                 <div className="p-6 sm:p-8">
                   <h3 className="text-[#8397a9] font-semibold mb-1">{item.name}</h3>
                   <p className="text-[#6b6b7a] text-xs mb-4">{item.time}</p>
