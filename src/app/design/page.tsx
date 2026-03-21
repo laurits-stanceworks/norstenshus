@@ -19,7 +19,7 @@ const sections = [
   {
     image: "/images/design-t5ssC02p1KvT0UknpzBy2c6XZ4I.jpg",
     heading: "Køkkenet som hjertet i bygningen",
-    body: "Køkkenet er centralt placeret som bygningens samlingspunkt — et sted, hvor folk kan mødes og tale sammen, ligesom man ville i et moderne hjem. Selvom dette er et professionelt miljø, er HAY's designfilosofi altid at skabe rum, der føles varme og imødekommende.",
+    body: "Køkkenet er centralt placeret som bygningens samlingspunkt — et sted, hvor folk kan mødes og tale sammen, ligesom man ville i et moderne hjem. HAY's designfilosofi er altid at skabe rum, der føles varme og imødekommende — synligt i valget af møbler og produkter i hele bygningen.",
     quote: "Siden HAY's begyndelse for over 20 år siden har vi stræbt efter at designe møbler, der bygger bro mellem det professionelle og det hjemlige. Et co-working-rum behøver ikke at føles stramt og corporate. Vi lever i en tid, hvor arbejdspladser forandrer sig, og dette projekt er et tydeligt eksempel på den udvikling.",
     cite: "— Rolf Hay",
     reverse: true,
@@ -27,10 +27,18 @@ const sections = [
   {
     image: "/images/design-8fqCDEMjowULhosiTWyPMHctk-2.jpg",
     heading: "Respekt for bygningens historie",
-    body: "Bygningen, der stammer fra 1886, bærer på en rig arkitektonisk historie og en nostalgisk charme. Vores mål var at ære denne historie og integrere den i designet, samtidig med at vi opfyldte kravene til et moderne co-working-miljø.",
+    body: "Bygningen, der stammer fra 1886, bærer på en rig arkitektonisk historie og en nostalgisk charme. Målet var at ære denne historie og integrere den i designet, samtidig med at vi opfyldte kravene til et moderne co-working-miljø.",
     quote: "I bygninger uden stærk arkitektonisk karakter er det ofte nødvendigt at tilføre detaljer. Men her handlede det om at vise mådehold og lade arkitekturen tale for sig selv. Vi gjorde kun justeringer for at fremhæve det bedste af, hvad der allerede var til stede, og for at lade bygningens historie fortsætte i en moderne kontekst.",
     cite: "— Susanne Furbo, Head of Interior Design, HAY",
     reverse: false,
+  },
+  {
+    image: "/images/interior-b.jpg",
+    heading: "En kreativ udfordring",
+    body: "Bygningen var ikke oprindeligt designet til co-working, men det at omdefinere dens formål viste sig at være en af de mest givende dele af projektet.",
+    quote: "Jeg håber, at det behagelige miljø, vi har skabt, og HAY's møbler vil blive værdsat i mange år fremover. Mette Hay og jeg har altid troet på, at produkter bør fungere lige så godt hjemme som på kontoret. Dette projekt viser på perfekt vis, hvordan disse verdener kan smelte problemfrit sammen.",
+    cite: "— Rolf Hay",
+    reverse: true,
   },
 ]
 
@@ -92,23 +100,34 @@ export default function DesignPage() {
 
       {/* Et unikt samarbejde */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
-            Samarbejde
-          </p>
-          <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-6">
-            Et unikt samarbejde
-          </h2>
-          <p className="text-[#6b6b7a] leading-relaxed mb-4">
-            Nordstens Workspace gav HAY fuldstændig frihed i dette projekt, hvilket har været en
-            af de mest givende aspekter af samarbejdet. Deres klare vision og respekt for
-            bygningens historie gav os plads til at udfolde vores kreativitet.
-          </p>
-          <p className="text-[#6b6b7a] leading-relaxed">
-            HAY har brugt produkter fra hele deres sortiment af accessories, møbler og belysning
-            — og resultatet er arbejdsmiljøer, der støtter nye måder at arbejde på, forvandler
-            erhvervsejendomme og styrker fællesskaber.
-          </p>
+        <div className="mx-auto max-w-3xl">
+          <div className="text-center mb-10">
+            <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+              Samarbejde
+            </p>
+            <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light">
+              Et unikt samarbejde
+            </h2>
+          </div>
+          <div className="space-y-4 text-[#6b6b7a] leading-relaxed">
+            <p>
+              HAY har sat nye standarder for moderne arbejdspladser ved at levere løsninger til
+              organisationer, der ønsker at forny støtten til medarbejdere og processer. Erfarne
+              arkitekter og designere har kombineret innovativt design med praktisk funktionalitet
+              og skabt arbejdsmiljøer, der støtter nye måder at arbejde på, forvandler
+              erhvervsejendomme og styrker fællesskaber.
+            </p>
+            <p>
+              Nordstens Workspace gav HAY fuldstændig frihed i dette projekt, hvilket har været
+              en af de mest givende aspekter af samarbejdet. Deres klare vision og respekt for
+              bygningens historie gav os plads til at udfolde vores kreativitet.
+            </p>
+            <p>
+              HAY har brugt produkter fra hele deres sortiment af accessories, møbler og
+              belysning — og resultatet er arbejdsmiljøer, der støtter nye måder at arbejde på,
+              forvandler erhvervsejendomme og styrker fællesskaber.
+            </p>
+          </div>
         </div>
       </section>
 
