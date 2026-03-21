@@ -107,7 +107,7 @@ export default function HilleroedPage() {
           {/* Map embed */}
           <div className="rounded-lg overflow-hidden h-96 md:h-auto min-h-80">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224.0!2d12.3078!3d55.9356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46524c7b7c9d6e5f%3A0x1234567890abcdef!2sSlotsgade%2013-17%2C%203400%20Hillerd!5e0!3m2!1sda!2sdk!4v1234567890"
+              src="https://maps.google.com/maps?q=Slotsgade+13-17,+3400+Hillerød,+Denmark&output=embed&hl=da"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "320px" }}
