@@ -93,7 +93,7 @@ export function PricingCards() {
       {plans.map((plan) => (
         <div
           key={plan.name}
-          className={`rounded-lg overflow-hidden flex flex-col bg-[#8397a9] text-white ${plan.highlight ? "ring-2 ring-[#9d2e1e]" : ""}`}
+          className="rounded-lg overflow-hidden flex flex-col bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
         >
           <div className="relative h-40 shrink-0">
             <Image src={plan.image} alt={plan.name} fill className="object-cover" />
