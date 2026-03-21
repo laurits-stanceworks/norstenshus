@@ -48,7 +48,7 @@ export default function DesignPage() {
       {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
         <Image
-          src="/images/design-HsumnEomPqemxrWzgxWmCBXqj6M-1.jpg"
+          src="/images/design-hero.jpg"
           alt="Nordstens Workspace by HAY"
           fill
           priority
