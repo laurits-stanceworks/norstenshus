@@ -98,26 +98,46 @@ export default function HomePage() {
       {/* Instagram */}
       <InstagramSection />
 
-      {/* About snippet */}
+      {/* Testimonials */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#8397a9] text-white">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-4 sm:mb-6">
-            Nordstens Hus
-          </p>
-          <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed mb-6 sm:mb-8">
-            "Hvad der er skabt uden omtanke vækker sjældent stor begejstring"
-          </blockquote>
-          <p className="text-white/60 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10">
-            I Nordstens Hus har Hillerød fået et håndgribeligt bevis på fortidens helt unikke håndværk.
-            Hele huset er nænsomt restaureret og i stort omfang genskabt som det så ud i slutningen af
-            1800-tallet — bl.a. med hjælp fra Nationalmuseet.
-          </p>
-          <Link
-            href="/om-os"
-            className="text-white border-b border-[#9d2e1e] pb-0.5 text-sm font-medium hover:text-[#9d2e1e] transition-colors"
-          >
-            Læs mere om huset →
-          </Link>
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-10 sm:mb-16">
+            <p className="text-[#9d2e1e] text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
+              Hvad siger vores lejere
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light">
+              Stemmer fra fællesskabet
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "Nordstens Workspace har givet vores lille virksomhed de professionelle rammer, vi aldrig selv ville have råd til at skabe. Det er ikke bare et kontor — det er et fællesskab.",
+                name: "Sarah M.",
+                title: "Freelance konsulent",
+              },
+              {
+                quote: "Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os.",
+                name: "Mikkel H.",
+                title: "Medstifter, tech-startup",
+              },
+              {
+                quote: "Bygningen er noget helt særligt. Kombinationen af historiske omgivelser og moderne faciliteter skaber en arbejdsatmosfære, der simpelthen inspirerer — hver eneste dag.",
+                name: "Louise B.",
+                title: "Kreativ direktør",
+              },
+            ].map(({ quote, name, title }) => (
+              <div key={name} className="bg-white/10 rounded-lg p-6 sm:p-8">
+                <p className="text-white/80 leading-relaxed mb-6 text-sm sm:text-base">
+                  &ldquo;{quote}&rdquo;
+                </p>
+                <div>
+                  <p className="font-semibold text-sm">{name}</p>
+                  <p className="text-white/50 text-xs mt-0.5">{title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
