@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram, Linkedin } from "lucide-react"
+import { Instagram, Linkedin, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -49,6 +49,15 @@ export function Footer() {
               aria-label="Instagram"
             >
               <Instagram size={20} />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} />
             </a>
             <a
               href="https://linkedin.com"
