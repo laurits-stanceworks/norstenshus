@@ -56,7 +56,7 @@ export function InstagramSection() {
                 href={post.permalink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative aspect-square overflow-hidden group block"
+                className="relative aspect-[4/5] overflow-hidden group block"
               >
                 <Image
                   src={post.media_type === "VIDEO" ? post.thumbnail_url! : post.media_url}
