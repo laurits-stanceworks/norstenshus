@@ -140,7 +140,7 @@ const sections = [
     reverse: true,
   },
   {
-    image: "/images/faciliteter-lounge.jpg",
+    image: "/images/faciliteter-coffee.jpg",
     heading: "Gratis kaffe og te i vores fælleskøkkener",
     body: "I vores fuldt udstyrede fælleskøkkener er der altid gratis kaffe og te — den perfekte anledning til en velfortjent pause, idéudveksling med kolleger og nye bekendtskaber. Køkkenerne er indrettet som hyggelige fællesområder med cafémiljø, hvor uformelle samtaler kan blomstre og styrke fællesskabet.",
     reverse: false,
