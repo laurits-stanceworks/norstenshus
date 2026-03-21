@@ -139,8 +139,16 @@ export default function HilleroedPage() {
 
       {/* Helt tæt på det hele */}
       <div className="flex flex-col md:flex-row bg-white">
-        <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
-          <Image src="/images/faciliteter-rooftop.jpg" alt="Udsigt over Hillerød" fill className="object-cover" />
+        <div className="w-full md:w-1/2 shrink-0 grid grid-cols-2 grid-rows-2 h-64 sm:h-80 md:h-[460px]">
+          <div className="relative col-span-2 row-span-1">
+            <Image src="/images/hilleroed-nature.jpg" alt="Natur og park i Hillerød" fill className="object-cover" />
+          </div>
+          <div className="relative">
+            <Image src="/images/hilleroed-castle.jpg" alt="Frederiksborg Slot" fill className="object-cover" />
+          </div>
+          <div className="relative">
+            <Image src="/images/hilleroed-shopping.jpg" alt="Slotsarkaderne shopping" fill className="object-cover" />
+          </div>
         </div>
         <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
           <div className="max-w-lg">
@@ -161,8 +169,18 @@ export default function HilleroedPage() {
 
       {/* Gastronomi */}
       <div className="flex flex-col md:flex-row-reverse bg-[#f5f4f0]">
-        <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
-          <Image src="/images/faciliteter-coffee.jpg" alt="Gastronomi og hygge" fill className="object-cover" />
+        <div className="w-full md:w-1/2 shrink-0 grid grid-cols-2 grid-rows-1 h-64 sm:h-80 md:h-[460px]">
+          <div className="relative">
+            <Image src="/images/hilleroed-gastro-1.jpg" alt="Gastronomi i Hillerød" fill className="object-cover" />
+          </div>
+          <div className="relative grid grid-rows-2">
+            <div className="relative">
+              <Image src="/images/hilleroed-gastro-2.jpg" alt="Mad og café" fill className="object-cover" />
+            </div>
+            <div className="relative">
+              <Image src="/images/hilleroed-gastro-3.avif" alt="Café og hygge" fill className="object-cover" />
+            </div>
+          </div>
         </div>
         <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
           <div className="max-w-lg">
@@ -183,7 +201,7 @@ export default function HilleroedPage() {
       {/* En erhvervsby med internationalt snit */}
       <div className="flex flex-col md:flex-row bg-white">
         <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
-          <Image src="/images/building.jpg" alt="Hillerød historisk" fill className="object-cover" />
+          <Image src="/images/hilleroed-business.jpg" alt="Hillerød erhvervsby" fill className="object-cover" />
         </div>
         <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
           <div className="max-w-lg">
