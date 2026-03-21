@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 }
 
 const stats = [
-  { value: "1–3 mdr.", label: "Opsigelse" },
   { value: "1 md.", label: "Betaling forud" },
   { value: "24/7", label: "Adgang" },
   { value: "Alt inkl.", label: "El, vand, varme & internet" },
