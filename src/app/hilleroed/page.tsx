@@ -9,22 +9,20 @@ export const metadata: Metadata = {
 }
 
 const distances = [
-  { label: "Bus", distance: "150 m" },
-  { label: "Tog", distance: "800 m" },
-  { label: "Parkering", distance: "100 m" },
-  { label: "Motorvej", distance: "3 min" },
-  { label: "Café", distance: "0 m" },
-  { label: "Restaurant", distance: "75 m" },
-  { label: "Padel", distance: "200 m" },
-  { label: "Frederiksborg Slot", distance: "1,1 km" },
-  { label: "Kongernes Nationalpark", distance: "1,1 km" },
   { label: "Fitness og fysio", distance: "1 km" },
-  { label: "Royal Stage", distance: "200 m" },
-  { label: "Kulturhus", distance: "400 m" },
-  { label: "Bibliotek", distance: "150 m" },
-  { label: "Golfbane", distance: "700 m" },
-  { label: "Hotel", distance: "2,5 km" },
-  { label: "Barokhaven", distance: "4 km" },
+  { label: "Café", distance: "0 m" },
+  { label: "Restaurant", distance: "0 m" },
+  { label: "Apotek", distance: "75 m" },
+  { label: "Padel", distance: "1,3 km" },
+  { label: "Hotel", distance: "200 m" },
+  { label: "Golfbane", distance: "2,5 km" },
+  { label: "Frederiksborg Slot", distance: "700 m" },
+  { label: "Barokhaven", distance: "1,1 km" },
+  { label: "Kongernes Nationalpark", distance: "4 km" },
+  { label: "Royal Stage", distance: "1,1 km" },
+  { label: "Kulturhus", distance: "200 m" },
+  { label: "Bibliotek", distance: "400 m" },
+  { label: "Biograf", distance: "150 m" },
 ]
 
 export default function HilleroedPage() {
@@ -33,8 +31,8 @@ export default function HilleroedPage() {
       {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
         <Image
-          src="/images/building-facade.jpg"
-          alt="Nordstens Hus, Hillerød"
+          src="/images/hilleroed-hero.jpg"
+          alt="Hillerød set fra luften"
           fill
           priority
           className="object-cover"
@@ -48,7 +46,7 @@ export default function HilleroedPage() {
             Hillerød — den perfekte hjemmebane til din virksomhed
           </h1>
           <p className="text-white/70 max-w-xl mx-auto">
-            Omringet af skov, slot og sø — og under 1 time fra København i bil, 35 minutter med S-tog.
+            Nordstens Workspace ligger lige midt i Hillerød, som er en dynamisk by omgivet af den smukkeste natur — og under 1 time fra København i bil og 35 minutter med S-tog.
           </p>
         </div>
       </section>
@@ -151,16 +149,39 @@ export default function HilleroedPage() {
             </h2>
             <p className="text-[#6b6b7a] leading-relaxed">
               Natur, historie og byliv. Du får det hele i Hillerød, som Nordstens Workspace ligger
-              helt centralt i. Gå frem og tag 10 minutters pause med en kollega rundt om Slotssøen.
-              Nyd Barokhaven og Frederiksborg Slot. Eller gå ind i SlotsArkaderne og gågadens
-              200 butikker — der er masser af inspiration, velvære og muligheder lige ude foran døren.
+              helt centralt i. Så der er masser af inspiration, velvære og shopping lige ude foran
+              døren. Gå lige frem og tag 10 minutters pause med en kollega rundt om Slotssøen. Nyd
+              Barokhaven og Frederiksborg Slot. Gå til venstre og lige om hjørnet ind i
+              Slotsarkaderne. Eller til højre 100 skridt hen ad gaden og ind i Nordisk Films
+              kommende superbiograf.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Gastronomi */}
+      <div className="flex flex-col md:flex-row-reverse bg-[#f5f4f0]">
+        <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
+          <Image src="/images/faciliteter-coffee.jpg" alt="Gastronomi og hygge" fill className="object-cover" />
+        </div>
+        <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
+          <div className="max-w-lg">
+            <h2 className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light mb-5">
+              Gastronomi og hygge lige ved hånden
+            </h2>
+            <p className="text-[#6b6b7a] leading-relaxed">
+              Nordstens Workspace er omfavnet af et væld af gastronomiske oplevelser og hyggelige
+              caféer. Uanset hvornår på døgnet du har brug for en pause, kan du altid finde en
+              dejlig atmosfære og lækker mad og drikke — enten i vores gård eller lige uden for
+              døren. Her er mulighederne mange, så du kan forkæle dig selv og nyde en velfortjent
+              pause eller fyraften i hyggelige rammer.
             </p>
           </div>
         </div>
       </div>
 
       {/* En erhvervsby med internationalt snit */}
-      <div className="flex flex-col md:flex-row-reverse bg-[#f5f4f0]">
+      <div className="flex flex-col md:flex-row bg-white">
         <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
           <Image src="/images/building.jpg" alt="Hillerød historisk" fill className="object-cover" />
         </div>
