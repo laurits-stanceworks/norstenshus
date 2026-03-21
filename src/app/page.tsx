@@ -16,7 +16,7 @@ export default function HomePage() {
           alt="Nordstens Workspace bygning"
           fill
           priority
-          className="object-cover opacity-30"
+          className="object-cover"
         />
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto py-16">
 <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-4 sm:mb-6">
