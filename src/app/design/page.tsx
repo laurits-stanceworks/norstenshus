@@ -21,7 +21,7 @@ const sections = [
     heading: "Køkkenet som hjertet i bygningen",
     body: "Køkkenet er centralt placeret som bygningens samlingspunkt — et sted, hvor folk kan mødes og tale sammen, ligesom man ville i et moderne hjem. HAY's designfilosofi er altid at skabe rum, der føles varme og imødekommende — synligt i valget af møbler og produkter i hele bygningen.",
     quote: "Siden HAY's begyndelse for over 20 år siden har vi stræbt efter at designe møbler, der bygger bro mellem det professionelle og det hjemlige. Et co-working-rum behøver ikke at føles stramt og corporate. Vi lever i en tid, hvor arbejdspladser forandrer sig, og dette projekt er et tydeligt eksempel på den udvikling.",
-    cite: "— Rolf Hay",
+    cite: "— Rolf Hay, kreativ direktør, HAY Furniture og Lighting",
     reverse: true,
   },
   {
@@ -37,7 +37,7 @@ const sections = [
     heading: "En kreativ udfordring",
     body: "Bygningen var ikke oprindeligt designet til co-working, men det at omdefinere dens formål viste sig at være en af de mest givende dele af projektet.",
     quote: "Jeg håber, at det behagelige miljø, vi har skabt, og HAY's møbler vil blive værdsat i mange år fremover. Mette Hay og jeg har altid troet på, at produkter bør fungere lige så godt hjemme som på kontoret. Dette projekt viser på perfekt vis, hvordan disse verdener kan smelte problemfrit sammen.",
-    cite: "— Rolf Hay",
+    cite: "— Rolf Hay, kreativ direktør, HAY Furniture og Lighting",
     reverse: true,
   },
 ]
@@ -141,7 +141,7 @@ export default function DesignPage() {
             &ldquo;Vi har skabt et rum, hvor hjemlige og professionelle miljøer smelter sammen —
             præcis som vores produkter altid har gjort.&rdquo;
           </p>
-          <p className="text-white/50 mt-4 text-sm">— Rolf Hay</p>
+          <p className="text-white/50 mt-4 text-sm">— Rolf Hay, kreativ direktør, HAY Furniture og Lighting</p>
         </div>
       </section>
     </>
