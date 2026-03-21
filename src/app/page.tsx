@@ -117,6 +117,7 @@ export default function HomePage() {
                 title: "Freelance konsulent",
                 initials: "SM",
                 photo: null,
+                logo: null,
               },
               {
                 quote: "Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os.",
@@ -124,6 +125,7 @@ export default function HomePage() {
                 title: "Medstifter, tech-startup",
                 initials: "MH",
                 photo: null,
+                logo: null,
               },
               {
                 quote: "Bygningen er noget helt særligt. Kombinationen af historiske omgivelser og moderne faciliteter skaber en arbejdsatmosfære, der simpelthen inspirerer — hver eneste dag.",
@@ -131,30 +133,45 @@ export default function HomePage() {
                 title: "Kreativ direktør",
                 initials: "LB",
                 photo: null,
+                logo: null,
               },
-            ].map(({ quote, name, title, initials, photo }) => (
+            ].map(({ quote, name, title, initials, photo, logo }) => (
               <div key={name} className="bg-white/10 rounded-lg p-6 sm:p-8 flex flex-col">
-                <p className="text-white/80 leading-relaxed mb-8 text-sm sm:text-base flex-1">
-                  &ldquo;{quote}&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
+                {/* Avatar */}
+                <div className="mb-6">
                   {photo ? (
                     <Image
                       src={photo}
                       alt={name}
-                      width={44}
-                      height={44}
-                      className="rounded-full object-cover shrink-0"
+                      width={80}
+                      height={80}
+                      className="rounded-full object-cover"
                     />
                   ) : (
-                    <div className="w-11 h-11 rounded-full bg-white/20 flex items-center justify-center shrink-0">
-                      <span className="text-white text-xs font-semibold">{initials}</span>
+                    <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center">
+                      <span className="text-white text-lg font-semibold">{initials}</span>
                     </div>
                   )}
+                </div>
+
+                <p className="text-white/80 leading-relaxed mb-8 text-sm sm:text-base flex-1">
+                  &ldquo;{quote}&rdquo;
+                </p>
+
+                <div className="flex items-center justify-between">
                   <div>
                     <p className="font-semibold text-sm">{name}</p>
                     <p className="text-white/50 text-xs mt-0.5">{title}</p>
                   </div>
+                  {logo && (
+                    <Image
+                      src={logo}
+                      alt={`${name} logo`}
+                      width={64}
+                      height={28}
+                      className="object-contain opacity-60"
+                    />
+                  )}
                 </div>
               </div>
             ))}
