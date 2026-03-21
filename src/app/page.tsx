@@ -136,42 +136,38 @@ export default function HomePage() {
                 logo: null,
               },
             ].map(({ quote, name, title, initials, photo, logo }) => (
-              <div key={name} className="bg-white/10 rounded-lg p-6 sm:p-8 flex flex-col">
-                {/* Avatar */}
-                <div className="mb-6">
+              <div key={name} className="bg-white/10 rounded-lg overflow-hidden flex flex-col">
+                {/* Photo — top half of card */}
+                <div className="relative h-56 bg-white/10">
                   {photo ? (
-                    <Image
-                      src={photo}
-                      alt={name}
-                      width={80}
-                      height={80}
-                      className="rounded-full object-cover"
-                    />
+                    <Image src={photo} alt={name} fill className="object-cover object-top" />
                   ) : (
-                    <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center">
-                      <span className="text-white text-lg font-semibold">{initials}</span>
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-white/30 text-5xl font-semibold">{initials}</span>
                     </div>
                   )}
                 </div>
 
-                <p className="text-white/80 leading-relaxed mb-8 text-sm sm:text-base flex-1">
-                  &ldquo;{quote}&rdquo;
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-semibold text-sm">{name}</p>
-                    <p className="text-white/50 text-xs mt-0.5">{title}</p>
+                {/* Content */}
+                <div className="p-6 sm:p-8 flex flex-col flex-1">
+                  <p className="text-white/80 leading-relaxed mb-6 text-sm sm:text-base flex-1">
+                    &ldquo;{quote}&rdquo;
+                  </p>
+                  <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                    <div>
+                      <p className="font-semibold text-sm">{name}</p>
+                      <p className="text-white/50 text-xs mt-0.5">{title}</p>
+                    </div>
+                    {logo && (
+                      <Image
+                        src={logo}
+                        alt={`${name} logo`}
+                        width={64}
+                        height={28}
+                        className="object-contain opacity-60"
+                      />
+                    )}
                   </div>
-                  {logo && (
-                    <Image
-                      src={logo}
-                      alt={`${name} logo`}
-                      width={64}
-                      height={28}
-                      className="object-contain opacity-60"
-                    />
-                  )}
                 </div>
               </div>
             ))}
