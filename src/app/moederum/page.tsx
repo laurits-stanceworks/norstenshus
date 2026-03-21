@@ -337,9 +337,9 @@ export default function MoederumPage() {
           <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-10 text-center">
             Spørgsmål og svar
           </h2>
-          <div className="space-y-6">
+          <div className="divide-y divide-[#e5e3dc]">
             {faq.map(({ q, a }) => (
-              <div key={q} className="bg-white rounded-lg p-6 sm:p-8">
+              <div key={q} className="py-6">
                 <h3 className="text-[#8397a9] font-semibold mb-3">{q}</h3>
                 <p className="text-[#6b6b7a] text-sm leading-relaxed">{a}</p>
               </div>
