@@ -12,7 +12,7 @@
   --color-border: #e5e3dc;
   --color-card: #ffffff;
   --color-card-foreground: #1a1a2e;
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-superblue);
   --font-heading: var(--font-superblue);
 }
 
@@ -31,6 +31,6 @@ html {
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-superblue), sans-serif;
   -webkit-font-smoothing: antialiased;
 }

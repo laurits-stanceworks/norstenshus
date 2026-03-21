@@ -15,11 +15,6 @@ const superblue = localFont({
   display: "swap",
 })
 
-const prumo = localFont({
-  src: "../../public/fonts/PrumoTextBold.otf",
-  variable: "--font-prumo",
-  display: "swap",
-})
 
 export const metadata: Metadata = {
   title: "Nordstens Workspace — Kontorfællesskab i Hillerød",
@@ -41,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="da" className={`${superblue.variable} ${prumo.variable} h-full`}>
+    <html lang="da" className={`${superblue.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased font-[family-name:var(--font-superblue)]">
         <Nav />
         <main className="flex-1">{children}</main>
