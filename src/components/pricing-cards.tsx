@@ -6,7 +6,7 @@ const plans = [
   {
     name: "Virtuelt Kontor",
     price: "600",
-    image: "/images/interior-a.jpg",
+    image: "/images/building-facade.jpg",
     description: "Professionel virksomhedsadresse i Hillerød — uden at du behøver et fysisk kontor.",
     features: [
       "Professionel virksomhedsadresse",
@@ -23,7 +23,7 @@ const plans = [
   {
     name: "Flexplads",
     price: "1.595",
-    image: "/images/interior-b.jpg",
+    image: "/images/interior-a.jpg",
     description: "Fleksibel arbejdsplads i åbent kontormiljø — ideel til freelancere og iværksættere.",
     features: [
       "Fuldt møbleret arbejdsplads",
@@ -43,7 +43,7 @@ const plans = [
   {
     name: "Fast Plads",
     price: "3.495",
-    image: "/images/interior-c.jpg",
+    image: "/images/interior-b.jpg",
     description: "Din egen faste, dedikerede arbejdsstation klar til dig hver dag.",
     features: [
       "Fast arbejdsstation med skærm, tastatur og mus",
@@ -65,7 +65,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
-    image: "/images/building-facade.jpg",
+    image: "/images/interior-c.jpg",
     description: "Eget lukket kontor til din virksomhed — kombiner privathed med fællesskabets fordele.",
     features: [
       "Fuldt møbleret privat kontor",

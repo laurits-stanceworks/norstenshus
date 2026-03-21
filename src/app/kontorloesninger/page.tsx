@@ -13,7 +13,7 @@ const plans = [
   {
     name: "Virtuelt Kontor",
     price: "600",
-    image: "/images/interior-a.jpg",
+    image: "/images/building-facade.jpg",
     deposit: "1 måneds depositum",
     description:
       "Har du ikke behov for et fysisk kontor, men gerne vil have en professionel adresse i Hillerød? Vores virtuelle kontorløsning giver dig en professionel tilstedeværelse og mulighed for at leje mødelokaler efter behov.",
@@ -29,7 +29,7 @@ const plans = [
   {
     name: "Co-working Flexplads",
     price: "1.595",
-    image: "/images/interior-b.jpg",
+    image: "/images/interior-a.jpg",
     deposit: "3 måneders depositum",
     description:
       "Er du freelancer, startup, iværksætter eller en mindre virksomhed? En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet — kombinér det bedste fra begge verdener.",
@@ -51,7 +51,7 @@ const plans = [
   {
     name: "Co-working Fast Plads",
     price: "3.495",
-    image: "/images/interior-c.jpg",
+    image: "/images/interior-b.jpg",
     deposit: "3 måneders depositum",
     description:
       "Med en fast plads får du din egen dedikerede arbejdsstation med adgang 24/7. Perfekt til dig, der ønsker at kombinere det dynamiske co-working miljø med en stabil base.",
@@ -75,7 +75,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
-    image: "/images/building-facade.jpg",
+    image: "/images/interior-c.jpg",
     deposit: "3 måneders depositum",
     description:
       "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere.",
