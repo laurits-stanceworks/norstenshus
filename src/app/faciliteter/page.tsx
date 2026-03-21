@@ -174,17 +174,17 @@ const sections = [
 export default function FaciliteterPage() {
   return (
     <>
-      <section className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-6 text-white text-center overflow-hidden">
-        <Image src="/images/faciliteter-hero.jpg" alt="Faciliteter" fill className="object-cover" />
-        <div className="absolute inset-0 bg-[#8397a9]/80" />
-        <div className="relative z-10">
-          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-4">
+      <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
+        <Image src="/images/faciliteter-hero.jpg" alt="Faciliteter" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-[#8397a9]/70" />
+        <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
+          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
             Faciliteter
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
             Faciliteter der løfter din arbejdsdag
           </h1>
-          <p className="text-white/60 max-w-xl mx-auto">
+          <p className="text-white/70 max-w-xl mx-auto">
             Meget mere end et traditionelt kontorlejemål. Alt hvad du behøver er inkluderet — fra dag ét.
           </p>
         </div>
