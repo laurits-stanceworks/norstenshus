@@ -3,6 +3,7 @@ import localFont from "next/font/local"
 import "./globals.css"
 import { Nav } from "@/components/nav"
 import { Footer } from "@/components/footer"
+import { CookieBanner } from "@/components/cookie-banner"
 
 const superblue = localFont({
   src: [
@@ -55,6 +56,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   )
