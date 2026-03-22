@@ -57,16 +57,6 @@ export default function OmOsPage() {
         </div>
       </section>
 
-      {/* Quote */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#f5f4f0]">
-        <div className="mx-auto max-w-3xl text-center">
-          <blockquote className="text-[#8397a9] text-xl sm:text-2xl md:text-3xl font-light leading-relaxed">
-            "Hvad der er skabt uden omtanke vækker sjældent stor begejstring"
-          </blockquote>
-          <p className="text-[#6b6b7a] mt-5 text-sm">— Frederiksborg Gruppen</p>
-        </div>
-      </section>
-
       {/* History + Timeline */}
       <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-12 md:gap-20 items-start">
