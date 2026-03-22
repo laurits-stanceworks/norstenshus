@@ -14,7 +14,7 @@ export default function KontaktPage() {
       {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
         <Image
-          src="/images/building-facade.jpg"
+          src="/images/kontakt-hero.jpg"
           alt="Nordstens Hus facade"
           fill
           priority
