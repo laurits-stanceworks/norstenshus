@@ -51,11 +51,7 @@ export default function KontaktPage() {
             <p className="text-[#9d2e1e] text-xs font-medium uppercase tracking-[0.2em] mb-4">Find os</p>
             <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-8">Kontaktoplysninger</h2>
 
-            <div className="relative h-48 w-full rounded-lg overflow-hidden mb-8">
-              <Image src="/images/contact-photo.png" alt="Nordstens Workspace team" fill className="object-cover" />
-            </div>
-
-            <div className="space-y-5 mb-10">
+<div className="space-y-5 mb-10">
               <div className="flex gap-4">
                 <MapPin size={18} className="text-[#9d2e1e] shrink-0 mt-0.5" strokeWidth={1.5} />
                 <div>
