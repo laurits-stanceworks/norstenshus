@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import { ContactForm } from "@/components/contact-form"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
@@ -11,30 +10,6 @@ export const metadata: Metadata = {
 export default function KontaktPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-[60vh] flex items-center justify-center text-white text-center overflow-hidden">
-        <Image
-          src="/images/kontakt-hero.jpg"
-          alt="Nordstens Hus facade"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
-          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
-            Kontakt
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
-            Lad os tage en snak
-          </h1>
-          <p className="text-white/70 max-w-xl mx-auto">
-            Book en gratis rundvisning, stil os et spørgsmål eller fortæl os hvad du har brug for.
-            Vi vender tilbage hurtigst muligt.
-          </p>
-        </div>
-      </section>
-
       {/* Form + Info */}
       <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-12 md:gap-20 items-start">
