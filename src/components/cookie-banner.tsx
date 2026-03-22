@@ -65,13 +65,13 @@ export function CookieBanner() {
         <button
           onClick={() => setVisible(true)}
           aria-label="Cookie-indstillinger"
-          className="fixed bottom-5 right-5 z-50 w-12 h-12 rounded-full bg-[#1e2235] flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
+          className="fixed bottom-5 right-5 z-50 w-12 h-12 rounded-full bg-[#8397a9] flex items-center justify-center shadow-lg hover:bg-[#9d2e1e] transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-5 h-5 text-[#b8a07a]"
+            className="w-5 h-5 text-white"
           >
             <path
               fillRule="evenodd"
