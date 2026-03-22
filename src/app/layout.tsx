@@ -18,14 +18,14 @@ const superblue = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Nordstens Workspace — Kontorfællesskab i Hillerød",
+  title: "Nordstens Hus — Kontorfællesskab i Hillerød",
   description:
     "Moderne kontorløsninger i et historisk miljø. Flexplads, fast plads og private kontorer i hjertet af Hillerød siden 1877.",
   openGraph: {
-    title: "Nordstens Workspace",
+    title: "Nordstens Hus",
     description: "Kontorfællesskab i Hillerød",
     url: "https://norstenshus.vercel.app",
-    siteName: "Nordstens Workspace",
+    siteName: "Nordstens Hus",
     locale: "da_DK",
     type: "website",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nordstens Workspace",
+    title: "Nordstens Hus",
     description: "Kontorfællesskab i Hillerød",
     images: ["https://norstenshus.vercel.app/images/kontakt-hero.jpg"],
   },
