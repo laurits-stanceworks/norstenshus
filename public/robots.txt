@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://norstenshus.vercel.app/sitemap.xml

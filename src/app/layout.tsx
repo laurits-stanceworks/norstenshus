@@ -23,10 +23,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nordstens Workspace",
     description: "Kontorfællesskab i Hillerød",
-    url: "https://nordstens.dk",
+    url: "https://norstenshus.vercel.app",
     siteName: "Nordstens Workspace",
     locale: "da_DK",
     type: "website",
+    images: [
+      {
+        url: "https://norstenshus.vercel.app/images/kontakt-hero.jpg",
+        width: 1440,
+        height: 960,
+        alt: "Nordstens Hus — Slotsgade 13-17, Hillerød",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nordstens Workspace",
+    description: "Kontorfællesskab i Hillerød",
+    images: ["https://norstenshus.vercel.app/images/kontakt-hero.jpg"],
   },
 }
 
