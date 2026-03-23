@@ -25,11 +25,7 @@ export default function HomePage() {
             <br />
             <span className="font-semibold">Nordstens Workspace</span>
           </h1>
-          <p className="text-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
-            Et unikt og levende miljø lige midt i Hillerød. I det smukke Nordstens Hus fra 1887
-            bliver fortidens håndværk forenet med nutidens komfort og design — altid med
-            fleksibilitet og fællesskab i centrum.
-          </p>
+
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link
               href="/kontorloesninger"
