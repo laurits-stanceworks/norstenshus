@@ -93,7 +93,7 @@ export function PricingCards() {
       {plans.map((plan) => (
         <div
           key={plan.name}
-          className="rounded-lg overflow-hidden flex flex-col bg-[#f5f4f0] text-[#8397a9]"
+          className="rounded-lg overflow-hidden flex flex-col bg-[#f5f4f0] text-[#8397a9] ring-2 ring-[#9d2e1e]"
         >
           <div className="relative h-40 shrink-0">
             <Image src={plan.image} alt={plan.name} fill className="object-cover" />
@@ -107,7 +107,7 @@ export function PricingCards() {
             </div>
             <Link
               href="/kontakt"
-              className="block text-center py-2.5 rounded text-sm font-medium transition-colors border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e] mb-6"
+              className="block text-center py-2.5 rounded text-sm font-medium transition-colors bg-[#9d2e1e] text-white hover:bg-[#8b2518] mb-6"
             >
               {plan.cta}
             </Link>
