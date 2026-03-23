@@ -89,32 +89,32 @@ const plans = [
 
 export function PricingCards() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {plans.map((plan) => (
         <div
           key={plan.name}
-          className="rounded-lg overflow-hidden flex flex-col bg-[#8397a9] text-white ring-2 ring-[#9d2e1e]"
+          className="rounded-lg overflow-hidden bg-[#f5f4f0] text-[#8397a9]"
         >
-          <div className="relative h-40 shrink-0">
+          <div className="relative h-72">
             <Image src={plan.image} alt={plan.name} fill className="object-cover" />
           </div>
-          <div className="p-6 sm:p-8 flex flex-col flex-1">
-            <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
-            <p className="text-sm mb-4 text-white/60 min-h-[80px]">{plan.description}</p>
+          <div className="p-6 sm:p-8 md:p-10">
+            <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
             <div className="mb-4">
               <span className="text-3xl sm:text-4xl font-light">{plan.price}</span>
-              <span className="text-sm ml-1 text-white/60">DKK/md.</span>
+              <span className="text-sm ml-2 text-[#6b6b7a]">DKK/måned ekskl. moms</span>
             </div>
             <Link
               href="/kontakt"
-              className="text-center py-2.5 rounded text-sm font-medium transition-colors bg-[#9d2e1e] text-white hover:bg-[#8b2518] mb-6"
+              className="block text-center py-3.5 rounded font-medium transition-colors border border-[#8397a9]/20 text-[#8397a9] hover:border-[#9d2e1e] hover:text-[#9d2e1e] mb-8"
             >
               {plan.cta}
             </Link>
-            <ul className="space-y-2 sm:space-y-3">
+            <p className="text-sm mb-6 leading-relaxed text-[#6b6b7a]">{plan.description}</p>
+            <ul className="space-y-3">
               {plan.features.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <Check size={15} className="mt-0.5 shrink-0 text-[#9d2e1e]" />
+                <li key={f} className="flex items-start gap-3 text-sm">
+                  <Check size={16} className="text-[#9d2e1e] mt-0.5 shrink-0" />
                   {f}
                 </li>
               ))}
