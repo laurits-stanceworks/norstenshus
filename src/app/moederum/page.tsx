@@ -41,19 +41,19 @@ const rooms = [
 const packages = [
   {
     name: "Heldagspakke",
-    price: "352",
+    price: "372",
     hours: "kl. 08.00 – 17.00",
     includes: ["Morgenmødepakke ved ankomst", "Frokostmødepakke midt på dagen", "Eftermiddagsmødepakke som afslutning"],
   },
   {
     name: "Halvdagspakke – Morgen",
-    price: "260",
+    price: "280",
     hours: "kl. 08.00 – 13.30",
     includes: ["Morgenmødepakke ved ankomst", "Frokostmødepakke midt på dagen"],
   },
   {
     name: "Halvdagspakke – Eftermiddag",
-    price: "274",
+    price: "294",
     hours: "kl. 12.00 – 17.00",
     includes: ["Frokostmødepakke midt på dagen", "Eftermiddagspakke sidst på dagen"],
   },
@@ -62,14 +62,14 @@ const packages = [
 const catering = [
   {
     name: "Morgenmødepakke",
-    price: "79",
+    price: "99",
     time: "kl. 08.00 – 10.00",
     image: "/images/interior-a.jpg",
     includes: ["Friskbagt surdejsbrød med smør og ost", "Croissant", "Filterkaffe og te", "Vand"],
   },
   {
     name: "Frokostmødepakke",
-    price: "182",
+    price: "202",
     time: "kl. 11.30 – 13.30",
     image: "/images/catering-lunch.jpg",
     includes: [
@@ -81,7 +81,7 @@ const catering = [
   },
   {
     name: "Eftermiddagsmødepakke",
-    price: "54",
+    price: "74",
     time: "kl. 14.00 – 17.00",
     image: "/images/catering-afternoon.jpg",
     includes: ["Filterkaffe og te", "Vand", "Kage"],
