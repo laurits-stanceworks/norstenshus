@@ -103,15 +103,35 @@ export default function OmOsPage() {
         </div>
       </section>
 
-      {/* Photo pair */}
-      <div className="grid grid-cols-2 gap-1 h-64 sm:h-80 md:h-[480px]">
-        <div className="relative overflow-hidden">
-          <Image src="/images/om-os-interior.jpg" alt="Nordstens Workspace indre" fill className="object-cover" />
+      {/* Historical photo grid */}
+      <section className="bg-white py-16 sm:py-20 px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-[#9d2e1e] text-xs font-medium uppercase tracking-[0.2em] mb-4 text-center">Arkiv</p>
+          <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light text-center mb-10">
+            Nordstens fabrik — historiske billeder
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1">
+            {[
+              { src: "/images/history-828-91-133.jpg", alt: "Nordstens værksted med hvælvede buer" },
+              { src: "/images/history-832-91-107.jpg", alt: "Arbejdere i fabrikshallen" },
+              { src: "/images/history-833-91-108.jpg", alt: "Arbejdere ved arbejdsbænk" },
+              { src: "/images/history-835-91-106.jpg", alt: "Produktionshallen" },
+              { src: "/images/history-836-91-110.jpg", alt: "Værksted med buede vinduer" },
+              { src: "/images/history-829-91-109.jpg", alt: "Nordstens landbrugsmaskine indendørs" },
+              { src: "/images/history-10097---32-88-57-og-2697-nordsten-landbrugsmaskine.jpg", alt: "Nordstens maskine ved fabrikken" },
+              { src: "/images/history-10101---36-88-61-og-24622-maskinhal.jpg", alt: "Maskinhal med cylindere" },
+              { src: "/images/history-830-75-32.jpg", alt: "Nordstens fabrikskompleks fra gaden" },
+              { src: "/images/history-979-nordsten-svendegilde-1960.jpg", alt: "Svendegilde 1960" },
+              { src: "/images/history-980-nordsten-svendegilde-1960.jpg", alt: "Svendegilde 1960" },
+              { src: "/images/history-981-nordsten-svendegilde-1960.jpg", alt: "Svendegilde 1960 — juletræ" },
+            ].map(({ src, alt }) => (
+              <div key={src} className="relative aspect-square overflow-hidden bg-[#f5f4f0]">
+                <Image src={src} alt={alt} fill className="object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="relative overflow-hidden">
-          <Image src="/images/om-os-courtyard.jpg" alt="Nordstens gård" fill className="object-cover" />
-        </div>
-      </div>
+      </section>
 
       {/* Collaborators */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#f5f4f0]">
