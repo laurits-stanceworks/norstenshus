@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    image: "/images/design-14NylTAh5nTOHkD3h0cDuweDV8.jpg",
+    image: "/images/design-process-1.jpg",
     heading: "Inklusion som designfilosofi",
     body: "Hos HAY har vi arbejdet ud fra en filosofi om inklusion for at skabe en sammenhængende og imødekommende kultur i hele bygningen — tro mod co-working-konceptets grundtanke. Vores design er skabt til at omfavne alle, der bruger rummet, uanset baggrund, behov eller arbejdsmæssigt fokus.",
     quote: "I et traditionelt kontor opstår fællesskabet ofte gennem virksomhedens kultur. Men i et co-working-miljø er det anderledes. Her vælger folk selv, hvor meget de vil deltage i fællesskabet. Derfor var vores mål at skabe et miljø, der naturligt inviterer til interaktion, men som også tilbyder steder, hvor man kan trække sig tilbage for fordybelse og ro.",
@@ -33,7 +33,7 @@ const sections = [
     reverse: false,
   },
   {
-    image: "/images/interior-b.jpg",
+    image: "/images/design-process-2.jpg",
     heading: "En kreativ udfordring",
     body: "Bygningen var ikke oprindeligt designet til co-working, men det at omdefinere dens formål viste sig at være en af de mest givende dele af projektet.",
     quote: "Jeg håber, at det behagelige miljø, vi har skabt, og HAY's møbler vil blive værdsat i mange år fremover. Mette Hay og jeg har altid troet på, at produkter bør fungere lige så godt hjemme som på kontoret. Dette projekt viser på perfekt vis, hvordan disse verdener kan smelte problemfrit sammen.",
