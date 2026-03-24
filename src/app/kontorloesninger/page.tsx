@@ -20,7 +20,7 @@ const plans = [
     features: [
       "En professionel adresse med eget firmaskilt, egen postadresse og postkasse",
       "Fri adgang til Nordstens Workspace åbne faglige events",
-      "Rabat på leje mødelokaler og telefonrum til private samtaler og mindre møder",
+      "Rabat på leje af mødelokaler og telefonrum til private samtaler og mindre møder",
       "1 måneds depositum, ingen binding – 3 måneders opsigelse",
     ],
   },
