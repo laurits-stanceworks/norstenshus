@@ -133,6 +133,25 @@ export default function OmOsPage() {
         </div>
       </section>
 
+      {/* Single historical photo */}
+      <section className="bg-white py-16 sm:py-20 px-4 sm:px-6">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-[#9d2e1e] text-xs font-medium uppercase tracking-[0.2em] mb-4 text-center">Arkiv</p>
+          <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light text-center mb-10">
+            Nordstens forside
+          </h2>
+          <div className="relative w-full overflow-hidden bg-[#f5f4f0]">
+            <Image
+              src="/images/history-985-nordsten-forside.jpg"
+              alt="Nordstens forside til skrift"
+              width={1200}
+              height={900}
+              className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Collaborators */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#f5f4f0]">
         <div className="mx-auto max-w-4xl text-center">
