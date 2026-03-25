@@ -138,7 +138,7 @@ export default function OmOsPage() {
         <div className="mx-auto max-w-5xl">
           <p className="text-[#9d2e1e] text-xs font-medium uppercase tracking-[0.2em] mb-4 text-center">Arkiv</p>
           <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light text-center mb-10">
-            Nordstens forside
+            Grand Prix på verdensudstillingen i Bruxelles
           </h2>
           <div className="relative w-full overflow-hidden bg-[#f5f4f0]">
             <Image
