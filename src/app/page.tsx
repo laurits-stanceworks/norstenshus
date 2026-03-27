@@ -136,7 +136,7 @@ export default function HomePage() {
                 name: "Daniel og Lisa Jacobsen",
                 title: "Mer Revision",
                 initials: "DJ",
-                photo: null,
+                photo: "/images/testimonial-daniel-lisa.jpg",
                 logo: null,
               },
               {
