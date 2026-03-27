@@ -160,7 +160,7 @@ export default function HomePage() {
                 {/* Photo — top half of card */}
                 <div className="relative h-56 bg-white/10">
                   {photo ? (
-                    <Image src={photo} alt={name} fill className="object-cover object-top" />
+                    <Image src={photo} alt={name} fill className="object-cover object-center" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="text-white/30 text-5xl font-semibold">{initials}</span>
