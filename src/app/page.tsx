@@ -132,15 +132,15 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                quote: "Nordstens Workspace har givet vores lille virksomhed de professionelle rammer, vi aldrig selv ville have råd til at skabe. Det er ikke bare et kontor — det er et fællesskab.",
-                name: "Sarah M.",
-                title: "Freelance konsulent",
-                initials: "SM",
+                quote: ["Lisa: Det er fantastisk at have kontor på Nordstens Hus! Tænk, at vi er så heldige at have vores arbejdsgang i denne smukke bygning. Jeg bliver glad hver morgen, når jeg går ind ad den smukke, gamle træhoveddør, og jeg er vild med måden, det hele er blevet restaureret og indrettet på. Jeg synes, at stemningen er rar. Det er hyggeligt, at man kan spise frokost sammen med andre og lige udveksle et \"hej\" ved kaffemaskinen.", "Daniel: Det har givet en ny arbejdsglæde at kunne møde ind i flotte, professionelle og hyggelige omgivelser hver dag."],
+                name: "Daniel og Lisa Jacobsen",
+                title: "Mer Revision",
+                initials: "DJ",
                 photo: null,
                 logo: null,
               },
               {
-                quote: "Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os.",
+                quote: ["Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os."],
                 name: "Mikkel H.",
                 title: "Medstifter, tech-startup",
                 initials: "MH",
@@ -148,7 +148,7 @@ export default function HomePage() {
                 logo: null,
               },
               {
-                quote: "Bygningen er noget helt særligt. Kombinationen af historiske omgivelser og moderne faciliteter skaber en arbejdsatmosfære, der simpelthen inspirerer — hver eneste dag.",
+                quote: ["Bygningen er noget helt særligt. Kombinationen af historiske omgivelser og moderne faciliteter skaber en arbejdsatmosfære, der simpelthen inspirerer — hver eneste dag."],
                 name: "Louise B.",
                 title: "Kreativ direktør",
                 initials: "LB",
@@ -170,9 +170,11 @@ export default function HomePage() {
 
                 {/* Content */}
                 <div className="p-6 sm:p-8 flex flex-col flex-1">
-                  <p className="text-white/80 leading-relaxed mb-6 text-sm sm:text-base flex-1">
-                    &ldquo;{quote}&rdquo;
-                  </p>
+                  <div className="text-white/80 leading-relaxed mb-6 text-sm sm:text-base flex-1 flex flex-col gap-3">
+                    {(Array.isArray(quote) ? quote : [quote]).map((p, i) => (
+                      <p key={i}>{i === 0 && <>&ldquo;</>}{p}{i === (Array.isArray(quote) ? quote.length : 1) - 1 && <>&rdquo;</>}</p>
+                    ))}
+                  </div>
                   <div className="flex items-center justify-between pt-4 border-t border-white/10">
                     <div>
                       <p className="font-semibold text-sm">{name}</p>
