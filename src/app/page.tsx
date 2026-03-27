@@ -141,10 +141,10 @@ export default function HomePage() {
               },
               {
                 quote: ["Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os."],
-                name: "Mikkel H.",
-                title: "Medstifter, tech-startup",
-                initials: "MH",
-                photo: null,
+                name: "Andre Clement",
+                title: "Co-Founder, Ratios",
+                initials: "AC",
+                photo: "/images/testimonial-andre.jpg",
                 logo: null,
               },
               {
