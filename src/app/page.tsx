@@ -137,6 +137,7 @@ export default function HomePage() {
                 title: "Mer Revision",
                 initials: "DJ",
                 photo: "/images/testimonial-daniel-lisa.jpg",
+                photoPosition: "object-center",
                 logo: null,
               },
               {
@@ -145,6 +146,7 @@ export default function HomePage() {
                 title: "Co-Founder, Ratios",
                 initials: "AC",
                 photo: "/images/testimonial-andre.jpg",
+                photoPosition: "object-top",
                 logo: null,
               },
               {
@@ -153,14 +155,15 @@ export default function HomePage() {
                 title: "Kreativ direktør",
                 initials: "LB",
                 photo: null,
+                photoPosition: "object-center",
                 logo: null,
               },
-            ].map(({ quote, name, title, initials, photo, logo }) => (
+            ].map(({ quote, name, title, initials, photo, photoPosition, logo }) => (
               <div key={name} className="bg-white/10 rounded-lg overflow-hidden flex flex-col">
                 {/* Photo — top half of card */}
                 <div className="relative h-56 bg-white/10">
                   {photo ? (
-                    <Image src={photo} alt={name} fill className="object-cover object-center" />
+                    <Image src={photo} alt={name} fill className={`object-cover ${photoPosition}`} />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="text-white/30 text-5xl font-semibold">{initials}</span>
