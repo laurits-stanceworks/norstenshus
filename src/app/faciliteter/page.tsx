@@ -110,7 +110,7 @@ const facilities = [
   {
     icon: Star,
     title: "Erhvervsadresse",
-    description: "Brug Slotsgade 13-17, Hillerød som din officielle virksomhedsadresse.",
+    description: "Brug Slotsgade 13-15, Hillerød som din officielle virksomhedsadresse.",
   },
 ]
 

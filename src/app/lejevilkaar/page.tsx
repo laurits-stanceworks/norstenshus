@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "1–3 mdr.", label: "Ingen lange bindingsperioder" },
   { value: "1 md.", label: "Månedlig betaling forud" },
-  { value: "Professionel adresse", label: "Slotsgade 13-17, Hillerød" },
+  { value: "Professionel adresse", label: "Slotsgade 13-15, Hillerød" },
   { value: "Fællesskab", label: "Adgang til netværksarrangementer" },
 ]
 
