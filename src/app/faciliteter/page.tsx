@@ -120,6 +120,7 @@ const sections = [
     heading: "State of the art mødelokaler",
     body: "I Nordstens Workspace møder du højeste kvalitet i alt — fra mursten til mødelokaler, der kommer i flere størrelser. Alle husets mødelokaler er udstyret med de nyeste skærme, systemer til videoopkald og hurtigt og stabilt internet, så du kan afvikle præsentationer, møder og workshops optimalt og helt uden bekymringer. Efter dine møder kan du invitere deltagerne op på tagterrassen eller hygge i gården.",
     reverse: false,
+    objectPosition: "center 50%",
   },
   {
     image: "/images/faciliteter-salto.jpg",
@@ -207,7 +208,7 @@ export default function FaciliteterPage() {
 
       {/* Alternating image-text sections */}
       <div>
-        {sections.map(({ image, heading, body, reverse }, i) => (
+        {sections.map(({ image, heading, body, reverse, objectPosition }, i) => (
           <div
             key={heading}
             className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} ${
@@ -215,7 +216,7 @@ export default function FaciliteterPage() {
             }`}
           >
             <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[460px] shrink-0">
-              <Image src={image} alt={heading} fill className="object-cover" />
+              <Image src={image} alt={heading} fill className="object-cover" style={objectPosition ? { objectPosition } : undefined} />
             </div>
             <div className="flex-1 flex items-center px-8 sm:px-12 md:px-16 py-10 md:py-16">
               <div className="max-w-lg">
