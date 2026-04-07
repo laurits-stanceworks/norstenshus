@@ -116,7 +116,7 @@ const facilities = [
 
 const sections = [
   {
-    image: "/images/meeting-a.jpg",
+    image: "/images/meeting-paris.jpg",
     heading: "State of the art mødelokaler",
     body: "I Nordstens Workspace møder du højeste kvalitet i alt — fra mursten til mødelokaler, der kommer i flere størrelser. Alle husets mødelokaler er udstyret med de nyeste skærme, systemer til videoopkald og hurtigt og stabilt internet, så du kan afvikle præsentationer, møder og workshops optimalt og helt uden bekymringer. Efter dine møder kan du invitere deltagerne op på tagterrassen eller hygge i gården.",
     reverse: false,
