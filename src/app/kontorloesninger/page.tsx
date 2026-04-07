@@ -69,7 +69,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
-    image: "/images/interior-privat.png",
+    image: "/images/interior-privat.jpg",
     description:
       "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser, der kombinerer funktionalitet og æstetik. Her kan du skabe en arbejdsplads præcis, som du ønsker det, med frihed til at tilpasse efter din virksomheds behov og værdier. Uanset om du arbejder alene eller leder et team, kan vores private kontorer tilpasses og vokse med dig. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere, der bruger +100 m². Løsningen kan fx kombineres med co-working arbejdspladser efter behov til ofte udkørende medarbejdere, eller medarbejdere der har et stort antal hjemmearbejdsdage. Med et privat kontor i Nordstens Workspace får din virksomhed en unik adresse i eksklusive rammer, der huser andre dynamiske virksomheder og dygtige mennesker.\n\nØg jeres effektivitet og forbedre arbejdsmiljøet ved at flytte fra store kontormiljøer til Nordstens Workspace, hvor du kan sammensætte dit nye setup som en kombination af mindre storrumskontorer og co-working arbejdspladser.",
     subheading: "Dit helt eget kontor – skræddersyet til din virksomhed",

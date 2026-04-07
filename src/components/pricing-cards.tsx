@@ -65,7 +65,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
-    image: "/images/interior-privat.png",
+    image: "/images/interior-privat.jpg",
     description: "Eget lukket kontor til din virksomhed — kombiner privathed med fællesskabets fordele.",
     features: [
       "Fuldt møbleret privat kontor",
