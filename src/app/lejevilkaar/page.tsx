@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 
 const stats = [
-  { value: "1–3 mdr.", label: "Ingen lange bindingsperioder" },
+  { value: "3 mdr.", label: "Ingen lange bindingsperioder" },
   { value: "1 md.", label: "Månedlig betaling forud" },
-  { value: "Professionel adresse", label: "Slotsgade 13-17, Hillerød" },
+  { value: "Professionel adresse", label: "Slotsgade 13-15, Hillerød" },
   { value: "Fællesskab", label: "Adgang til netværksarrangementer" },
 ]
 
 const benefits = [
-  "Ingen lange bindingsperioder – fleksibilitet med 1–3 mdrs. opsigelse",
+  "Ingen lange bindingsperioder – fleksibilitet med 3 mdrs. opsigelse",
   "Mulighed for dag-til-dag skalering af kontorstørrelse og antal arbejdspladser",
   "Alt inklusive – el, vand, varme, internet, alarm og alle øvrige driftsudgifter",
   "Med i prisen – kaffe og te ad libitum, møbler, unikke fællesfaciliteter m.m.",
@@ -42,7 +42,7 @@ const terms = [
   },
   {
     heading: "Betaling",
-    body: "Leje opkræves månedligt forud. Depositum svarer til 1–3 måneders leje afhængigt af løsningstype og forfalder ved indgåelse af aftalen.",
+    body: "Leje opkræves månedligt forud. Depositum svarer til 3 måneders leje og forfalder ved indgåelse af aftalen.",
   },
   {
     heading: "Adgang",

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "https://norstenshus.vercel.app/images/kontakt-hero.jpg",
         width: 1440,
         height: 960,
-        alt: "Nordstens Hus — Slotsgade 13-17, Hillerød",
+        alt: "Nordstens Hus — Slotsgade 13-15, Hillerød",
       },
     ],
   },

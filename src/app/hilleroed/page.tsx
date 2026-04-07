@@ -5,7 +5,7 @@ import { MapPin, Train, Car, Bus } from "lucide-react"
 export const metadata: Metadata = {
   title: "Hillerød — Nordstens Workspace",
   description:
-    "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-17 — under 1 time fra København.",
+    "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-15 — under 1 time fra København.",
 }
 
 const distances = [
@@ -65,7 +65,7 @@ export default function HilleroedPage() {
                 <div>
                   <p className="font-medium text-[#8397a9] mb-1">Adresse</p>
                   <p className="text-[#6b6b7a] text-sm">
-                    Slotsgade 13-17<br />
+                    Slotsgade 13-15<br />
                     3400 Hillerød
                   </p>
                 </div>
@@ -107,7 +107,7 @@ export default function HilleroedPage() {
           {/* Map embed */}
           <div className="rounded-lg overflow-hidden h-96 md:h-auto min-h-80">
             <iframe
-              src="https://maps.google.com/maps?q=Slotsgade+13-17,+3400+Hillerød,+Denmark&output=embed&hl=da"
+              src="https://maps.google.com/maps?q=Slotsgade+13-15,+3400+Hillerød,+Denmark&output=embed&hl=da"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "320px" }}

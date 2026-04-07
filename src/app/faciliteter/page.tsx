@@ -95,7 +95,7 @@ const facilities = [
   {
     icon: Car,
     title: "Parkering",
-    description: "Parkeringsmuligheder i nærheden af bygningen.",
+    description: "Parkeringsmuligheder i nærheden af bygningen mod betaling.",
   },
   {
     icon: Tv,
@@ -110,7 +110,7 @@ const facilities = [
   {
     icon: Star,
     title: "Erhvervsadresse",
-    description: "Brug Slotsgade 13-17, Hillerød som din officielle virksomhedsadresse.",
+    description: "Brug Slotsgade 13-15, Hillerød som din officielle virksomhedsadresse.",
   },
 ]
 
