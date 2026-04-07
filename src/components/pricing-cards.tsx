@@ -102,6 +102,7 @@ export function PricingCards() {
             <h3 className="text-lg sm:text-xl font-semibold mb-1">{plan.name}</h3>
             <p className="text-sm mb-4 text-[#6b6b7a] min-h-[80px]">{plan.description}</p>
             <div className="mb-4">
+              {plan.name === "Privat Kontor" && <span className="text-sm mr-1 text-[#6b6b7a]">fra</span>}
               <span className="text-3xl sm:text-4xl font-light">{plan.price}</span>
               <span className="text-sm ml-1 text-[#6b6b7a]">DKK/md.</span>
             </div>
