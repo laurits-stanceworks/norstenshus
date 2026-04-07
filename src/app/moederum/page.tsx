@@ -64,7 +64,7 @@ const catering = [
     name: "Morgenmødepakke",
     price: "99",
     time: "kl. 08.00 – 10.00",
-    image: "/images/interior-a.jpg",
+    image: "/images/faciliteter-coffee.jpg",
     includes: ["Friskbagt surdejsbrød med smør og ost", "Croissant", "Filterkaffe og te", "Vand"],
   },
   {
@@ -225,11 +225,11 @@ export default function MoederumPage() {
             <div className="space-y-3 text-sm text-[#6b6b7a]">
               <div className="flex justify-between border-b border-[#e5e3dc] pb-3">
                 <span>Heldagsmøde (kl. 08.00–17.30)</span>
-                <span className="font-medium text-[#8397a9]">4.000 kr. ekskl. moms</span>
+                <span className="font-medium text-[#8397a9]">fra 4.000 kr. ekskl. moms</span>
               </div>
               <div className="flex justify-between">
                 <span>Halvdagsmøde (op til 5 timer)</span>
-                <span className="font-medium text-[#8397a9]">2.000 kr. ekskl. moms</span>
+                <span className="font-medium text-[#8397a9]">fra 2.000 kr. ekskl. moms</span>
               </div>
             </div>
           </div>

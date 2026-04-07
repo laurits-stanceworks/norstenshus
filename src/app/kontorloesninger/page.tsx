@@ -25,9 +25,9 @@ const plans = [
     ],
   },
   {
-    name: "Co-working Flexplads",
+    name: "Flexplads",
     price: "1.595",
-    image: "/images/interior-a.jpg",
+    image: "/images/interior-b.jpg",
     description:
       "Er du freelancer, startup, iværksætter eller en mindre virksomhed? Så kan du få en fleksibel arbejdsplads med stærke netværksmuligheder, så du kan tage virksomheden til næste niveau. En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet. Benyt vores co-working hvor du vil finde en gruppe af ligesindede, som deler de samme værdier og mindset, eller sæt dig i en af vores mange stille zoner hvor du kan fordybe dig. Co-working flexplads kombinerer det bedste fra begge verdener, og er ideel til dig som søger et professionelt arbejdsmiljø uden lange forpligtelser og store omkostninger.",
     subheading: "Fleksibilitet og fællesskab – når det passer dig",
@@ -47,9 +47,9 @@ const plans = [
     highlight: true,
   },
   {
-    name: "Co-working Fast Plads",
+    name: "Fast Plads",
     price: "3.495",
-    image: "/images/interior-b.jpg",
+    image: "/images/interior-c.jpg",
     description:
       "Med en co-working fast plads får du din egen faste arbejdsstation i Nordstens Workspace co-working, som du har adgang til 24/7. Perfekt til dig, der ønsker at kombinere det dynamiske co-working miljø med en stabil base. Du får en dedikeret plads, og adgang til alle vores faciliteter, lige fra loungeområder til moderne mødelokaler og fælleskøkkener.",
     subheading: "Din egen plads – klar til dig, døgnet rundt",
@@ -69,7 +69,7 @@ const plans = [
   {
     name: "Privat Kontor",
     price: "6.500",
-    image: "/images/interior-c.jpg",
+    image: "/images/interior-privat.png",
     description:
       "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser, der kombinerer funktionalitet og æstetik. Her kan du skabe en arbejdsplads præcis, som du ønsker det, med frihed til at tilpasse efter din virksomheds behov og værdier. Uanset om du arbejder alene eller leder et team, kan vores private kontorer tilpasses og vokse med dig. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere, der bruger +100 m². Løsningen kan fx kombineres med co-working arbejdspladser efter behov til ofte udkørende medarbejdere, eller medarbejdere der har et stort antal hjemmearbejdsdage. Med et privat kontor i Nordstens Workspace får din virksomhed en unik adresse i eksklusive rammer, der huser andre dynamiske virksomheder og dygtige mennesker.\n\nØg jeres effektivitet og forbedre arbejdsmiljøet ved at flytte fra store kontormiljøer til Nordstens Workspace, hvor du kan sammensætte dit nye setup som en kombination af mindre storrumskontorer og co-working arbejdspladser.",
     subheading: "Dit helt eget kontor – skræddersyet til din virksomhed",
@@ -123,6 +123,7 @@ export default function KontorloesningerPage() {
               <div className="p-6 sm:p-8 md:p-10">
                 <h2 className="text-2xl font-semibold mb-4">{plan.name}</h2>
                 <div className="mb-4">
+                  {plan.name === "Privat Kontor" && <span className="text-sm mr-1 text-[#6b6b7a]">fra</span>}
                   <span className="text-3xl sm:text-4xl md:text-5xl font-light">{plan.price}</span>
                   <span className="text-sm ml-2 text-[#6b6b7a]">DKK/måned ekskl. moms</span>
                 </div>
@@ -186,7 +187,7 @@ export default function KontorloesningerPage() {
                   { label: "Kaffe, te og vand ad libitum", vals: [false, true, true, true] },
                   { label: "Fibernet", vals: [false, true, true, true] },
                   { label: "Daglig rengøring", vals: [false, true, true, true] },
-                  { label: "Telefonrum", vals: [false, false, false, true] },
+                  { label: "Telefonrum", vals: [false, false, true, true] },
                   { label: "Virksomhedsadresse og postkasse", vals: [true, false, true, true] },
                   { label: "Firmaskiltning", vals: [true, false, true, true] },
                   { label: "Netværksarrangementer", vals: [true, true, true, true] },

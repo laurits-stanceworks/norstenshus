@@ -95,7 +95,7 @@ const facilities = [
   {
     icon: Car,
     title: "Parkering",
-    description: "Parkeringsmuligheder i nærheden af bygningen.",
+    description: "Parkeringsmuligheder i nærheden af bygningen mod betaling.",
   },
   {
     icon: Tv,
