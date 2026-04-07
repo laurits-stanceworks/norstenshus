@@ -4,13 +4,13 @@ import Image from "next/image"
 import { Marquee } from "@/components/marquee"
 
 export const metadata: Metadata = {
-  title: "Kontorfællesskab & Kontorplads i Hillerød — Nordstens Hus",
-  description: "Lej flexplads, fast plads eller privat kontor i Hillerød fra 1.595 kr./md. Nordstens Hus er et unikt kontorfællesskab i historiske rammer på Slotsgade 13-15 — under 1 time fra København.",
+  title: "Kontorfællesskab & Kontorplads i Hillerød — Nordstens Workspace",
+  description: "Lej flexplads, fast plads eller privat kontor i Hillerød fra 1.595 kr./md. Nordstens Workspace er et unikt kontorfællesskab i historiske rammer på Slotsgade 13-15 — under 1 time fra København.",
   alternates: { canonical: "https://nordstens.dk" },
   openGraph: {
-    title: "Nordstens Hus — Kontorfællesskab i Hillerød",
+    title: "Nordstens Workspace — Kontorfællesskab i Hillerød",
     description: "Lej flexplads, fast plads eller privat kontor fra 1.595 kr./md. i Hillerød.",
-    images: [{ url: "/images/hero-main.jpg", width: 1800, height: 1200, alt: "Nordstens Hus Hillerød" }],
+    images: [{ url: "/images/hero-main.jpg", width: 1800, height: 1200, alt: "Nordstens Workspace Hillerød" }],
   },
 }
 import { PricingCards } from "@/components/pricing-cards"

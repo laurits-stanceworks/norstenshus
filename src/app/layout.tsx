@@ -20,21 +20,21 @@ const superblue = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nordstens.dk"),
   title: {
-    default: "Nordstens Hus — Kontorfællesskab & Kontorplads i Hillerød",
-    template: "%s | Nordstens Hus",
+    default: "Nordstens Workspace — Kontorfællesskab & Kontorplads i Hillerød",
+    template: "%s | Nordstens Workspace",
   },
   description:
-    "Lej kontorplads, flexplads eller privat kontor i Hillerød. Nordstens Hus tilbyder moderne kontorfællesskab i historiske rammer på Slotsgade 13-15 — under 1 time fra København.",
+    "Lej kontorplads, flexplads eller privat kontor i Hillerød. Nordstens Workspace tilbyder moderne kontorfællesskab i historiske rammer på Slotsgade 13-15 — under 1 time fra København.",
   keywords: [
     "kontorfællesskab Hillerød", "coworking Hillerød", "kontorplads Hillerød",
     "flexplads Hillerød", "lej kontor Hillerød", "privat kontor Hillerød",
-    "mødelokale Hillerød", "kontorlejemål Hillerød", "Nordstens Hus",
+    "mødelokale Hillerød", "kontorlejemål Hillerød", "Nordstens Workspace", "Nordstens Hus",
   ],
   openGraph: {
-    title: "Nordstens Hus — Kontorfællesskab i Hillerød",
+    title: "Nordstens Workspace — Kontorfællesskab i Hillerød",
     description: "Lej kontorplads, flexplads eller privat kontor i Hillerød. Moderne kontorfællesskab i historiske rammer.",
     url: "https://nordstens.dk",
-    siteName: "Nordstens Hus",
+    siteName: "Nordstens Workspace",
     locale: "da_DK",
     type: "website",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nordstens Hus — Kontorfællesskab i Hillerød",
+    title: "Nordstens Workspace — Kontorfællesskab i Hillerød",
     description: "Lej kontorplads, flexplads eller privat kontor i Hillerød.",
     images: ["/images/hero-main.jpg"],
   },
