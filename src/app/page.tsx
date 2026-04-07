@@ -121,7 +121,7 @@ export default function HomePage() {
               En eksklusiv fordel ved Nordstens Workspace er, at du kan nyde Hillerøds hyggeligste gårdmiljø. Her samles lejere og gæster til uformelle møder, netværk og en pause fra hverdagen.
             </p>
             <p className="text-[#6b6b7a] leading-relaxed">
-              Gården byder på en unik stemning med kaffeBar, øl- og vinkort, restaurant og butik — alt hvad du behøver til en god pause eller en hyggelig eftermiddag i selskab med naboerne.
+              Gården byder på en unik stemning med cafe, øl og vin og butik — alt hvad du behøver til en god pause eller en hyggelig eftermiddag i selskab med naboerne.
             </p>
           </div>
         </div>
