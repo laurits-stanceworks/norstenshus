@@ -23,8 +23,8 @@ export function Nav() {
     <header className="sticky top-0 z-50 bg-[#8397a9] text-white font-[family-name:var(--font-prumo)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between h-14 md:h-16">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
-          <Image src="/images/logo-icon.svg" alt="Nordstens Hus" width={28} height={22} className="opacity-90" />
           <span className="text-white font-semibold text-sm leading-tight">Nordstens Hus</span>
+          <Image src="/images/logo-icon.svg" alt="Nordstens Hus" width={28} height={22} className="opacity-90" />
         </Link>
 
         {/* Desktop nav */}
