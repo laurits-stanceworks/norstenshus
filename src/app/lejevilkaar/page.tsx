@@ -4,7 +4,7 @@ import { Check } from "lucide-react"
 import { LejevilkaarFaq } from "@/components/lejevilkaar-faq"
 
 export const metadata: Metadata = {
-  title: "Lejevilkår — Nordstens Workspace",
+  title: "Lejevilkår — Fleksible Kontrakter uden Binding",
   description: "Fleksible og attraktive lejevilkår skræddersyet til nutidens behov.",
 }
 

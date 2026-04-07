@@ -18,30 +18,42 @@ const superblue = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Nordstens Hus — Kontorfællesskab i Hillerød",
+  metadataBase: new URL("https://nordstens.dk"),
+  title: {
+    default: "Nordstens Hus — Kontorfællesskab & Kontorplads i Hillerød",
+    template: "%s | Nordstens Hus",
+  },
   description:
-    "Moderne kontorløsninger i et historisk miljø. Flexplads, fast plads og private kontorer i hjertet af Hillerød siden 1877.",
+    "Lej kontorplads, flexplads eller privat kontor i Hillerød. Nordstens Hus tilbyder moderne kontorfællesskab i historiske rammer på Slotsgade 13-15 — under 1 time fra København.",
+  keywords: [
+    "kontorfællesskab Hillerød", "coworking Hillerød", "kontorplads Hillerød",
+    "flexplads Hillerød", "lej kontor Hillerød", "privat kontor Hillerød",
+    "mødelokale Hillerød", "kontorlejemål Hillerød", "Nordstens Hus",
+  ],
   openGraph: {
-    title: "Nordstens Hus",
-    description: "Kontorfællesskab i Hillerød",
-    url: "https://norstenshus.vercel.app",
+    title: "Nordstens Hus — Kontorfællesskab i Hillerød",
+    description: "Lej kontorplads, flexplads eller privat kontor i Hillerød. Moderne kontorfællesskab i historiske rammer.",
+    url: "https://nordstens.dk",
     siteName: "Nordstens Hus",
     locale: "da_DK",
     type: "website",
     images: [
       {
-        url: "https://norstenshus.vercel.app/images/kontakt-hero.jpg",
-        width: 1440,
-        height: 960,
-        alt: "Nordstens Hus — Slotsgade 13-15, Hillerød",
+        url: "/images/hero-main.jpg",
+        width: 1800,
+        height: 1200,
+        alt: "Nordstens Hus — Kontorfællesskab på Slotsgade 13-15, Hillerød",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nordstens Hus",
-    description: "Kontorfællesskab i Hillerød",
-    images: ["https://norstenshus.vercel.app/images/kontakt-hero.jpg"],
+    title: "Nordstens Hus — Kontorfællesskab i Hillerød",
+    description: "Lej kontorplads, flexplads eller privat kontor i Hillerød.",
+    images: ["/images/hero-main.jpg"],
+  },
+  alternates: {
+    canonical: "https://nordstens.dk",
   },
 }
 

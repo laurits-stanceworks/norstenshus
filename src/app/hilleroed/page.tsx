@@ -3,7 +3,7 @@ import Image from "next/image"
 import { MapPin, Train, Car, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Hillerød — Nordstens Workspace",
+  title: "Kontorfællesskab i Hillerød Centrum — Nordstens Hus",
   description:
     "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-15 — under 1 time fra København.",
 }

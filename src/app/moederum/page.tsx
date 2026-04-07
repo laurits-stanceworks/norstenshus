@@ -5,7 +5,7 @@ import { Check } from "lucide-react"
 import { MoederumFaq } from "@/components/moederum-faq"
 
 export const metadata: Metadata = {
-  title: "Møderum — Nordstens Workspace",
+  title: "Lej Mødelokale i Hillerød — Book Online",
   description:
     "Book et af vores moderne mødelokaler i Hillerød. Udstyret med AV-teknik, videomødesystem og mulighed for forplejning.",
 }

@@ -7,8 +7,8 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Faciliteter — Nordstens Workspace",
-  description: "Se alle faciliteter inkluderet i dit medlemskab hos Nordstens Workspace i Hillerød.",
+  title: "Faciliteter & Kontorfaciliteter — Nordstens Hus Hillerød",
+  description: "Alt inkluderet: fibernet, mødelokaler, tagterrasse, kaffe, 24/7 adgang og daglig rengøring. Se alle faciliteter på Nordstens Hus i Hillerød.",,
 }
 
 const facilities = [

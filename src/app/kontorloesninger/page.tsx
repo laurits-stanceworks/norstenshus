@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Check } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Kontorløsninger — Nordstens Workspace",
+  title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
   description:
     "Vælg mellem flexplads, fast plads, privat kontor eller virtuelt kontor i Hillerød.",
 }

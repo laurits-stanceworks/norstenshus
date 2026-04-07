@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/contact-form"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Kontakt — Nordstens Workspace",
+  title: "Kontakt & Book Rundvisning — Nordstens Hus Hillerød",
   description: "Kontakt Nordstens Workspace — book en rundvisning eller stil os et spørgsmål.",
 }
 
