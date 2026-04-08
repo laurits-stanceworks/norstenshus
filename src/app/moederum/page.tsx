@@ -156,8 +156,8 @@ export default function MoederumPage() {
           {/* Room photo gallery */}
           <div className="grid grid-cols-3 gap-2 mt-10 rounded-lg overflow-hidden">
             {[
-              "/images/moederum-IMG_6126.jpg",
-              "/images/moederum-IMG_6145.jpg",
+              "/images/moederum-dl-C9A8012.jpg",
+              "/images/moederum-dl-C9A8027.jpg",
               "/images/moederum-dl-IMG_7372.jpg",
               "/images/moederum-dl-IMG_7554.jpg",
               "/images/moederum-dl-IMG_7561.jpg",
@@ -211,9 +211,9 @@ export default function MoederumPage() {
               "/images/moederum-dl-Ny_raa_0005_raa15-01.jpg",
               "/images/moederum-dl-Ny_raa_0002_raa15-24.jpg",
               "/images/moederum-dl-Ny_raa_0007_raa-110.jpg",
-              "/images/moederum-dl-Ny_raa_0006_raa-116.jpg",
               "/images/moederum-IMG_5246.jpg",
-              "/images/moederum-dl-Ny_raa_0004_raa15-22.jpg",
+              "/images/moederum-IMG_6126.jpg",
+              "/images/moederum-IMG_6145.jpg",
             ].map((src) => (
               <div key={src} className="relative h-40 overflow-hidden">
                 <Image src={src} alt="RÅ15" fill className="object-cover" />
