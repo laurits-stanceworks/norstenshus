@@ -31,7 +31,7 @@ export default function KontaktPage() {
                 <MapPin size={18} className="text-[#9d2e1e] shrink-0 mt-0.5" strokeWidth={1.5} />
                 <div>
                   <p className="text-xs font-medium text-[#8397a9] uppercase tracking-wide mb-0.5">Adresse</p>
-                  <p className="text-[#6b6b7a] text-sm">Slotsgade 13-15, 3400 Hillerød</p>
+                  <p className="text-[#6b6b7a] text-sm">Slotsgade 15, 3400 Hillerød</p>
                 </div>
               </div>
               <div className="flex gap-4">
