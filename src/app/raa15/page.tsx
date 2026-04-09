@@ -60,7 +60,7 @@ export default function Raa15Page() {
       {/* Hero */}
       <section className="relative h-[65vh] flex items-center justify-center text-white text-center overflow-hidden">
         <Image
-          src="/images/moederum-dl-Ny_raa_0006_raa-116.jpg"
+          src="/images/raa15-hero.webp"
           alt="rå15 eventlokale"
           fill
           priority
@@ -68,9 +68,6 @@ export default function Raa15Page() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 px-4 sm:px-6 max-w-3xl mx-auto">
-          <p className="text-white/60 text-sm font-medium uppercase tracking-[0.2em] mb-4">
-            Event &amp; mødelokale
-          </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
             rå15
           </h1>
