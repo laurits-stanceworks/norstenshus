@@ -27,12 +27,12 @@ const rooms = [
     features: ["AV-udstyr", "Videokonference"],
   },
   {
-    name: "RÅ15",
+    name: "rå15",
     capacity: "2–20 personer",
     features: ["AV-udstyr", "Videokonference", "Whiteboards", "Flip over"],
   },
   {
-    name: "RÅ15 Event",
+    name: "rå15 Event",
     capacity: "2–50 personer",
     features: ["AV-udstyr", "Videokonference", "Whiteboards", "Flip over"],
   },
@@ -190,55 +190,52 @@ export default function MoederumPage() {
         </div>
       </section>
 
-      {/* RÅ15 event */}
+      {/* rå15 teaser */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
-            Event lokale
-          </p>
-          <h2 className="text-[#8397a9] text-2xl sm:text-3xl md:text-4xl font-light mb-6">
-            RÅ15 — et fleksibelt lokale til møder, events og selskaber
-          </h2>
-          <p className="text-[#6b6b7a] leading-relaxed mb-8">
-            RÅ15 er et nyt og alsidigt møde- og eventlokale med plads til op mod 50 personer.
-            Lokalet egner sig perfekt til forretningsmøder, workshops, firmafester, netværksevents
-            og private fejringer.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-8 rounded-lg overflow-hidden text-left">
-            {[
-              "/images/moederum-dl-Ny_raa_0003_raa15-36.jpg",
-              "/images/moederum-dl-Ny_raa_0008_raa-100.jpg",
-              "/images/moederum-dl-Ny_raa_0005_raa15-01.jpg",
-              "/images/moederum-dl-Ny_raa_0002_raa15-24.jpg",
-              "/images/moederum-dl-Ny_raa_0007_raa-110.jpg",
-              "/images/moederum-IMG_5246.jpg",
-              "/images/moederum-IMG_6126.jpg",
-              "/images/moederum-IMG_6145.jpg",
-            ].map((src) => (
-              <div key={src} className="relative h-40 overflow-hidden">
-                <Image src={src} alt="RÅ15" fill className="object-cover" />
+        <div className="mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-2 gap-2 rounded-lg overflow-hidden">
+              {[
+                "/images/moederum-dl-Ny_raa_0005_raa15-01.jpg",
+                "/images/moederum-dl-Ny_raa_0003_raa15-36.jpg",
+                "/images/moederum-dl-Ny_raa_0008_raa-100.jpg",
+                "/images/moederum-dl-Ny_raa_0002_raa15-24.jpg",
+              ].map((src) => (
+                <div key={src} className="relative h-44 overflow-hidden">
+                  <Image src={src} alt="rå15" fill className="object-cover" />
+                </div>
+              ))}
+            </div>
+            <div>
+              <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-3">
+                Event lokale
+              </p>
+              <h2 className="text-[#8397a9] text-2xl sm:text-3xl font-light mb-4">
+                rå15
+              </h2>
+              <p className="text-[#6b6b7a] leading-relaxed mb-6">
+                Et fleksibelt møde- og eventlokale med plads til op mod 50 personer —
+                perfekt til forretningsmøder, workshops, firmafester og private fejringer.
+                Industriel charme midt i Hillerød.
+              </p>
+              <div className="text-sm text-[#6b6b7a] space-y-1 mb-8">
+                <div className="flex justify-between border-b border-[#e5e3dc] pb-2">
+                  <span>Heldagsmøde (kl. 08.00–17.30)</span>
+                  <span className="font-medium text-[#8397a9]">fra 4.000 kr.</span>
+                </div>
+                <div className="flex justify-between pt-1">
+                  <span>Halvdagsmøde (op til 5 timer)</span>
+                  <span className="font-medium text-[#8397a9]">fra 2.000 kr.</span>
+                </div>
               </div>
-            ))}
-          </div>
-          <div className="bg-white rounded-lg p-6 sm:p-8 text-left mb-6">
-            <h3 className="text-[#8397a9] font-semibold mb-4">Leje af RÅ15</h3>
-            <div className="space-y-3 text-sm text-[#6b6b7a]">
-              <div className="flex justify-between border-b border-[#e5e3dc] pb-3">
-                <span>Heldagsmøde (kl. 08.00–17.30)</span>
-                <span className="font-medium text-[#8397a9]">fra 4.000 kr. ekskl. moms</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Halvdagsmøde (op til 5 timer)</span>
-                <span className="font-medium text-[#8397a9]">fra 2.000 kr. ekskl. moms</span>
-              </div>
+              <Link
+                href="/raa15"
+                className="bg-[#9d2e1e] text-white font-medium px-8 py-3.5 rounded hover:bg-[#8b2518] transition-colors inline-block"
+              >
+                Se rå15
+              </Link>
             </div>
           </div>
-          <Link
-            href="/kontakt"
-            className="bg-[#9d2e1e] text-white font-medium px-8 py-3.5 rounded hover:bg-[#8b2518] transition-colors inline-block"
-          >
-            Book mødelokale
-          </Link>
         </div>
       </section>
 

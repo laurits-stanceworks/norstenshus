@@ -10,7 +10,7 @@ const faq = [
   },
   {
     q: "Er der mulighed for forplejning?",
-    a: "Ja, vi sørger for frisk og velsmagende forplejning til alle mødedeltagere lavet af de bedste råvarer fra Café Rømers her i Hillerød. I bestemmer selv, hvor meget forplejning og hvornår I ønsker det.",
+    a: "Ja, vi sørger for frisk og velsmagende forplejning til alle mødedeltagere lavet af de bedste råvarer fra Café rømers her i Hillerød. I bestemmer selv, hvor meget forplejning og hvornår I ønsker det.",
   },
   {
     q: "Kan Nordstens Workspace hjælpe med at arrangere mødet?",

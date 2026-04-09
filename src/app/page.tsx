@@ -141,7 +141,7 @@ export default function HomePage() {
               Stemmer fra fællesskabet
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
                 quote: ["Lisa: Det er fantastisk at have kontor på Nordstens Hus! Tænk, at vi er så heldige at have vores arbejdsgang i denne smukke bygning. Jeg bliver glad hver morgen, når jeg går ind ad den smukke, gamle træhoveddør, og jeg er vild med måden, det hele er blevet restaureret og indrettet på. Jeg synes, at stemningen er rar. Det er hyggeligt, at man kan spise frokost sammen med andre og lige udveksle et \"hej\" ved kaffemaskinen.", "Daniel: Det har givet en ny arbejdsglæde at kunne møde ind i flotte, professionelle og hyggelige omgivelser hver dag."],
@@ -166,6 +166,15 @@ export default function HomePage() {
                 name: "Bastian Meijer Carlsen",
                 title: "Pharma Engineering Director, Eltronic",
                 initials: "BMC",
+                photo: null,
+                photoPosition: "object-center",
+                logo: null,
+              },
+              {
+                quote: ["Nordstens Hus har en helt særlig stemning. Der er både liv og ro på samme tid, og det giver en god balance mellem inspiration og koncentration. Det føles professionelt, men også uformelt – og det kan jeg rigtig godt lide.", "Det har givet mere struktur og bedre skelnen mellem arbejde og fritid. Samtidig er det inspirerende at være omgivet af andre selvstændige og virksomheder, hvilket ofte fører til nye idéer og perspektiver."],
+                name: "Alexander Lynge Hybschmann",
+                title: "Hybschmann & Co",
+                initials: "ALH",
                 photo: null,
                 photoPosition: "object-center",
                 logo: null,
