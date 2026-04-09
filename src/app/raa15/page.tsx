@@ -75,8 +75,7 @@ export default function Raa15Page() {
             rå15
           </h1>
           <p className="text-white/70 max-w-2xl mx-auto text-lg">
-            Et fleksibelt lokale med karakter — til møder, events og fejringer
-            for op til 50 personer.
+            Et fleksibelt lokale med karakter — til møder, events og fejringer.
           </p>
         </div>
       </section>
