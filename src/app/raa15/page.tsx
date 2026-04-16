@@ -59,7 +59,6 @@ const gallery = [
   "/images/raa15-DSC_5730.jpg",
   "/images/raa15-IMG_6142.jpg",
   "/images/moederum-dl-Ny_raa_0008_raa-100.jpg",
-  "/images/moederum-dl-Ny_raa_0007_raa-110.jpg",
   "/images/moederum-IMG_5246.jpg",
   "/images/moederum-IMG_6126.jpg",
 ]
