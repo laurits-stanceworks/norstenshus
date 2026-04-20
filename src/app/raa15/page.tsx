@@ -170,8 +170,22 @@ export default function Raa15Page() {
         </div>
       </section>
 
-      {/* Gården */}
+      {/* Testimonial */}
       <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#f5f4f0]">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-[#9d2e1e] text-sm font-medium uppercase tracking-[0.2em] mb-8">
+            Det siger vores gæster
+          </p>
+          <blockquote className="border-l-2 border-[#9d2e1e] pl-6 text-left">
+            <p className="text-[#8397a9] text-lg sm:text-xl font-light italic leading-relaxed mb-2">
+              &ldquo;Utrolig smukt, rustikt lokale der fungerede helt perfekt til vores reception. Søde og hjælpsomme og meget opsatte på at indrette lokalet til vores behov.&rdquo;
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Gården */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="relative h-72 sm:h-96 rounded-lg overflow-hidden">
