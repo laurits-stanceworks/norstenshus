@@ -2,9 +2,15 @@ import type { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Nordstens Hus — Nordstens Workspace",
+  title: "Om Nordstens Hus — Historie & Vision",
   description:
-    "Lær historien bag Nordstens Hus — en omhyggeligt restaureret bygning fra 1880'erne i hjertet af Hillerød.",
+    "Nordstens Hus på Slotsgade 13-15 i Hillerød er en nænsomt restaureret fabriksbygning fra 1880'erne. Fra Nordeuropas største såmaskinefabrik til moderne kontorfællesskab — i samarbejde med Nationalmuseet.",
+  alternates: { canonical: "https://nordstens.dk/om-os" },
+  openGraph: {
+    title: "Om Nordstens Hus — Historie & Vision",
+    description: "Fra Nordeuropas største såmaskinefabrik til moderne kontorfællesskab. Nænsomt restaureret i samarbejde med Nationalmuseet.",
+    images: [{ url: "/images/om-os-hero.jpg", width: 1800, height: 1200, alt: "Nordstens Hus facade" }],
+  },
 }
 
 const timeline = [

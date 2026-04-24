@@ -18,9 +18,68 @@ import { FacilitiesPreview } from "@/components/facilities-preview"
 import { FaqSection } from "@/components/faq-section"
 import { InstagramSection } from "@/components/instagram-section"
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Hvad indeholder en møbleret arbejdsplads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En møbleret arbejdsplads i Nordstens Workspace sikrer maksimal komfort og produktivitet. Alle pladser har moderne hæve-sænkeborde, bordlampe, ergonomiske kontorstole og aflåselige reoler.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvad er inkluderet i lejen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Alt er inkluderet i prisen — internet, rengøring, møbler, it-infrastruktur, kaffe, te, adgang til telefonbokse og fuldt udstyrede fælleskøkkener.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Er der nogen binding?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nej, der er ingen lange bindingsperioder. Du kan opsige din aftale med tre måneders varsel.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvordan er ånden hos Nordstens Workspace?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ånden bygger på fællesskab, innovation og ambition. Vi afholder regelmæssige netværksarrangementer og lægger vægt på, at alle føler sig som en del af et dynamisk og støttende fællesskab.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Kan jeg komme forbi og se lokalerne?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolut! Vi viser dig meget gerne rundt. Tag fat i os, så finder vi en tid der passer dig.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvilke slags AV-udstyr er til rådighed i mødelokalerne?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hvert mødelokale er udstyret med højopløselige skærme og systemer til videoopkald, så du kan præsentere alt dit indhold trådløst, klart og effektivt.",
+      },
+    },
+  ],
+}
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center bg-[#8397a9] overflow-hidden">
         <Image

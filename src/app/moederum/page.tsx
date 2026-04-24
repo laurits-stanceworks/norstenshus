@@ -7,7 +7,13 @@ import { MoederumFaq } from "@/components/moederum-faq"
 export const metadata: Metadata = {
   title: "Lej Mødelokale i Hillerød — Book Online",
   description:
-    "Book et af vores moderne mødelokaler i Hillerød. Udstyret med AV-teknik, videomødesystem og mulighed for forplejning.",
+    "Lej mødelokale i Hillerød til 2–20 personer. Fuldt udstyret med AV-teknik og videokonference. Mødepakker fra 99 kr./pers. inkl. forplejning. Book online — Nordstens Workspace, Slotsgade 13-15.",
+  alternates: { canonical: "https://nordstens.dk/moederum" },
+  openGraph: {
+    title: "Lej Mødelokale i Hillerød — Book Online",
+    description: "Mødelokaler til 2–20 personer med AV-teknik og videokonference. Mødepakker fra 99 kr./pers. inkl. forplejning.",
+    images: [{ url: "/images/moederum-hero.jpg", width: 1800, height: 1200, alt: "Mødelokale hos Nordstens Workspace Hillerød" }],
+  },
 }
 
 const rooms = [

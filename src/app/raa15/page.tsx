@@ -4,9 +4,15 @@ import Image from "next/image"
 import { Check, Users, Briefcase, Music, Network, PartyPopper } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "rå15 — Lej eventlokale i Hillerød",
+  title: "rå15 — Lej eventlokale i Hillerød op til 50 personer",
   description:
-    "rå15 er et fleksibelt møde- og eventlokale med plads til op mod 50 personer. Perfekt til forretningsmøder, workshops, firmafester og private arrangementer i Hillerød.",
+    "rå15 er et fleksibelt møde- og eventlokale med plads til op til 50 personer i Hillerød. Industriel charme, fuldt AV-udstyret. Halvdag fra 2.000 kr., heldagsmøde fra 4.000 kr. Book på Nordstens Workspace.",
+  alternates: { canonical: "https://nordstens.dk/raa15" },
+  openGraph: {
+    title: "rå15 — Lej eventlokale i Hillerød op til 50 personer",
+    description: "Fleksibelt møde- og eventlokale til op til 50 personer. Industriel charme, fuldt AV-udstyret. Halvdag fra 2.000 kr.",
+    images: [{ url: "/images/raa15-hero.webp", width: 1800, height: 1200, alt: "rå15 eventlokale i Hillerød" }],
+  },
 }
 
 const useCases = [

@@ -5,7 +5,13 @@ import { LejevilkaarFaq } from "@/components/lejevilkaar-faq"
 
 export const metadata: Metadata = {
   title: "Lejevilkår — Fleksible Kontrakter uden Binding",
-  description: "Fleksible og attraktive lejevilkår skræddersyet til nutidens behov.",
+  description: "Fleksible lejevilkår hos Nordstens Workspace: 3 måneders opsigelse, månedlig betaling, ingen lange bindingsperioder. Alt inkluderet — el, vand, varme, internet og rengøring.",
+  alternates: { canonical: "https://nordstens.dk/lejevilkaar" },
+  openGraph: {
+    title: "Lejevilkår — Fleksible Kontrakter uden Binding",
+    description: "3 måneders opsigelse, månedlig betaling, ingen binding. Alt inkluderet — el, vand, varme, internet og rengøring.",
+    images: [{ url: "/images/lejevilkaar.jpg", width: 1800, height: 1200, alt: "Nordstens Workspace lejevilkår" }],
+  },
 }
 
 

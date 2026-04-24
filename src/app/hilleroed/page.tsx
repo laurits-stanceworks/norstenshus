@@ -5,7 +5,13 @@ import { MapPin, Train, Car, Bus } from "lucide-react"
 export const metadata: Metadata = {
   title: "Kontorfællesskab i Hillerød Centrum — Nordstens Hus",
   description:
-    "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-15 — under 1 time fra København.",
+    "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-15 — 800 m fra stationen, 35 min fra København med S-tog. Natur, byliv og erhvervsliv i perfekt balance.",
+  alternates: { canonical: "https://nordstens.dk/hilleroed" },
+  openGraph: {
+    title: "Kontorfællesskab i Hillerød Centrum — Nordstens Hus",
+    description: "Nordstens Workspace på Slotsgade 13-15 — 800 m fra stationen, 35 min fra København. Natur, byliv og erhvervsliv i perfekt balance.",
+    images: [{ url: "/images/hilleroed-hero.jpg", width: 1800, height: 1200, alt: "Hillerød centrum" }],
+  },
 }
 
 const distances = [

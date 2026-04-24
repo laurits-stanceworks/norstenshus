@@ -9,6 +9,12 @@ import {
 export const metadata: Metadata = {
   title: "Faciliteter & Kontorfaciliteter — Nordstens Hus Hillerød",
   description: "Alt inkluderet: fibernet, mødelokaler, tagterrasse, kaffe, 24/7 adgang og daglig rengøring. Se alle faciliteter på Nordstens Hus i Hillerød.",
+  alternates: { canonical: "https://nordstens.dk/faciliteter" },
+  openGraph: {
+    title: "Faciliteter & Kontorfaciliteter — Nordstens Hus Hillerød",
+    description: "Alt inkluderet: fibernet, mødelokaler, tagterrasse, kaffe, 24/7 adgang og daglig rengøring. Se alle faciliteter på Nordstens Hus i Hillerød.",
+    images: [{ url: "/images/faciliteter-hero.jpg", width: 1800, height: 1200, alt: "Faciliteter i Nordstens Workspace Hillerød" }],
+  },
 }
 
 const facilities = [

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/kontorloesninger`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/faciliteter`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/moederum`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/raa15`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/lejevilkaar`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/design`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/hilleroed`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },

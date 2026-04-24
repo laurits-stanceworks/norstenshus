@@ -57,6 +57,47 @@ export const metadata: Metadata = {
   },
 }
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://nordstens.dk",
+  name: "Nordstens Workspace",
+  alternateName: "Nordstens Hus",
+  description: "Moderne kontorfællesskab i historiske rammer i Hillerød. Lej flexplads, fast plads eller privat kontor.",
+  url: "https://nordstens.dk",
+  telephone: "+4582303234",
+  email: "info@nordstens.dk",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Slotsgade 13-15",
+    addressLocality: "Hillerød",
+    postalCode: "3400",
+    addressCountry: "DK",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 55.9305,
+    longitude: 12.3089,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "17:00",
+  },
+  image: "https://nordstens.dk/images/hero-main.jpg",
+  priceRange: "DKK",
+  currenciesAccepted: "DKK",
+  paymentAccepted: "Cash, Credit Card",
+  areaServed: {
+    "@type": "City",
+    name: "Hillerød",
+  },
+  sameAs: [
+    "https://www.instagram.com/nordstenshus",
+  ],
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -64,6 +105,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="da" className={`${superblue.variable} h-full`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col antialiased font-[family-name:var(--font-superblue)]">
         <Nav />
         <main className="flex-1">{children}</main>

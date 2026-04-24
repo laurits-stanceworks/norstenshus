@@ -4,7 +4,13 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Kontakt & Book Rundvisning — Nordstens Hus Hillerød",
-  description: "Kontakt Nordstens Workspace — book en rundvisning eller stil os et spørgsmål.",
+  description: "Kontakt Nordstens Workspace på Slotsgade 13-15, 3400 Hillerød. Book en gratis rundvisning, stil spørgsmål om kontorplads eller mødelokaler. Tlf. 82 30 32 34.",
+  alternates: { canonical: "https://nordstens.dk/kontakt" },
+  openGraph: {
+    title: "Kontakt & Book Rundvisning — Nordstens Hus Hillerød",
+    description: "Book en gratis rundvisning eller stil spørgsmål om kontorplads og mødelokaler. Tlf. 82 30 32 34.",
+    images: [{ url: "/images/hero-main.jpg", width: 1800, height: 1200, alt: "Nordstens Workspace Hillerød" }],
+  },
 }
 
 export default function KontaktPage() {

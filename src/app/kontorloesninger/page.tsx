@@ -6,7 +6,13 @@ import { Check } from "lucide-react"
 export const metadata: Metadata = {
   title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
   description:
-    "Vælg mellem flexplads, fast plads, privat kontor eller virtuelt kontor i Hillerød.",
+    "Lej kontorplads i Hillerød fra 1.595 kr./md. Vælg mellem flexplads, fast plads, privat kontor eller virtuelt kontor — alt inkluderet, ingen binding. Nordstens Workspace på Slotsgade 13-15.",
+  alternates: { canonical: "https://nordstens.dk/kontorloesninger" },
+  openGraph: {
+    title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
+    description: "Lej kontorplads fra 1.595 kr./md. Flexplads, fast plads og privat kontor i Hillerød. Alt inkluderet — ingen binding.",
+    images: [{ url: "/images/kontorloesninger-hero.jpg", width: 1800, height: 1200, alt: "Kontorløsninger hos Nordstens Workspace Hillerød" }],
+  },
 }
 
 const plans = [
