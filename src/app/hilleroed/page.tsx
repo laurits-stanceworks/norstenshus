@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Kontorfællesskab i Hillerød Centrum — Nordstens Hus",
   description:
     "Nordstens Workspace ligger centralt i Hillerød på Slotsgade 13-15 — 800 m fra stationen, 35 min fra København med S-tog. Natur, byliv og erhvervsliv i perfekt balance.",
+  keywords: [
+    "kontorplads Hillerød centrum", "kontor nær Hillerød station", "kontorplads nær København",
+    "coworking Nordsjælland", "kontorfællesskab Nordsjælland", "erhvervslejemål Hillerød",
+    "Slotsgade 13-15 Hillerød", "kontorplads 35 min København", "arbejdsplads Hillerød",
+  ],
   alternates: { canonical: "https://nordstens.dk/hilleroed" },
   openGraph: {
     title: "Kontorfællesskab i Hillerød Centrum — Nordstens Hus",

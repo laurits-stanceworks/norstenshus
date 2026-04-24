@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "Om Nordstens Hus — Historie & Vision",
   description:
     "Nordstens Hus på Slotsgade 13-15 i Hillerød er en nænsomt restaureret fabriksbygning fra 1880'erne. Fra Nordeuropas største såmaskinefabrik til moderne kontorfællesskab — i samarbejde med Nationalmuseet.",
+  keywords: [
+    "Nordstens Hus historie", "Nordstens fabrik Hillerød", "Slotsgade 15 Hillerød",
+    "restaureret bygning Hillerød", "kontorfællesskab historiske rammer",
+    "Frederiksborg Gruppen", "Nordstens Workspace om os",
+  ],
   alternates: { canonical: "https://nordstens.dk/om-os" },
   openGraph: {
     title: "Om Nordstens Hus — Historie & Vision",

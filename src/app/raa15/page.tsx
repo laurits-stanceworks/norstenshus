@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "rå15 — Lej eventlokale i Hillerød op til 50 personer",
   description:
     "rå15 er et fleksibelt møde- og eventlokale med plads til op til 50 personer i Hillerød. Industriel charme, fuldt AV-udstyret. Halvdag fra 2.000 kr., heldagsmøde fra 4.000 kr. Book på Nordstens Workspace.",
+  keywords: [
+    "eventlokale Hillerød", "lej eventlokale Hillerød", "konferencelokale 50 personer Hillerød",
+    "firmafest lokale Hillerød", "workshop lokale Hillerød", "festlokale Hillerød",
+    "mødelokale 50 personer", "lej lokale Hillerød", "event venue Hillerød",
+    "industrielt lokale Hillerød", "rå15 Nordstens", "lokale til arrangement Hillerød",
+  ],
   alternates: { canonical: "https://nordstens.dk/raa15" },
   openGraph: {
     title: "rå15 — Lej eventlokale i Hillerød op til 50 personer",

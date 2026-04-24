@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Lej Mødelokale i Hillerød — Book Online",
   description:
     "Lej mødelokale i Hillerød til 2–20 personer. Fuldt udstyret med AV-teknik og videokonference. Mødepakker fra 99 kr./pers. inkl. forplejning. Book online — Nordstens Workspace, Slotsgade 13-15.",
+  keywords: [
+    "lej mødelokale Hillerød", "mødelokale med AV Hillerød", "book mødelokale Hillerød",
+    "konferencelokale Hillerød", "møderum Hillerød", "videokonference Hillerød",
+    "mødelokale forplejning Hillerød", "mødelokale Nordsjælland", "mødelokale til 20 personer",
+    "mødepakke Hillerød", "møderum leje pris",
+  ],
   alternates: { canonical: "https://nordstens.dk/moederum" },
   openGraph: {
     title: "Lej Mødelokale i Hillerød — Book Online",

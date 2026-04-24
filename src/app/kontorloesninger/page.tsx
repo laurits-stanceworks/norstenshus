@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
   description:
     "Lej kontorplads i Hillerød fra 1.595 kr./md. Vælg mellem flexplads, fast plads, privat kontor eller virtuelt kontor — alt inkluderet, ingen binding. Nordstens Workspace på Slotsgade 13-15.",
+  keywords: [
+    "lej kontorplads Hillerød", "flexplads Hillerød", "fast plads Hillerød",
+    "privat kontor Hillerød", "kontorlejemål Hillerød", "virtuel adresse Hillerød",
+    "virtuelt kontor Hillerød", "kontorplads uden binding", "kontorplads alt inkluderet",
+    "coworking plads Hillerød", "lej kontor Nordsjælland", "kontorplads fra 1595 kr",
+  ],
   alternates: { canonical: "https://nordstens.dk/kontorloesninger" },
   openGraph: {
     title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
