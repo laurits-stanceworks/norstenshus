@@ -207,48 +207,44 @@ export default function HomePage() {
                 name: "Daniel og Lisa Jacobsen",
                 title: "Mer Revision",
                 initials: "DJ",
-                photo: "/images/testimonial-daniel-lisa.jpg",
-                photoPosition: "object-center",
-                logo: null,
+                logo: "/images/logo-mer-revision.svg",
+                logoFilter: false,
               },
               {
                 quote: ["Vi skiftede fra et traditionelt kontorlejemål til Nordstens, og det var den bedste beslutning vi har truffet. Alt er inkluderet, og fleksibiliteten er uvurderlig for en startup som os."],
                 name: "Andre Clement",
                 title: "Co-Founder, Ratios",
                 initials: "AC",
-                photo: "/images/testimonial-andre.jpg",
-                photoPosition: "object-top",
-                logo: null,
+                logo: "/images/logo-ratios.svg",
+                logoFilter: false,
               },
               {
                 quote: ["Jeg arbejder bedst med ro til fordybelse, tæt kontakt til mine stakeholders og et dynamisk kollegaskab. Kollegerne i Hillerød trives i Nordstens Hus, især på grund af de rolige omgivelser og gode faciliteter."],
                 name: "Bastian Meijer Carlsen",
                 title: "Pharma Engineering Director, Eltronic",
                 initials: "BMC",
-                photo: null,
-                photoPosition: "object-center",
-                logo: null,
+                logo: "/images/logo-eltronic.png",
+                logoFilter: true,
               },
               {
                 quote: ["Nordstens Hus har en helt særlig stemning. Der er både liv og ro på samme tid, og det giver en god balance mellem inspiration og koncentration. Det føles professionelt, men også uformelt – og det kan jeg rigtig godt lide.", "Det har givet mere struktur og bedre skelnen mellem arbejde og fritid. Samtidig er det inspirerende at være omgivet af andre selvstændige og virksomheder, hvilket ofte fører til nye idéer og perspektiver."],
                 name: "Alexander Lynge Hybschmann",
                 title: "Hybschmann & Co",
                 initials: "ALH",
-                photo: null,
-                photoPosition: "object-center",
-                logo: null,
+                logo: "/images/logo-hybschmann.png",
+                logoFilter: true,
               },
-            ].map(({ quote, name, title, initials, photo, photoPosition, logo }) => (
+            ].map(({ quote, name, title, initials, logo, logoFilter }) => (
               <div key={name} className="bg-white/10 rounded-lg overflow-hidden flex flex-col">
-                {/* Photo — top half of card */}
-                <div className="relative h-56 bg-white/10">
-                  {photo ? (
-                    <Image src={photo} alt={name} fill className={`object-cover ${photoPosition}`} />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <span className="text-white/30 text-5xl font-semibold">{initials}</span>
-                    </div>
-                  )}
+                {/* Logo — top area of card */}
+                <div className="h-56 bg-white/10 flex items-center justify-center p-8">
+                  <Image
+                    src={logo}
+                    alt={name}
+                    width={200}
+                    height={100}
+                    className={`object-contain max-h-28 w-auto ${logoFilter ? "brightness-0 invert" : ""}`}
+                  />
                 </div>
 
                 {/* Content */}
@@ -258,20 +254,9 @@ export default function HomePage() {
                       <p key={i}>{i === 0 && <>&ldquo;</>}{p}{i === (Array.isArray(quote) ? quote.length : 1) - 1 && <>&rdquo;</>}</p>
                     ))}
                   </div>
-                  <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                    <div>
-                      <p className="font-semibold text-sm">{name}</p>
-                      <p className="text-white/50 text-xs mt-0.5">{title}</p>
-                    </div>
-                    {logo && (
-                      <Image
-                        src={logo}
-                        alt={`${name} logo`}
-                        width={64}
-                        height={28}
-                        className="object-contain opacity-60"
-                      />
-                    )}
+                  <div className="pt-4 border-t border-white/10">
+                    <p className="font-semibold text-sm">{name}</p>
+                    <p className="text-white/50 text-xs mt-0.5">{title}</p>
                   </div>
                 </div>
               </div>
