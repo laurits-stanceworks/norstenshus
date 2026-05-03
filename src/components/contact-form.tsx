@@ -27,7 +27,7 @@ export function ContactForm() {
           "service_gpia86s",
           "template_1h9xqhp",
           { to_name: name, to_email: email },
-          "WI_yoVpyJMS1q8UbY"
+          { publicKey: "WI_yoVpyJMS1q8UbY" }
         ).catch((err) => console.error("EmailJS error:", err))
         setStatus("success")
         form.reset()
