@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
@@ -11,6 +12,8 @@ export function ContactForm() {
 
     const form = e.currentTarget
     const data = new FormData(form)
+    const name = data.get("name") as string
+    const email = data.get("email") as string
 
     try {
       const res = await fetch("https://formsubmit.co/ajax/info@nordstens.dk", {
@@ -20,6 +23,12 @@ export function ContactForm() {
       })
 
       if (res.ok) {
+        await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          { to_name: name, to_email: email },
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        )
         setStatus("success")
         form.reset()
       } else {
