@@ -23,12 +23,17 @@ export function ContactForm() {
       })
 
       if (res.ok) {
-        emailjs.send(
-          "service_gpia86s",
-          "template_1h9xqhp",
-          { to_name: name, to_email: email },
-          { publicKey: "WI_yoVpyJMS1q8UbY" }
-        ).catch((err) => console.error("EmailJS error:", err))
+        try {
+          const result = await emailjs.send(
+            "service_gpia86s",
+            "template_1h9xqhp",
+            { to_name: name, to_email: email },
+            { publicKey: "WI_yoVpyJMS1q8UbY" }
+          )
+          console.log("EmailJS success:", result)
+        } catch (err) {
+          console.error("EmailJS error:", err)
+        }
         setStatus("success")
         form.reset()
       } else {
