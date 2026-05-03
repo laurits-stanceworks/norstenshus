@@ -23,18 +23,19 @@ export function ContactForm() {
       })
 
       if (res.ok) {
-        await emailjs.send(
+        emailjs.send(
           process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
           process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
           { to_name: name, to_email: email },
           process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-        )
+        ).catch((err) => console.error("EmailJS error:", err))
         setStatus("success")
         form.reset()
       } else {
         setStatus("error")
       }
-    } catch {
+    } catch (err) {
+      console.error("Form submission error:", err)
       setStatus("error")
     }
   }
