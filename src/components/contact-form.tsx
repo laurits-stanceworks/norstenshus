@@ -24,10 +24,10 @@ export function ContactForm() {
 
       if (res.ok) {
         emailjs.send(
-          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          "service_gpia86s",
+          "template_1h9xqhp",
           { to_name: name, to_email: email },
-          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+          "WI_yoVpyJMS1q8UbY"
         ).catch((err) => console.error("EmailJS error:", err))
         setStatus("success")
         form.reset()
