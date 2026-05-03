@@ -26,7 +26,7 @@ export function ContactForm() {
         try {
           const result = await emailjs.send(
             "service_gpia86s",
-            "template_1h9xqhp",
+            "template_o4a76qo",
             { to_name: name, to_email: email },
             { publicKey: "WI_yoVpyJMS1q8UbY" }
           )
