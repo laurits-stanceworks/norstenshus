@@ -17,7 +17,7 @@ function loadGA() {
 
   const script = document.createElement("script")
   script.id = "ga-script"
-  script.src = "https://www.googletagmanager.com/gtag/js?id=G-TTLELHVH23"
+  script.src = "https://www.googletagmanager.com/gtag/js?id=GT-5MXXGCZ7"
   script.async = true
   document.head.appendChild(script)
 
@@ -26,7 +26,9 @@ function loadGA() {
     window.dataLayer.push(args)
   }
   window.gtag("js", new Date())
+  window.gtag("config", "GT-5MXXGCZ7")
   window.gtag("config", "G-TTLELHVH23")
+  window.gtag("config", "AW-16845303742")
 }
 
 export function CookieBanner() {
@@ -54,6 +56,7 @@ export function CookieBanner() {
 
   function decline() {
     localStorage.setItem(CONSENT_KEY, "declined")
+    loadGA()
     setHasConsent(true)
     setVisible(false)
   }
