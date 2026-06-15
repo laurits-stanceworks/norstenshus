@@ -22,9 +22,8 @@ function loadGA() {
   document.head.appendChild(script)
 
   window.dataLayer = window.dataLayer || []
-  window.gtag = function (...args) {
-    window.dataLayer.push(args)
-  }
+  // eslint-disable-next-line prefer-rest-params
+  window.gtag = function () { window.dataLayer.push(arguments) }
   window.gtag("js", new Date())
   window.gtag("config", "GT-5MXXGCZ7")
   window.gtag("config", "G-TTLELHVH23")
@@ -56,8 +55,6 @@ export function CookieBanner() {
 
   function decline() {
     localStorage.setItem(CONSENT_KEY, "declined")
-    loadGA()
-    setHasConsent(true)
     setVisible(false)
   }
 
