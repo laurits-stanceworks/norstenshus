@@ -6,17 +6,17 @@ import { Check } from "lucide-react"
 export const metadata: Metadata = {
   title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
   description:
-    "Lej kontorplads i Hillerød fra 1.595 kr./md. Vælg mellem flexplads, fast plads, privat kontor eller virtuelt kontor — alt inkluderet, ingen binding. Nordstens Workspace på Slotsgade 13-15.",
+    "Lej kontorplads i Hillerød fra 1.995 kr./md. Vælg mellem flexplads, fast plads, privat kontor eller virtuelt kontor — alt inkluderet, ingen binding. Nordstens Workspace på Slotsgade 13-15.",
   keywords: [
     "lej kontorplads Hillerød", "flexplads Hillerød", "fast plads Hillerød",
     "privat kontor Hillerød", "kontorlejemål Hillerød", "virtuel adresse Hillerød",
     "virtuelt kontor Hillerød", "kontorplads uden binding", "kontorplads alt inkluderet",
-    "coworking plads Hillerød", "lej kontor Nordsjælland", "kontorplads fra 1595 kr",
+    "coworking plads Hillerød", "lej kontor Nordsjælland", "kontorplads fra 1995 kr",
   ],
   alternates: { canonical: "https://nordstens.dk/kontorloesninger" },
   openGraph: {
     title: "Lej Kontorplads i Hillerød — Flexplads, Fast Plads & Privat Kontor",
-    description: "Lej kontorplads fra 1.595 kr./md. Flexplads, fast plads og privat kontor i Hillerød. Alt inkluderet — ingen binding.",
+    description: "Lej kontorplads fra 1.995 kr./md. Flexplads, fast plads og privat kontor i Hillerød. Alt inkluderet — ingen binding.",
     images: [{ url: "/images/kontorloesninger-hero.jpg", width: 1800, height: 1200, alt: "Kontorløsninger hos Nordstens Workspace Hillerød" }],
   },
 }
@@ -38,7 +38,7 @@ const plans = [
   },
   {
     name: "Flexplads",
-    price: "1.595",
+    price: "1.995",
     image: "/images/interior-b.jpg",
     description:
       "Er du freelancer, startup, iværksætter eller en mindre virksomhed? Så kan du få en fleksibel arbejdsplads med stærke netværksmuligheder, så du kan tage virksomheden til næste niveau. En co-working flexplads giver dig en perfekt balance mellem fællesskab og individualitet. Benyt vores co-working hvor du vil finde en gruppe af ligesindede, som deler de samme værdier og mindset, eller sæt dig i en af vores mange stille zoner hvor du kan fordybe dig. Co-working flexplads kombinerer det bedste fra begge verdener, og er ideel til dig som søger et professionelt arbejdsmiljø uden lange forpligtelser og store omkostninger.",
@@ -60,7 +60,7 @@ const plans = [
   },
   {
     name: "Fast Plads",
-    price: "3.495",
+    price: "3.995",
     image: "/images/interior-c.jpg",
     description:
       "Med en co-working fast plads får du din egen faste arbejdsstation i Nordstens Workspace co-working, som du har adgang til 24/7. Perfekt til dig, der ønsker at kombinere det dynamiske co-working miljø med en stabil base. Du får en dedikeret plads, og adgang til alle vores faciliteter, lige fra loungeområder til moderne mødelokaler og fælleskøkkener.",
@@ -80,7 +80,7 @@ const plans = [
   },
   {
     name: "Privat Kontor",
-    price: "6.500",
+    price: "7.000",
     image: "/images/interior-privat.jpg",
     description:
       "Med et privat kontor i Nordstens Workspace får du og din virksomhed sit eget lukkede kontor i eksklusive omgivelser, der kombinerer funktionalitet og æstetik. Her kan du skabe en arbejdsplads præcis, som du ønsker det, med frihed til at tilpasse efter din virksomheds behov og værdier. Uanset om du arbejder alene eller leder et team, kan vores private kontorer tilpasses og vokse med dig. Her er plads til alt fra enkeltmandsvirksomheder til virksomheder med +15 medarbejdere, der bruger +100 m². Løsningen kan fx kombineres med co-working arbejdspladser efter behov til ofte udkørende medarbejdere, eller medarbejdere der har et stort antal hjemmearbejdsdage. Med et privat kontor i Nordstens Workspace får din virksomhed en unik adresse i eksklusive rammer, der huser andre dynamiske virksomheder og dygtige mennesker.\n\nØg jeres effektivitet og forbedre arbejdsmiljøet ved at flytte fra store kontormiljøer til Nordstens Workspace, hvor du kan sammensætte dit nye setup som en kombination af mindre storrumskontorer og co-working arbejdspladser.",
@@ -183,7 +183,7 @@ export default function KontorloesningerPage() {
                 </tr>
                 <tr className="border-b border-[#8397a9]/20 bg-white/50">
                   <td className="py-3 pr-6 text-[#6b6b7a] font-medium">Pris/måned ekskl. moms</td>
-                  {["600 DKK", "1.595 DKK", "3.495 DKK", "6.500 DKK"].map((p) => (
+                  {["600 DKK", "1.995 DKK", "3.995 DKK", "7.000 DKK"].map((p) => (
                     <td key={p} className="text-center py-3 px-3 text-[#8397a9] font-semibold">{p}</td>
                   ))}
                 </tr>

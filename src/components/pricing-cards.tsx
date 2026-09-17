@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: "Flexplads",
-    price: "1.595",
+    price: "1.995",
     image: "/images/interior-b.jpg",
     description: "Fleksibel arbejdsplads i åbent kontormiljø — ideel til freelancere og iværksættere.",
     features: [
@@ -42,7 +42,7 @@ const plans = [
   },
   {
     name: "Fast Plads",
-    price: "3.495",
+    price: "3.995",
     image: "/images/interior-c.jpg",
     description: "Din egen faste, dedikerede arbejdsstation klar til dig hver dag.",
     features: [
@@ -64,7 +64,7 @@ const plans = [
   },
   {
     name: "Privat Kontor",
-    price: "6.500",
+    price: "7.000",
     image: "/images/interior-privat.jpg",
     description: "Eget lukket kontor til din virksomhed — kombiner privathed med fællesskabets fordele.",
     features: [
@@ -104,7 +104,7 @@ export function PricingCards() {
             <div className="mb-4">
               {plan.name === "Privat Kontor" && <span className="text-sm mr-1 text-[#6b6b7a]">fra</span>}
               <span className="text-3xl sm:text-4xl font-light">{plan.price}</span>
-              <span className="text-sm ml-1 text-[#6b6b7a]">DKK/md.</span>
+              <span className="text-sm ml-1 text-[#6b6b7a]">DKK/mdr. ekskl. moms</span>
             </div>
             <Link
               href="/kontakt"
