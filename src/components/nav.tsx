@@ -41,14 +41,24 @@ export function Nav() {
           ))}
         </nav>
 
-        {/* Phone CTA */}
-        <a
-          href="tel:+4582303234"
-          className="hidden xl:flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#8b2518] transition-colors shrink-0"
-        >
-          <Phone size={14} />
-          82 30 32 34
-        </a>
+        {/* Intranet + Phone CTA */}
+        <div className="hidden xl:flex items-center gap-3 shrink-0">
+          <a
+            href="https://nordstens.app/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#8b2518] transition-colors"
+          >
+            Intranet
+          </a>
+          <a
+            href="tel:+4582303234"
+            className="flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#8b2518] transition-colors"
+          >
+            <Phone size={14} />
+            82 30 32 34
+          </a>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -73,13 +83,23 @@ export function Nav() {
               {l.label}
             </Link>
           ))}
-          <a
-            href="tel:+4582303234"
-            className="flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded mt-2 w-fit"
-          >
-            <Phone size={14} />
-            82 30 32 34
-          </a>
+          <div className="flex flex-wrap gap-3 mt-2">
+            <a
+              href="https://nordstens.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded"
+            >
+              Intranet
+            </a>
+            <a
+              href="tel:+4582303234"
+              className="flex items-center gap-2 bg-[#9d2e1e] text-white text-sm font-medium px-4 py-2 rounded"
+            >
+              <Phone size={14} />
+              82 30 32 34
+            </a>
+          </div>
         </div>
       )}
     </header>
