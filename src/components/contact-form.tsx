@@ -14,12 +14,14 @@ export function ContactForm() {
     const data = new FormData(form)
     const name = data.get("name") as string
     const email = data.get("email") as string
+    const phone = data.get("phone") as string
+    const message = data.get("message") as string
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/info@nordstens.dk", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, message }),
       })
 
       if (res.ok) {
